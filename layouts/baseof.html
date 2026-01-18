@@ -14,6 +14,35 @@
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
 
+    <!-- JS SCRIPTS IN EXACT ORDER FROM WORDPRESS EXPORT -->
+    <!-- 1. jQuery -->
+    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
+
+    <!-- 2. jQuery Migrate -->
+    <script src="{{ "js/jquery-migrate.min.js" | relURL }}"></script>
+
+    <!-- 3. React Core (from wp-includes/js/dist/vendor/) -->
+    <script src="{{ "js/react.min.js" | relURL }}"></script>
+    <script src="{{ "js/react-dom.min.js" | relURL }}"></script>
+
+    <!-- 4. GPL Calculator (from wp-content/plugins/) -->
+    <script>
+      window.process = { env: { NODE_ENV: "production" } };
+    </script>
+    <script src="{{ "js/plugins/gpl-calculator/gpl-calculator.js" | relURL }}"></script>
+
+    <!-- 5. Oil Calculator (from wp-content/plugins/) -->
+    <script src="{{ "js/plugins/oil-calculator/calculator.js" | relURL }}"></script>
+
+    <!-- 6. Kadence Widget Dock (from wp-content/plugins/) -->
+    <script src="{{ "js/plugins/kadence-widget-dock/kt-widget-dock-min.js" | relURL }}"></script>
+
+    <!-- 7. Kadence Navigation (from wp-content/themes/kadence/assets/js/) - async -->
+    <script>
+      var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child menu of","collapse":"Child menu","collapseOf":"Child menu of"},"breakPoints":{"desktop":"1024","tablet":768},"scrollOffset":"0"};
+    </script>
+    <script src="{{ "js/kadence/navigation.min.js" | relURL }}" async></script>
+
   </head>
 
   <body>
@@ -44,8 +73,23 @@
     </main>
 
     <!-- footer -->
-    {{ partial "essentials/footer.html" . }}
+    {{ partial "footer.html" . }}
 
+    <!-- JS SCRIPTS IN EXACT ORDER FROM WORDPRESS EXPORT (body) -->
+    <!-- 8. countUp (from wp-content/plugins/kadence-blocks/includes/assets/js/) -->
+    <script src="{{ "js/plugins/kadence-blocks/countUp.min.js" | relURL }}"></script>
+
+    <!-- 9. kb-countup (from wp-content/plugins/kadence-blocks/includes/assets/js/) -->
+    <script src="{{ "js/plugins/kadence-blocks/kb-countup.min.js" | relURL }}"></script>
+
+    <!-- 10. imagesloaded -->
+    <script src="{{ "js/imagesloaded.min.js" | relURL }}"></script>
+
+    <!-- 11. masonry -->
+    <script src="{{ "js/masonry.min.js" | relURL }}"></script>
+
+    <!-- 12. kb-masonry-init (from wp-content/plugins/kadence-blocks/includes/assets/js/) -->
+    <script src="{{ "js/plugins/kadence-blocks/kb-masonry-init.min.js" | relURL }}"></script>
 
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}
