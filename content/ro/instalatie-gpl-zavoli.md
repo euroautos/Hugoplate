@@ -167,7 +167,7 @@ draft: false
 
 
 
-<p>Echipa noastră vă stă la dispoziție pentru a efectua schimbul de filtre GPL Zavoli rapid și eficient, utilizând piese de origine și echipamente specializate.</p>
+<p>Echipa noastră vă stă la dispoziție pentru a efectua schimbul de filtre GPL Zavoli rapid și eficient, utilizând piese de origine și echipamente specializate. Recomandăm [întreținere periodică a filtrelor](/revizie-auto/) pentru o funcționare optimă.</p>
 
 
 

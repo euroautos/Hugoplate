@@ -1,0 +1,396 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "body_class" }}page-single page-{{ .Section }}{{ end }}
+
+{{ define "main" }}
+
+{{/* Breadcrumbs */}}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="/" class="breadcrumbs__link">Acasă</a>
+      </li>
+      {{ if .Parent }}
+      <li class="breadcrumbs__item">
+        <a href="{{ .Parent.RelPermalink }}" class="breadcrumbs__link">{{ .Parent.Title }}</a>
+      </li>
+      {{ end }}
+      <li class="breadcrumbs__item breadcrumbs__item--active">
+        <span>{{ .Title }}</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<article class="article">
+  {{/* Hero/Header */}}
+  <header class="article__header">
+    <div class="container">
+      <div class="article__header-content">
+        <div class="article__header-text">
+          {{ with .Params.badge }}
+          <span class="badge badge--primary mb-sm">{{ . }}</span>
+          {{ end }}
+          
+          <h1 class="article__title">{{ .Title }}</h1>
+          
+          {{ with .Params.subtitle }}
+          <p class="article__subtitle">{{ . }}</p>
+          {{ end }}
+          
+          {{/* Price highlight if available */}}
+          {{ with .Params.price_from }}
+          <div class="article__price-highlight">
+            <span class="article__price-label">de la</span>
+            <span class="article__price-value">{{ . }} {{ $.Params.price_unit | default "RON" }}</span>
+          </div>
+          {{ end }}
+          
+          {{/* CTA Buttons */}}
+          <div class="article__cta">
+            <a href="#programare" class="btn btn--primary btn--lg">
+              {{ partial "icons/calendar.html" (dict "class" "w-5 h-5") }}
+              Programează acum
+            </a>
+            <a href="tel:{{ .Site.Params.contact.phone }}" class="btn btn--secondary btn--lg">
+              {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+              {{ .Site.Params.contact.phone_display }}
+            </a>
+          </div>
+        </div>
+        
+        {{/* Featured Image */}}
+        {{ with .Params.image }}
+        <div class="article__header-image">
+          {{ $image := resources.Get . }}
+          {{ if $image }}
+            {{ $medium := $image.Resize "800x webp" }}
+            <img src="{{ $medium.RelPermalink }}" 
+                 alt="{{ $.Title }}" 
+                 width="{{ $medium.Width }}" 
+                 height="{{ $medium.Height }}"
+                 loading="eager">
+          {{ else }}
+            <img src="{{ . }}" alt="{{ $.Title }}" loading="eager">
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+  
+  {{/* Trust Bar */}}
+  {{ partial "sections/trust-bar.html" . }}
+  
+  {{/* Main Content */}}
+  <div class="article__body">
+    <div class="container">
+      <div class="article__grid">
+        {{/* Content Column */}}
+        <div class="article__content prose">
+          {{ .Content }}
+          
+          {{/* Benefits list if defined */}}
+          {{ with .Params.benefits }}
+          <div class="benefits-grid">
+            {{ range . }}
+            <div class="benefit-item">
+              {{ partial "icons/check-circle.html" (dict "class" "w-6 h-6 text-success") }}
+              <span>{{ . }}</span>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        
+        {{/* Sidebar with form */}}
+        <aside class="article__sidebar">
+          <div class="sidebar-sticky" id="programare">
+            {{ partial "components/contact-form.html" (dict 
+              "Site" .Site 
+              "Page" .
+              "title" "Programează-te"
+              "subtitle" "Completează și te sunăm noi"
+              "formName" .Title
+            ) }}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  
+  {{/* Pricing Table if available */}}
+  {{ with .Params.prices }}
+  <section class="section section--alt" id="preturi">
+    <div class="container">
+      <h2 class="text-center mb-lg">Prețuri {{ $.Title }}</h2>
+      
+      <div class="price-table-wrapper">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Serviciu</th>
+              <th>Preț</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range . }}
+            <tr>
+              <td>
+                <strong>{{ .name }}</strong>
+                {{ with .note }}<br><small class="text-muted">{{ . }}</small>{{ end }}
+              </td>
+              <td class="price-table__price">
+                {{ if eq .price 0 }}
+                  GRATUIT
+                {{ else }}
+                  {{ if .price_from }}de la {{ end }}{{ .price }} RON
+                {{ end }}
+              </td>
+              <td class="price-table__cta">
+                <a href="#programare" class="btn btn--primary btn--sm">Programează</a>
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  
+  {{/* FAQ Section if available */}}
+  {{ with .Params.faq }}
+  <section class="section" id="intrebari-frecvente">
+    <div class="container">
+      <h2 class="text-center mb-lg">Întrebări frecvente</h2>
+      
+      <div class="faq-wrapper">
+        <div class="accordion" data-accordion="single">
+          {{ range $index, $item := . }}
+          <div class="accordion__item" data-accordion-item>
+            <button class="accordion__trigger" data-accordion-trigger aria-expanded="false">
+              <span>{{ .question }}</span>
+              <span class="accordion__icon">
+                {{ partial "icons/chevron-down.html" (dict "class" "w-5 h-5") }}
+              </span>
+            </button>
+            <div class="accordion__content" data-accordion-content>
+              <p>{{ .answer }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  
+  {{/* Related Services */}}
+  {{ $related := where .Site.RegularPages "Section" "servicii" | first 3 }}
+  {{ if $related }}
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="text-center mb-lg">Alte servicii</h2>
+      <div class="services-grid services-grid--3">
+        {{ range $related }}
+        {{ if ne .Permalink $.Permalink }}
+        {{ partial "components/service-card.html" (dict 
+          "title" .Title
+          "description" .Params.subtitle
+          "icon" (.Params.icon | default "wrench")
+          "price" .Params.price_from
+          "url" .RelPermalink
+        ) }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  
+</article>
+
+{{ end }}
+
+{{ define "scripts" }}
+<style>
+.breadcrumbs {
+  padding: var(--space-md) 0;
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  margin-left: var(--space-sm);
+  color: var(--color-text-light);
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs__item--active {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.article__header {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-bg) 100%);
+}
+
+.article__header-content {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .article__header-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.article__title {
+  margin-bottom: var(--space-sm);
+}
+
+.article__subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.article__price-highlight {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-success-light);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.article__price-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.article__price-value {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.article__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.article__header-image {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.article__header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article__body {
+  padding: var(--space-2xl) 0;
+}
+
+.article__grid {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 1024px) {
+  .article__grid {
+    grid-template-columns: 1fr 400px;
+  }
+}
+
+.article__content {
+  max-width: none;
+}
+
+.prose h2 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.prose p {
+  margin-bottom: var(--space-md);
+}
+
+.prose ul, .prose ol {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+}
+
+.prose li {
+  margin-bottom: var(--space-sm);
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.benefits-grid {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-lg) 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+}
+
+.text-success { color: var(--color-success); }
+
+.price-table-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.faq-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+</style>
+{{ end }}

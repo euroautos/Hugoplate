@@ -1,10 +1,12 @@
 ---
+noindex: true
 title: "Tinichigerie Auto in Constanta"
 url: "/tinichigerie-auto-in-constanta/"
 type: "services"
 categories:
   - Caroserie
 ---
+noindex: true
 # Tinichigerie Auto in Constanta
 
 Efectuam lucrari de tinichigerie auto profesionale si tot ce tine de structura metalica si nemetalica a autoturismului tau, precum si servicii de vopsitorie auto.

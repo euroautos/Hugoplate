@@ -122,7 +122,7 @@ Verificarea periodică a sistemului de aer condiționat al autovehiculului este 
 [0729440127](tel:+40729440127)
 ### Diagnosticare precisă a problemelor AC
 
-Pentru a identifica și remedia problemele sistemului de aer condiționat, este esențială o diagnoză corectă. Aceasta poate include verificarea nivelului de freon, testarea componentelor electrice, inspectarea conductelor și a componentelor mecanice pentru scurgeri sau blocări, și evaluarea performanței compresorului. Specialiștii Euro Auto Service sunt echipați să ofere o diagnoză precisă și reparații eficiente pentru toate tipurile de sisteme de aer condiționat auto.
+Pentru a identifica și remedia problemele sistemului de aer condiționat, este esențială o diagnoză corectă folosind [diagnóstico computerizată a sistemelor de climatizare](/diagnoza-auto/). Aceasta poate include verificarea nivelului de freon, testarea componentelor electrice, inspectarea conductelor și a componentelor mecanice pentru scurgeri sau blocări, și evaluarea performanței compresorului.</p>
 
 - Verificarea nivelului de freon
 - Testarea componentelor electrice

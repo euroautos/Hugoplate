@@ -1,0 +1,75 @@
+{{/* 
+  CTA Box Shortcode
+  
+  Usage:
+  {{< cta title="Programează-te acum" text="Te sunăm în 15 minute" button="Trimite" url="/contact/" >}}
+  
+  Parameters:
+  - title: Titlul CTA-ului
+  - text: Text descriptiv
+  - button: Text buton (default: "Programează acum")
+  - url: URL pentru buton (default: "/contact/")
+  - style: "primary" | "secondary" | "whatsapp" (default: "primary")
+  - phone: "true" pentru a afișa și telefon
+*/}}
+
+{{ $title := .Get "title" | default "Ai întrebări?" }}
+{{ $text := .Get "text" | default "Contactează-ne și îți răspundem rapid." }}
+{{ $button := .Get "button" | default "Programează acum" }}
+{{ $url := .Get "url" | default "/contact/" }}
+{{ $style := .Get "style" | default "primary" }}
+{{ $phone := .Get "phone" }}
+
+<div class="cta-shortcode">
+  <div class="cta-shortcode__content">
+    <h3 class="cta-shortcode__title">{{ $title }}</h3>
+    <p class="cta-shortcode__text">{{ $text }}</p>
+  </div>
+  <div class="cta-shortcode__actions">
+    <a href="{{ $url }}" class="btn btn--{{ $style }} btn--lg">
+      {{ $button }}
+    </a>
+    {{ if eq $phone "true" }}
+    <a href="tel:{{ .Site.Params.contact.phone }}" class="btn btn--ghost btn--lg">
+      {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+      {{ .Site.Params.contact.phone_display }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+<style>
+.cta-shortcode {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  background: var(--color-primary-50);
+  border-radius: var(--radius-xl);
+  border-left: 4px solid var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .cta-shortcode {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cta-shortcode__title {
+  margin-bottom: var(--space-xs);
+}
+
+.cta-shortcode__text {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.cta-shortcode__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+</style>

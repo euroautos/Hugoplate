@@ -1,0 +1,82 @@
+{{/* Trust Bar - Social Proof Bar conform analizei
+    - Rating Google
+    - Autorizare RAR
+    - Număr clienți
+*/}}
+
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar__content">
+      {{/* Google Rating */}}
+      <div class="trust-item trust-item--rating">
+        <span class="trust-item__stars">
+          ★★★★<span style="opacity: 0.5">★</span>
+        </span>
+        <span>{{ .Site.Params.stats.google_rating }}/5 din {{ .Site.Params.stats.google_reviews }} recenzii</span>
+      </div>
+      
+      {{/* RAR Authorization */}}
+      <div class="trust-item">
+        <span class="trust-item__icon">
+          {{ partial "icons/shield-check.html" (dict "class" "w-5 h-5") }}
+        </span>
+        <span>Stație ITP autorizată RAR {{ .Site.Params.stats.rar_code }}</span>
+      </div>
+      
+      {{/* Experience */}}
+      <div class="trust-item">
+        <span class="trust-item__icon">
+          {{ partial "icons/award.html" (dict "class" "w-5 h-5") }}
+        </span>
+        <span>Din {{ .Site.Params.stats.years_since }} | {{ .Site.Params.stats.total_itps }} ITP-uri</span>
+      </div>
+      
+      {{/* Rapid Response */}}
+      <div class="trust-item">
+        <span class="trust-item__icon">
+          {{ partial "icons/clock.html" (dict "class" "w-5 h-5") }}
+        </span>
+        <span>Răspundem în {{ .Site.Params.form.response_time }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.trust-bar {
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+}
+
+.trust-bar__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md) var(--space-xl);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.trust-item__icon {
+  color: var(--color-success);
+}
+
+.trust-item__stars {
+  color: var(--color-yellow);
+  letter-spacing: 1px;
+}
+
+.trust-item--rating {
+  font-weight: 600;
+}
+</style>

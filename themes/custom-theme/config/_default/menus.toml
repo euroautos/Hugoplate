@@ -1,0 +1,142 @@
+# =============================================================================
+# MENIURI DE NAVIGAȚIE
+# Simplificat conform recomandărilor (max 6 itemi principali)
+# =============================================================================
+
+# --- Meniu Principal Header ---
+[[main]]
+  name = "Acasă"
+  url = "/"
+  weight = 1
+
+[[main]]
+  name = "Servicii"
+  url = "/servicii/"
+  weight = 2
+  hasChildren = true
+
+[[main]]
+  name = "ITP"
+  parent = "Servicii"
+  url = "/servicii/itp/"
+  weight = 1
+
+[[main]]
+  name = "Reparații Auto"
+  parent = "Servicii"
+  url = "/servicii/reparatii-auto/"
+  weight = 2
+
+[[main]]
+  name = "Montaj GPL"
+  parent = "Servicii"
+  url = "/servicii/montaj-gpl/"
+  weight = 3
+
+[[main]]
+  name = "Revizie Auto"
+  parent = "Servicii"
+  url = "/servicii/revizie-auto/"
+  weight = 4
+
+[[main]]
+  name = "Diagnoză Auto"
+  parent = "Servicii"
+  url = "/servicii/diagnoza-auto/"
+  weight = 5
+
+[[main]]
+  name = "ITP"
+  url = "/itp/"
+  weight = 3
+  highlight = true  # Buton evidențiat în meniu
+
+[[main]]
+  name = "Prețuri"
+  url = "/preturi/"
+  weight = 4
+
+[[main]]
+  name = "Despre Noi"
+  url = "/despre/"
+  weight = 5
+
+[[main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 6
+
+# --- Meniu Footer - Servicii ---
+[[footer_services]]
+  name = "ITP Auto"
+  url = "/servicii/itp/"
+  weight = 1
+
+[[footer_services]]
+  name = "Reparații Auto"
+  url = "/servicii/reparatii-auto/"
+  weight = 2
+
+[[footer_services]]
+  name = "Montaj GPL"
+  url = "/servicii/montaj-gpl/"
+  weight = 3
+
+[[footer_services]]
+  name = "Revizie Auto"
+  url = "/servicii/revizie-auto/"
+  weight = 4
+
+[[footer_services]]
+  name = "Diagnoză Auto"
+  url = "/servicii/diagnoza-auto/"
+  weight = 5
+
+[[footer_services]]
+  name = "Geometrie Roți"
+  url = "/servicii/geometrie-roti/"
+  weight = 6
+
+# --- Meniu Footer - Informații ---
+[[footer_info]]
+  name = "Despre Noi"
+  url = "/despre/"
+  weight = 1
+
+[[footer_info]]
+  name = "Echipa Noastră"
+  url = "/echipa/"
+  weight = 2
+
+[[footer_info]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
+
+[[footer_info]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 4
+
+# --- Meniu Footer - Legal ---
+[[footer_legal]]
+  name = "Termeni și Condiții"
+  url = "/termeni-si-conditii/"
+  weight = 1
+
+[[footer_legal]]
+  name = "Politica de Confidențialitate"
+  url = "/politica-confidentialitate/"
+  weight = 2
+
+[[footer_legal]]
+  name = "Politica Cookies"
+  url = "/politica-cookies/"
+  weight = 3
+
+# --- Alertă ITP (pentru banner) ---
+[[alerts]]
+  name = "Verifică expirarea ITP"
+  url = "/alerta-itp/"
+  icon = "bell"
+  weight = 1

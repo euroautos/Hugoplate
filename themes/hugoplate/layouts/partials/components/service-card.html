@@ -1,0 +1,60 @@
+{{/* Service Card Component
+    - Icon
+    - Titlu
+    - Descriere scurtă
+    - Preț "de la X RON"
+    - CTA consistent
+*/}}
+
+{{ $title := .title }}
+{{ $description := .description }}
+{{ $icon := .icon | default "wrench" }}
+{{ $price := .price }}
+{{ $unit := .unit | default "RON" }}
+{{ $url := .url }}
+{{ $badge := .badge }}
+
+<article class="service-card" data-reveal>
+  <div class="service-card__body">
+    {{/* Icon */}}
+    <div class="service-card__icon">
+      {{ partial (printf "icons/%s.html" $icon) (dict "class" "w-6 h-6") }}
+    </div>
+    
+    {{/* Badge */}}
+    {{ if $badge }}
+    <span class="badge badge--popular mb-sm">{{ $badge }}</span>
+    {{ end }}
+    
+    {{/* Title */}}
+    <h3 class="service-card__title">
+      {{ if $url }}<a href="{{ $url }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}
+    </h3>
+    
+    {{/* Description */}}
+    {{ if $description }}
+    <p class="service-card__description">{{ $description }}</p>
+    {{ end }}
+    
+    {{/* Price */}}
+    {{ if $price }}
+    <div class="service-card__price">
+      {{ if eq $price 0 }}
+        GRATUIT
+      {{ else }}
+        de la {{ $price }} {{ $unit }}
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  
+  {{/* Footer with CTA */}}
+  {{ if $url }}
+  <div class="service-card__footer">
+    <a href="{{ $url }}" class="btn btn--ghost btn--sm w-full">
+      Detalii și programare
+      {{ partial "icons/arrow-right.html" (dict "class" "w-4 h-4") }}
+    </a>
+  </div>
+  {{ end }}
+</article>

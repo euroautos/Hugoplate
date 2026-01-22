@@ -1,0 +1,151 @@
+{
+  "interlinks": [
+    {
+      "from": "instalatie-gpl-landi-renzo.md",
+      "to": "reductor-gpl.md",
+      "anchor": "vaporizatorul/reductorul GPL",
+      "reason": "The reductor page is already linked from the Zavoli page, completing the cross-brand reference for Landi Renzo users who want to understand this critical component",
+      "priority": "high"
+    },
+    {
+      "from": "instalatie-gpl-zavoli.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "diagnoza pentru instalațiile GPL",
+      "reason": "Zavoli page mentions depanare and senzori defecți - linking to the diagnostic service page which explicitly mentions Zavoli GPL diagnosis creates a complete user journey from problem identification to solution",
+      "priority": "high"
+    },
+    {
+      "from": "instalatie-gpl-zavoli.md",
+      "to": "revizie-auto.md",
+      "anchor": "întreținere periodică a filtrelor",
+      "reason": "Zavoli page discusses schimbarea filtrelor GPL - creating a bridge to general vehicle maintenance where users can learn about filter importance, intervals, and consequences of not replacing them",
+      "priority": "medium"
+    },
+    {
+      "from": "instalatie-gpl-zavoli.md",
+      "to": "cum-va-afecteaza-noul-itp-din-2023.md",
+      "anchor": "inspectia tehnică periodică (ITP)",
+      "reason": "Installing GPL requires ITP approval - connecting the installation page with the ITP regulations page provides essential compliance information for GPL system owners",
+      "priority": "medium"
+    },
+    {
+      "from": "instalatie-gpl-landi-renzo.md",
+      "to": "instalatie-gpl-zavoli.md",
+      "anchor": "sisteme GPL italiene",
+      "reason": "Creating a cross-brand comparison link helps users choose between Landi Renzo and Zavoli, both being Italian top-tier GPL systems offered by the same service provider",
+      "priority": "high"
+    },
+    {
+      "from": "instalatie-gpl-landi-renzo.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "diagnostic computerizată",
+      "reason": "Landi Renzo page mentions depanare and senzori defecți - linking to the diagnostic service page creates a complete user journey from problem to solution",
+      "priority": "high"
+    },
+    {
+      "from": "reductor-gpl.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "diagnostic pentru reductor defect",
+      "reason": "Reductor page focuses on symptoms and problem identification - the diagnostic page completes the user journey by explaining how to perform the actual diagnostic procedure",
+      "priority": "high"
+    },
+    {
+      "from": "reductor-gpl.md",
+      "to": "revizie-auto.md",
+      "anchor": "întreținere la fiecare 50.000 km",
+      "reason": "The reductor page recommends maintenance at 50,000 km - linking to the general vehicle maintenance page provides context about overall vehicle maintenance schedules",
+      "priority": "low"
+    },
+    {
+      "from": "revizie-auto.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "identificarea defectelor",
+      "reason": "Filters during revizie can reveal system issues - linking to the diagnostic service page provides the next step when problems are discovered during routine maintenance",
+      "priority": "high"
+    },
+    {
+      "from": "revizie-auto.md",
+      "to": "cum-va-afecteaza-noul-itp-din-2023.md",
+      "anchor": "verificarea vehiculului",
+      "reason": "Revizie and ITP are related periodic maintenance requirements - creating a navigation path helps users understand the complete vehicle compliance and maintenance schedule",
+      "priority": "medium"
+    },
+    {
+      "from": "revizie-auto.md",
+      "to": "instalatie-gpl-landi-renzo.md",
+      "anchor": "sisteme GPL pentru vehicule",
+      "reason": "Revizie page discusses engine systems - linking to GPL installation provides information about an alternative fuel conversion that users can consider during major maintenance decisions",
+      "priority": "low"
+    },
+    {
+      "from": "service-aer-conditionat.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "diagnóstico computerizată a sistemelor de climatizare",
+      "reason": "The AC page emphasizes diagnostic procedures and problem identification - linking to the general diagnostic service page provides comprehensive information about the diagnostic tools and capabilities available",
+      "priority": "high"
+    },
+    {
+      "from": "service-aer-conditionat.md",
+      "to": "revizie-auto.md",
+      "anchor": "filtrul de habitaclu / polen",
+      "reason": "AC page mentions replacing the cabin filter - linking to the general maintenance page where cabin filters are discussed in detail creates consistency across maintenance topics",
+      "priority": "medium"
+    },
+    {
+      "from": "daune-auto.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "determinarea valorii daunei",
+      "reason": "Daune page discusses damage evaluation - linking to the diagnostic service page explains how technical diagnosis can support the damage assessment process",
+      "priority": "high"
+    },
+    {
+      "from": "daune-auto.md",
+      "to": "revizie-auto.md",
+      "anchor": "întreținerea periodică a vehiculului pentru siguranță",
+      "reason": "Daune page discusses accident prevention through maintenance - linking to the revizie page provides specific maintenance procedures that help prevent accidents",
+      "priority": "medium"
+    },
+    {
+      "from": "daune-auto.md",
+      "to": "cum-va-afecteaza-noul-itp-din-2023.md",
+      "anchor": "verificarea tehnică periodică",
+      "reason": "Daune page mentions service selection and repairs as part of accident recovery - ITP compliance is essential for legal operation after repairs, creating a logical connection for users",
+      "priority": "medium"
+    },
+    {
+      "from": "diagnoza-auto.md",
+      "to": "cum-va-afecteaza-noul-itp-din-2023.md",
+      "anchor": "conectarea la interfata OBD",
+      "reason": "The diagnostic page explains OBD connection for diagnosis - the ITP page explains the same OBD connection for OBFCM data collection, providing users with a complete understanding of OBD capabilities",
+      "priority": "high"
+    },
+    {
+      "from": "diagnoza-auto.md",
+      "to": "service-aer-conditionat.md",
+      "anchor": "diagnoza și repararea sistemelor de climatizare",
+      "reason": "The diagnostic page mentions AGFR certification and climate control diagnosis - linking to the dedicated AC service page provides detailed information about specific AC repairs and procedures",
+      "priority": "high"
+    },
+    {
+      "from": "diagnoza-auto.md",
+      "to": "instalatie-gpl-landi-renzo.md",
+      "anchor": "diagnostic pentru instalațiile GPL Landi Renzo",
+      "reason": "The diagnostic page specifically mentions offering diagnosis for GPL systems including Landi Renzo - creating this link completes the user journey from diagnosis to the specific brand service page",
+      "priority": "medium"
+    },
+    {
+      "from": "diagnoza-auto.md",
+      "to": "instalatie-gpl-zavoli.md",
+      "anchor": "diagnostic pentru instalțiile GPL Zavoli",
+      "reason": "The diagnostic page specifically mentions offering diagnosis for GPL systems including Zavoli - this link is consistent with the Landi Renzo link to provide balanced brand coverage",
+      "priority": "medium"
+    },
+    {
+      "from": "cum-va-afecteaza-noul-itp-din-2023.md",
+      "to": "diagnoza-auto.md",
+      "anchor": "colectarea datelor prin OBD",
+      "reason": "The ITP page explains connecting to OBD interface for OBFCM data collection - the diagnostic page explains the same OBD connection for problem diagnosis, providing users with a complete understanding of OBD capabilities",
+      "priority": "high"
+    }
+  ]
+}

@@ -1,11 +1,15 @@
 ---
+<meta http-equiv="refresh" content="0;url=/">
+redirect: "/"
 title: "Reglaj faruri in Constanta"
 url: "/reglaj-faruri-in-constanta/"
 type: "services"
 categories:
   - Caroserie
 ---
+<meta http-equiv="refresh" content="0;url=/">
 ---
+<meta http-equiv="refresh" content="0;url=/">
 
 # Reglaj faruri in Constanta
 

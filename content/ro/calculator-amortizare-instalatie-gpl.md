@@ -6,9 +6,12 @@ image: "/images/2024/05/calculator-amortizare-gpl.jpg"
 categories: ["Calculatoare"]
 author: "Ioan"
 draft: false
+noindex: true
 ---
 <div class="entry-content single-content">
-	
+
+<meta name="robots" content="noindex, nofollow">
+
 <p>Bine ați venit la <strong>Euro Auto Service</strong>! Suntem dedicați să vă oferim soluții eficiente pentru a economisi la combustibil și a reduce impactul asupra mediului. Cu ajutorul calculatorului nostru, puteți afla cât de mult veți economisi prin instalarea unui sistem GPL pe vehiculul dumneavoastră.</p>
 
 

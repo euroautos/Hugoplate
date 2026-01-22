@@ -1,0 +1,211 @@
+<head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<!-- Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+<script id="google_gtagjs-js-consent-mode-data-layer">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
+</script>
+<!-- End Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+
+<!-- Title and Description -->
+<title>{{ if .IsHome }}Service Auto Constanta - EuroAutoService{{ else }}{{ .Title }} | EuroAutoService{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if site.Params.description }}{{ site.Params.description }}{{ else }}Service auto Constanta - oferim servicii de mecanica, diagnoza, vopsitorie, tinichigerie, instalatii GPL, revizii auto si statie ITP.{{ end }}" />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- OpenGraph -->
+<meta property="og:locale" content="ro_RO">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ if .IsHome }}Service Auto Constanta - EuroAutoService{{ else }}{{ .Title }} | EuroAutoService{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if site.Params.description }}{{ site.Params.description }}{{ else }}Service auto Constanta - oferim servicii de mecanica, diagnoza, vopsitorie, tinichigerie, instalatii GPL, revizii auto si statie ITP.{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="Euro Auto Service">
+<meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}Service Auto Constanta - EuroAutoService{{ else }}{{ .Title }} | EuroAutoService{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if site.Params.description }}{{ site.Params.description }}{{ else }}Service auto Constanta - oferim servicii de mecanica, diagnoza, vopsitorie, tinichigerie, instalatii GPL, revizii auto si statie ITP.{{ end }}">
+<meta name="twitter:site" content="@euroautoservice">
+<meta name="twitter:creator" content="@euroautoservice">
+
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo */}}
+{{ partial "basic-seo.html" . }}
+
+<!-- DNS Prefetch -->
+<link rel="dns-prefetch" href="//www.google.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
+{{ partialCached "favicon" . }}
+
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
+{{ partialCached "manifest" . }}
+
+<script>document.documentElement.classList.remove( 'no-js' );</script>
+
+<!-- CSS FILES IN EXACT ORDER FROM WORDPRESS EXPORT -->
+<!-- 1. GPL Calculator CSS -->
+<link rel="stylesheet" href="{{ "css/gpl-calculator.css" | relURL }}" media="all">
+
+<!-- 2. Oil Calculator CSS -->
+<link rel="stylesheet" href="{{ "css/oil-calculator.css" | relURL }}" media="all">
+
+<!-- 3. Kadence Widget Dock CSS -->
+<link rel="stylesheet" href="{{ "css/kt-widget-dock.css" | relURL }}" media="all">
+
+<!-- 4. Kadence Global CSS -->
+<link rel="stylesheet" href="{{ "css/global.min.css" | relURL }}" media="all">
+
+<!-- 5. Kadence Global Inline CSS -->
+<link rel="stylesheet" href="{{ "css/kadence-global-inline.css" | relURL }}" media="all">
+
+<!-- 6. Kadence Pro Menu Addons CSS -->
+<link rel="stylesheet" href="{{ "css/menu-addon.css" | relURL }}" media="all">
+
+<!-- 7. Gravity Forms Basic CSS -->
+<link rel="stylesheet" href="{{ "css/basic.min.css" | relURL }}" media="all">
+
+<!-- 8. Gravity Forms Theme Components CSS -->
+<link rel="stylesheet" href="{{ "css/theme-components.min.css" | relURL }}" media="all">
+
+<!-- 9. Gravity Forms Theme IE11 CSS -->
+<link rel="stylesheet" href="{{ "css/theme-ie11.min.css" | relURL }}" media="all">
+
+<!-- 10. Gravity Forms Theme CSS -->
+<link rel="stylesheet" href="{{ "css/theme.min.css" | relURL }}" media="all">
+
+<!-- 11. Kadence Blocks Row Layout CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-rowlayout.css" | relURL }}" media="all">
+
+<!-- 12. Kadence Blocks Column CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-column.css" | relURL }}" media="all">
+
+<!-- 13. Kadence Blocks Advancedheading Inline CSS -->
+<link rel="stylesheet" href="{{ "css/kadence-blocks-advancedheading-inline.css" | relURL }}" media="all">
+
+<!-- 14. Kadence Blocks Advanced Button CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-advancedbtn.css" | relURL }}" media="all">
+
+<!-- 15. Kadence Blocks Image CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-image.css" | relURL }}" media="all">
+
+<!-- 16. Kadence Blocks Info Box CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-infobox.css" | relURL }}" media="all">
+
+<!-- 17. Kadence Blocks Advanced Gallery CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-advancedgallery.css" | relURL }}" media="all">
+
+<!-- 18. Kadence Blocks Testimonials CSS -->
+<link rel="stylesheet" href="{{ "css/style-blocks-testimonials.css" | relURL }}" media="all">
+
+<!-- 19. Kadence RankMath CSS -->
+<link rel="stylesheet" href="{{ "css/rankmath.min.css" | relURL }}" media="all">
+
+<!-- 20. Kadence Blocks Global Variables Inline CSS -->
+<link rel="stylesheet" href="{{ "css/kadence-blocks-global-variables-inline.css" | relURL }}" media="all">
+
+<!-- 21. Kadence Slider CSS -->
+<link rel="stylesheet" href="{{ "css/ksp.css" | relURL }}" media="all">
+
+<!-- 22. Google Fonts - Raleway -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%3A800%2C600%2C400%2C300%2C200&display=swap" media="all">
+
+<!-- 23-25. Preload essential Kadence CSS -->
+<link rel="preload" href="{{ "css/header.min.css" | relURL }}" as="style">
+<link rel="preload" href="{{ "css/content.min.css" | relURL }}" as="style">
+<link rel="preload" href="{{ "css/footer.min.css" | relURL }}" as="style">
+
+<!-- JSON-LD Schema for EuroAutoService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Place",
+      "@id": "{{ site.BaseURL }}/#place",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.186440575958606",
+        "longitude": "28.595415439434184"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=44.186440575958606,28.595415439434184",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Dumitru (Tache) Brumarescu, nr. 24",
+        "addressLocality": "Constanta",
+        "addressRegion": "Constanta",
+        "postalCode": "900330",
+        "addressCountry": "RO"
+      }
+    },
+    {
+      "@type": ["AutoRepair", "Organization"],
+      "@id": "{{ site.BaseURL }}/#organization",
+      "name": "Euro Auto Service",
+      "url": "{{ site.BaseURL }}",
+      "sameAs": [
+        "https://www.facebook.com/EuroAutoService/",
+        "https://twitter.com/euroautoservice"
+      ],
+      "email": "birou@euroautoservice.ro",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Dumitru (Tache) Brumarescu, nr. 24",
+        "addressLocality": "Constanta",
+        "addressRegion": "Constanta",
+        "postalCode": "900330",
+        "addressCountry": "RO"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "{{ site.BaseURL }}/#logo",
+        "url": "{{ "images/EURO-AUTO-logo.png" | relURL }}",
+        "caption": "Euro Auto Service",
+        "inLanguage": "ro-RO"
+      },
+      "priceRange": "$",
+      "openingHours": [
+        "Monday,Tuesday,Wednesday,Thursday,Friday 08:30-17:00",
+        "Saturday 09:00-14:00"
+      ],
+      "legalName": "Statie ITP Constanta CT060",
+      "location": {
+        "@id": "{{ site.BaseURL }}/#place"
+      },
+      "telephone": "0040729440127"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.BaseURL }}/#website",
+      "url": "{{ site.BaseURL }}",
+      "name": "Euro Auto Service",
+      "alternateName": "Statie ITP Constanta CT060",
+      "publisher": {
+        "@id": "{{ site.BaseURL }}/#organization"
+      },
+      "inLanguage": "ro-RO"
+    }
+  ]
+}
+</script>
+
+<!-- Google Tag Manager -->
+{{ partialCached "gtm.html" . }}
+{{ partialCached "google_analytics.html" . }}
+
+<!-- Google Tag Manager (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4R3FELZ6WP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4R3FELZ6WP');
+</script>
+</head>

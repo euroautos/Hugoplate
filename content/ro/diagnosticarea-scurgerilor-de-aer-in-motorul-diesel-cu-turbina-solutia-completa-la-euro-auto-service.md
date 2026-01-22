@@ -1,9 +1,11 @@
 ---
+noindex: true
 title: "Diagnosticarea Scurgerilor de Aer în Motorul Diesel cu Turbină: Soluția Completă la Euro Auto Service"
 url: "/diagnosticarea-scurgerilor-de-aer-in-motorul-diesel-cu-turbina-solutia-completa-la-euro-auto-service/"
 type: "category"
 category: "Diagnoza Auto"
 ---
+noindex: true
 [Uncategorized](/category/uncategorized/).entry-taxonomies
 # Diagnosticarea Scurgerilor de Aer în Motorul Diesel cu Turbină: Soluția Completă la Euro Auto Service
 

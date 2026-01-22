@@ -1,0 +1,649 @@
+{{/* Header optimizat conform analizei:
+    - Număr de telefon vizibil constant
+    - Navigație simplificată (max 6 itemi)
+    - Program de lucru afișat
+    - CTA evidențiat pentru ITP
+*/}}
+
+<header class="header">
+  {{/* Top Bar - Program și Contact rapid */}}
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-content">
+        <div class="header__top-left">
+          <span class="header__schedule">
+            {{ partial "icons/clock.html" (dict "class" "w-4 h-4 inline-block mr-1") }}
+            {{ .Site.Params.schedule.weekdays }} | {{ .Site.Params.schedule.saturday }}
+          </span>
+          {{ if .Site.Params.schedule.note }}
+          <span class="header__schedule-note">
+            — {{ .Site.Params.schedule.note }}
+          </span>
+          {{ end }}
+        </div>
+        <div class="header__top-right">
+          <a href="{{ .Site.Params.contact.google_maps }}" target="_blank" rel="noopener" class="header__top-link">
+            {{ partial "icons/map-pin.html" (dict "class" "w-4 h-4 inline-block mr-1") }}
+            {{ .Site.Params.contact.city }}
+          </a>
+          <span class="header__top-divider">|</span>
+          <span class="header__rar">
+            Stație ITP autorizată RAR {{ .Site.Params.stats.rar_code }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{/* Main Header */}}
+  <div class="header__main">
+    <div class="container">
+      <div class="header__content">
+        {{/* Logo */}}
+        <a href="{{ "/" | relURL }}" class="header__logo" aria-label="{{ .Site.Title }} - Pagina principală">
+          <img src="/images/logo.png" alt="{{ .Site.Title }}" width="180" height="48" class="header__logo-img">
+        </a>
+        
+        {{/* Desktop Navigation */}}
+        <nav class="header__nav" aria-label="Navigație principală">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <div class="header__nav-dropdown">
+              <button class="header__nav-link header__nav-link--dropdown" aria-expanded="false">
+                {{ .Name }}
+                {{ partial "icons/chevron-down.html" (dict "class" "w-4 h-4 ml-1") }}
+              </button>
+              <div class="header__dropdown-menu">
+                {{ range .Children }}
+                <a href="{{ .URL }}" class="header__dropdown-link">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+            {{ else }}
+            <a href="{{ .URL }}" 
+               class="header__nav-link{{ if .Params.highlight }} header__nav-link--highlight{{ end }}{{ if $.IsMenuCurrent "main" . }} header__nav-link--active{{ end }}">
+              {{ .Name }}
+            </a>
+            {{ end }}
+          {{ end }}
+        </nav>
+        
+        {{/* CTA Area */}}
+        <div class="header__cta">
+          {{/* Phone - Desktop */}}
+          <a href="tel:{{ .Site.Params.contact.phone }}" class="header__phone">
+            {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+            <span>{{ .Site.Params.contact.phone_display }}</span>
+          </a>
+          
+          {{/* WhatsApp Button - Desktop */}}
+          <a href="https://wa.me/{{ .Site.Params.contact.whatsapp }}?text={{ urlquery "Bună ziua! Aș dori să programez o vizită." }}" 
+             target="_blank"
+             rel="noopener"
+             class="btn btn--whatsapp btn--sm">
+            {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+            <span class="hidden lg:inline">WhatsApp</span>
+          </a>
+          
+          {{/* Mobile Menu Toggle */}}
+          <button class="header__menu-toggle" 
+                  data-menu-toggle 
+                  aria-label="Deschide meniul"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu">
+            {{ partial "icons/menu.html" (dict "class" "w-6 h-6") }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{/* Mobile Navigation */}}
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu__header">
+      <span class="mobile-menu__title">Meniu</span>
+      <button class="mobile-menu__close" data-menu-toggle aria-label="Închide meniul">
+        {{ partial "icons/x.html" (dict "class" "w-6 h-6") }}
+      </button>
+    </div>
+    
+    <nav class="mobile-menu__nav" aria-label="Navigație mobilă">
+      {{ range .Site.Menus.main }}
+        {{ if not .HasChildren }}
+        <a href="{{ .URL }}" class="mobile-menu__link{{ if .Params.highlight }} mobile-menu__link--highlight{{ end }}">
+          {{ .Name }}
+        </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+    
+    {{/* Quick Actions Mobile */}}
+    <div class="mobile-menu__actions">
+      <a href="tel:{{ $.Site.Params.contact.phone }}" class="btn btn--primary btn--lg w-full">
+        {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+        Sună Acum
+      </a>
+      <a href="https://wa.me/{{ $.Site.Params.contact.whatsapp }}" 
+         target="_blank"
+         rel="noopener"
+         class="btn btn--whatsapp btn--lg w-full">
+        {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+        Scrie pe WhatsApp
+      </a>
+    </div>
+    
+    {{/* Contact Info Mobile */}}
+    <div class="mobile-menu__info">
+      <p class="mobile-menu__schedule">
+        {{ partial "icons/clock.html" (dict "class" "w-4 h-4 inline") }}
+        {{ $.Site.Params.schedule.weekdays }}
+      </p>
+      <p class="mobile-menu__address">
+        {{ partial "icons/map-pin.html" (dict "class" "w-4 h-4 inline") }}
+        {{ $.Site.Params.contact.address }}
+      </p>
+    </div>
+  </div>
+</header>
+
+<style>
+/* ========== Logo Styles ========== */
+.header__logo-img {
+  width: 180px;
+  height: 48px;
+  object-fit: contain;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Responsive Logo - Mobile First */
+@media (max-width: 479px) {
+  .header__logo-img {
+    width: 140px;
+    height: 37px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header__logo-img {
+    width: 160px;
+    height: 43px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__logo-img {
+    width: 180px;
+    height: 48px;
+  }
+}
+
+/* ========== Header Top Bar ========== */
+.header__top {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1a4d2e 100%);
+  color: white;
+  padding: var(--space-sm) 0;
+  position: relative;
+  z-index: 1002;
+}
+
+/* Header Top - Mobile Responsive */
+@media (max-width: 767px) {
+  .header__top {
+    padding: var(--space-xs) 0;
+  }
+}
+
+.header__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  gap: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .header__top-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
+
+@media (max-width: 479px) {
+  .header__top-content {
+    gap: 2px;
+  }
+}
+
+.header__top-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+@media (max-width: 479px) {
+  .header__top-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.header__schedule {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 479px) {
+  .header__schedule {
+    font-size: var(--font-size-xs);
+    white-space: normal;
+  }
+}
+
+.header__schedule-note {
+  color: var(--color-yellow);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 479px) {
+  .header__schedule-note {
+    font-size: var(--font-size-xs);
+    white-space: normal;
+    margin-top: 2px;
+  }
+}
+
+.header__top-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 767px) {
+  .header__top-right {
+    align-self: flex-start;
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 479px) {
+  .header__top-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+    font-size: var(--font-size-xs);
+  }
+}
+
+.header__top-link {
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.header__top-link:hover {
+  color: #ffffff;
+}
+
+.header__top-link:focus {
+  outline: 2px solid var(--color-yellow);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.header__top-divider {
+  margin: 0 var(--space-sm);
+  opacity: 0.5;
+}
+
+@media (max-width: 479px) {
+  .header__top-divider {
+    display: none;
+  }
+}
+
+.header__rar {
+  opacity: 0.9;
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+}
+
+@media (max-width: 479px) {
+  .header__rar {
+    font-size: 11px;
+  }
+}
+
+/* ========== Main Header ========== */
+.header__main {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) 0;
+  gap: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .header__content {
+    padding: var(--space-sm) 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__content {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}
+
+/* Desktop Navigation - Hide on mobile */
+@media (max-width: 1023px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+/* ========== CTA Area ========== */
+.header__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 767px) {
+  .header__cta {
+    gap: var(--space-xs);
+  }
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header__phone:hover {
+  color: var(--color-primary);
+}
+
+.header__phone:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Phone text - Responsive */
+@media (max-width: 767px) {
+  .header__phone span {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 479px) {
+  .header__phone span {
+    display: none;
+  }
+}
+
+/* WhatsApp Button - Hide on mobile */
+@media (max-width: 767px) {
+  .btn--whatsapp {
+    display: none;
+  }
+}
+
+/* ========== Mobile Menu Toggle ========== */
+.header__menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+}
+
+.header__menu-toggle:hover {
+  background: var(--color-bg-alt);
+  border-color: var(--color-primary);
+}
+
+.header__menu-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.header__menu-toggle[aria-expanded="true"] {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+/* Hide menu toggle on desktop */
+@media (min-width: 1024px) {
+  .header__menu-toggle {
+    display: none;
+  }
+}
+
+/* ========== Mobile Menu Styles ========== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-xl);
+  z-index: 1001;
+  transition: right var(--transition-slow);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu.is-open {
+  right: 0;
+}
+
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mobile-menu__title {
+  font-weight: 600;
+}
+
+.mobile-menu__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.mobile-menu__close:hover,
+.mobile-menu__close:focus {
+  background: var(--color-bg-alt);
+}
+
+.mobile-menu__close:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.mobile-menu__nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-md) 0;
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: var(--space-md) var(--space-lg);
+  color: var(--color-text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.mobile-menu__link:hover {
+  background: var(--color-bg-alt);
+}
+
+.mobile-menu__link:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.mobile-menu__link--highlight {
+  color: var(--color-cta);
+}
+
+.mobile-menu__actions {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.mobile-menu__info {
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-alt);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.mobile-menu__info p {
+  margin-bottom: var(--space-xs);
+}
+
+.mobile-menu__info p:last-child {
+  margin-bottom: 0;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+}
+
+.menu-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide mobile menu on desktop */
+@media (min-width: 1024px) {
+  .mobile-menu,
+  .menu-overlay {
+    display: none;
+  }
+}
+
+/* ========== Desktop Dropdown Menu ========== */
+.header__nav-dropdown {
+  position: relative;
+}
+
+.header__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-sm) 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-fast);
+}
+
+.header__nav-dropdown:hover .header__dropdown-menu,
+.header__nav-dropdown:focus-within .header__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header__dropdown-link {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.header__dropdown-link:hover,
+.header__dropdown-link:focus {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+}
+
+.header__dropdown-link:focus {
+  outline: none;
+  padding-left: calc(var(--space-md) + 2px);
+}
+
+/* ========== Utility Classes ========== */
+.w-full { width: 100%; }
+.hidden { display: none; }
+
+@media (min-width: 1024px) {
+  .lg\:inline { display: inline; }
+}
+
+/* ========== Enhanced Accessibility ========== */
+/* Skip link for keyboard users */
+[role="navigation"] a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .header__logo-img,
+  .header__logo-img *,
+  .header__menu-toggle,
+  .mobile-menu,
+  .header__dropdown-menu,
+  .header__top-link,
+  .mobile-menu__link,
+  .header__phone {
+    transition: none;
+  }
+}
+</style>

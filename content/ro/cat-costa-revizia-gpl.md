@@ -6,9 +6,14 @@ image: "/images/2024/05/revizia-gpl.jpg"
 categories: ["Instalatii GPL"]
 author: "Ioan"
 draft: false
+redirect: "/gpl/silo/intretinere/"
 ---
+<meta http-equiv="refresh" content="0;url=/gpl/silo/intretinere/">
 <div class="entry-content single-content">
-	<div class="kb-row-layout-wrap kb-row-layout-id345_a7bc5f-12 alignfull has-theme-palette8-background-color kt-row-has-bg wp-block-kadence-rowlayout"><div class="kt-row-column-wrap kt-has-2-columns kt-row-layout-equal kt-tab-layout-equal kt-mobile-layout-row kt-row-valign-middle kb-theme-content-width">
+
+<p><strong>Informație Mutată:</strong> Această pagină a fost consolidată. Vă rugăm să accesați <a href="/gpl/silo/intretinere/">Inginerie și Întreținere GPL</a> pentru informații complete despre costurile reviziei GPL.</p>
+
+<div class="kb-row-layout-wrap kb-row-layout-id345_a7bc5f-12 alignfull has-theme-palette8-background-color kt-row-has-bg wp-block-kadence-rowlayout"><div class="kt-row-column-wrap kt-has-2-columns kt-row-layout-equal kt-tab-layout-equal kt-mobile-layout-row kt-row-valign-middle kb-theme-content-width">
 
 <div class="wp-block-kadence-column kadence-column345_af78fb-ba kb-section-dir-vertical inner-column-1"><div class="kt-inside-inner-col">
 <div class="wp-block-kadence-spacer aligncenter kt-block-spacer-345_4cdbc0-8c"><div class="kt-block-spacer kt-block-spacer-halign-left"><hr class="kt-divider"></div></div>

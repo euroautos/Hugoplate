@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "ro" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  {{/* SEO Meta Tags */}}
+  <title>{{ block "title" . }}{{ .Title }} {{ .Site.Params.seo.title_separator | default " | " }} {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  
+  {{/* Canonical URL */}}
+  <link rel="canonical" href="{{ .Permalink }}">
+  
+  {{/* Open Graph */}}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ .Site.Params.seo.og_image | absURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="ro_RO">
+  
+  {{/* Twitter Card */}}
+  <meta name="twitter:card" content="{{ .Site.Params.seo.twitter_card | default "summary_large_image" }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:image" content="{{ .Site.Params.seo.og_image | absURL }}">
+  
+  {{/* Favicon */}}
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1e40af">
+  
+  {{/* Preconnect to external resources */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  {{/* Fonts - Inter for clean professional look */}}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  {{/* Design System CSS - Apple HIG + Prägnanz */}}
+  {{ $designSystem := resources.Get "css/design-system.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $designSystem.RelPermalink }}" integrity="{{ $designSystem.Data.Integrity }}">
+  
+  {{/* Main CSS - Components & Layouts */}}
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  
+  {{/* Additional head content */}}
+  {{ block "head" . }}{{ end }}
+  
+  {{/* Google Analytics */}}
+  {{ if .Site.Params.features.google_analytics }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.features.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ .Site.Params.features.google_analytics }}');
+  </script>
+  {{ end }}
+  
+  {{/* Schema.org Structured Data */}}
+  {{ partial "schema/organization.html" . }}
+</head>
+<body class="{{ block "body_class" . }}{{ end }}">
+  {{/* Skip to content link for accessibility */}}
+  <a href="#main-content" class="sr-only">Salt la conținut</a>
+  
+  {{/* Header */}}
+  {{ partial "header.html" . }}
+  
+  {{/* Main Content */}}
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  
+  {{/* Footer */}}
+  {{ partial "footer.html" . }}
+  
+  {{/* Floating WhatsApp Button */}}
+  {{ if .Site.Params.features.whatsapp_floating }}
+  {{ partial "components/whatsapp-float.html" . }}
+  {{ end }}
+  
+  {{/* Mobile Call Button */}}
+  {{ if .Site.Params.features.click_to_call }}
+  {{ partial "components/mobile-call.html" . }}
+  {{ end }}
+  
+  {{/* Mobile Menu Overlay */}}
+  <div class="menu-overlay" data-menu-overlay></div>
+  
+  {{/* Main JavaScript */}}
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  
+  {{/* Additional scripts */}}
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

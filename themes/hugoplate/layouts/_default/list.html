@@ -1,0 +1,140 @@
+{{ define "title" }}{{ .Title | default "Servicii Auto" }}{{ end }}
+
+{{ define "body_class" }}page-list page-services{{ end }}
+
+{{ define "main" }}
+
+{{/* Hero Section */}}
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__content text-center">
+      <h1 class="page-hero__title">{{ .Title | default "Serviciile Noastre" }}</h1>
+      <p class="page-hero__subtitle">
+        {{ .Description | default "Service auto complet în Constanța. De la ITP la reparații complexe, suntem aici pentru mașina ta." }}
+      </p>
+    </div>
+  </div>
+</section>
+
+{{/* Trust Bar */}}
+{{ partial "sections/trust-bar.html" . }}
+
+{{/* Services Grid */}}
+<section class="section">
+  <div class="container">
+    <div class="services-grid">
+      {{ range .Pages }}
+      {{ partial "components/service-card.html" (dict 
+        "title" .Title
+        "description" (.Params.subtitle | default .Summary)
+        "icon" (.Params.icon | default "wrench")
+        "price" .Params.price_from
+        "url" .RelPermalink
+        "badge" .Params.badge
+      ) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* Quick Contact CTA */}}
+<section class="section section--alt">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-box__content">
+        <h2 class="cta-box__title">Nu găsești ce cauți?</h2>
+        <p class="cta-box__text">Contactează-ne și îți spunem cum te putem ajuta.</p>
+      </div>
+      <div class="cta-box__actions">
+        <a href="tel:{{ .Site.Params.contact.phone }}" class="btn btn--primary btn--lg">
+          {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+          Sună acum
+        </a>
+        <a href="https://wa.me/{{ .Site.Params.contact.whatsapp }}" 
+           target="_blank" 
+           rel="noopener"
+           class="btn btn--whatsapp btn--lg">
+          {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Testimonials */}}
+{{ partial "sections/testimonials.html" (dict "Site" .Site "title" "Ce spun clienții" "limit" 3) }}
+
+{{ end }}
+
+{{ define "scripts" }}
+<style>
+.page-hero {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-bg) 100%);
+}
+
+.page-hero__title {
+  margin-bottom: var(--space-sm);
+}
+
+.page-hero__subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .cta-box {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.cta-box__title {
+  margin-bottom: var(--space-xs);
+}
+
+.cta-box__text {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.cta-box__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+</style>
+{{ end }}

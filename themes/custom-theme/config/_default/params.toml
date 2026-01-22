@@ -1,0 +1,151 @@
+# =============================================================================
+# SITE PARAMETERS - EuroAutoService
+# Configurări pentru conversii optimizate
+# =============================================================================
+
+# --- Informații de Bază ---
+name = "EuroAutoService"
+tagline = "Service Auto și Stație ITP Constanța"
+description = "Service auto profesionist și stație ITP autorizată RAR în Constanța. ITP în 30 min, reparații auto, montaj GPL. Peste 17 ani experiență, 50.000+ ITP-uri efectuate."
+keywords = ["service auto constanta", "itp constanta", "reparatii auto", "montaj gpl", "revizie auto"]
+author = "EuroAutoService"
+
+# --- Informații Contact (afișate în header/footer) ---
+[contact]
+  phone = "+40 741 123 456"
+  phone_display = "0741 123 456"
+  phone_secondary = "+40 241 123 456"
+  whatsapp = "+40741123456"
+  email = "contact@euroautoservice.ro"
+  address = "Str. Exemplu Nr. 123, Constanța"
+  city = "Constanța"
+  county = "Constanța"
+  postal_code = "900001"
+  country = "România"
+  
+  # Link-uri externe
+  google_maps = "https://maps.google.com/?q=EuroAutoService+Constanta"
+  waze = "https://waze.com/ul?ll=44.1765,28.6519&navigate=yes"
+
+# --- Program de Lucru ---
+[schedule]
+  weekdays = "Luni - Vineri: 08:00 - 18:00"
+  saturday = "Sâmbătă: 08:00 - 14:00"
+  sunday = "Duminică: Închis"
+  note = "ITP fără programare în avans!"
+
+# --- Statistici (Trust Signals) ---
+[stats]
+  years_experience = 17
+  years_since = 2007
+  total_itps = "50.000+"
+  total_clients = "35.000+"
+  google_rating = 4.5
+  google_reviews = 241
+  rar_code = "CT060"
+
+# --- Prețuri Populare (afișate pe homepage) ---
+[[prices]]
+  service = "ITP Auto"
+  price_from = 120
+  unit = "RON"
+  badge = "Cel mai popular"
+  
+[[prices]]
+  service = "Revizie Auto"
+  price_from = 199
+  unit = "RON"
+  badge = ""
+  
+[[prices]]
+  service = "Diagnosticare"
+  price_from = 0
+  unit = "RON"
+  badge = "GRATUIT"
+  note = "La programare"
+
+[[prices]]
+  service = "Montaj GPL"
+  price_from = 2500
+  unit = "RON"
+  badge = "Economie 50%"
+
+# --- Garanții (Trust Signals) ---
+[[guarantees]]
+  icon = "shield-check"
+  title = "Garanție Piese"
+  description = "2 ani garanție pentru toate piesele montate"
+
+[[guarantees]]
+  icon = "wrench"
+  title = "Garanție Manoperă"
+  description = "6 luni garanție pentru lucrările efectuate"
+
+[[guarantees]]
+  icon = "refresh"
+  title = "Reinspecție Gratuită"
+  description = "Reinspecție ITP gratuită în caz de respingere"
+
+[[guarantees]]
+  icon = "clock"
+  title = "Răspuns Rapid"
+  description = "Răspundem în maxim 15 minute"
+
+# --- Beneficii ITP (pentru landing page) ---
+[[itp_benefits]]
+  icon = "check-circle"
+  title = "Preverificare Gratuită"
+  description = "Verificăm mașina înainte de ITP"
+
+[[itp_benefits]]
+  icon = "refresh"
+  title = "Reinspecție Gratuită"
+  description = "Dacă nu treci, revii gratuit"
+
+[[itp_benefits]]
+  icon = "tools"
+  title = "Reparații pe Loc"
+  description = "Rezolvăm problemele imediat"
+
+# --- SEO & Social ---
+[seo]
+  title_separator = " | "
+  og_image = "/images/og-default.jpg"
+  twitter_card = "summary_large_image"
+  
+[social]
+  facebook = "https://facebook.com/euroautoservice"
+  instagram = "https://instagram.com/euroautoservice"
+  google_business = "https://g.page/euroautoservice"
+
+# --- Features Toggle ---
+[features]
+  whatsapp_floating = true
+  click_to_call = true
+  dark_mode = false  # Dezactivat pentru business local
+  google_analytics = ""  # Adaugă ID-ul GA4
+  google_tag_manager = ""
+  facebook_pixel = ""
+  
+# --- Formular Contact ---
+[form]
+  action = "/api/contact"  # Endpoint pentru procesare
+  response_time = "15 minute"
+  captcha = "recaptcha_v3"  # invisible captcha conform recomandărilor
+  recaptcha_site_key = ""  # Adaugă cheia reCAPTCHA
+
+# --- CTA Texts (pentru A/B testing ușor) ---
+[cta]
+  primary = "Programează Acum"
+  secondary = "Vezi Prețurile"
+  whatsapp = "Scrie pe WhatsApp"
+  call = "Sună Acum"
+  itp = "Programează ITP"
+  quote = "Cere Ofertă"
+
+# --- Footer ---
+[footer]
+  copyright = "EuroAutoService"
+  show_social = true
+  show_schedule = true
+  show_map = true

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# Block admin/private areas if any
+Disallow: /admin/
+Disallow: /api/

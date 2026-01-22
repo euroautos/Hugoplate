@@ -127,7 +127,7 @@ draft: false
 
 
 
-<p><strong>Dacă se suspectează un reductor defect, capacul rezervorului de expansiune poate fi deschis pentru a verifica dacă se poate auzi un miros de gaz.</strong></p>
+<p>În caz de problemă cu reductorul, oferim [diagnostic pentru reductor defect](/diagnoza-auto/). Tehnicienii noștri pot determina dacă vaporizatorul necesita reparație sau înlocuire.</p>
 </div></div>
 
 

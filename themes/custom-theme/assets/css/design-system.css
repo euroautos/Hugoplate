@@ -1,0 +1,1241 @@
+/* =============================================================================
+   EUROAUTOSERVICE - Design System 2.0
+   Bazat pe Apple Human Interface Guidelines + Legea Prägnanz
+   
+   PRINCIPII FUNDAMENTALE:
+   - CLARITY: Fiecare element ușor de înțeles și lizibil
+   - DEFERENCE: UI-ul în spate, conținutul în prim-plan
+   - DEPTH: Ierarhie vizuală și navigație predictibilă
+   - PRÄGNANZ: Simplitate maximă, efort cognitiv minim
+   ============================================================================= */
+
+/* =============================================================================
+   1. DESIGN TOKENS - Apple HIG Compliant
+   ============================================================================= */
+
+:root {
+  /* -------------------------------------------------------------------------
+     TYPOGRAPHY SCALE
+     - Minimum 11pt (≈0.6875rem) - NICIODATĂ mai mic
+     - Scale bazat pe Apple Text Styles
+     - Line-height minimum 1.3x font size
+     ------------------------------------------------------------------------- */
+  
+  /* Font Family - Inter ca alternativă web la SF Pro */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 
+               'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+  
+  /* Font Sizes - Apple Text Styles Mapping */
+  --text-caption-2: 0.6875rem;   /* 11pt - MINIMUM ABSOLUT */
+  --text-caption-1: 0.75rem;     /* 12pt */
+  --text-footnote: 0.8125rem;    /* 13pt */
+  --text-subhead: 0.9375rem;     /* 15pt */
+  --text-callout: 1rem;          /* 16pt */
+  --text-body: 1.0625rem;        /* 17pt - Default body text */
+  --text-headline: 1.0625rem;    /* 17pt Bold */
+  --text-title-3: 1.25rem;       /* 20pt */
+  --text-title-2: 1.375rem;      /* 22pt */
+  --text-title-1: 1.75rem;       /* 28pt */
+  --text-large-title: 2.125rem;  /* 34pt */
+  
+  /* Font Weights - DOAR acestea (evită Ultralight, Thin, Light) */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /* Line Heights - Minimum 1.3x */
+  --leading-tight: 1.2;      /* Headlines, Large Titles */
+  --leading-normal: 1.5;     /* Body text */
+  --leading-relaxed: 1.625;  /* Long-form reading */
+  
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;  /* Headlines */
+  --tracking-normal: 0;       /* Body */
+  --tracking-wide: 0.02em;    /* Small caps, labels */
+  
+  /* -------------------------------------------------------------------------
+     CULORI - Semantic Colors (Apple HIG)
+     - Adaptare automată Light/Dark
+     - Contrast ratio minimum 4.5:1 pentru text
+     - 7:1 pentru optimal accessibility
+     ------------------------------------------------------------------------- */
+  
+  /* Primary Actions & Brand */
+  --color-primary: #1e40af;
+  --color-primary-hover: #1e3a8a;
+  --color-primary-light: #3b82f6;
+  --color-primary-subtle: #eff6ff;
+  
+  /* System Colors - Semantic Usage */
+  --color-system-blue: #007AFF;      /* Links, primary actions */
+  --color-system-green: #34C759;     /* Success, confirmări */
+  --color-system-red: #FF3B30;       /* Destructive, erori */
+  --color-system-orange: #FF9500;    /* Warning, atenție */
+  --color-system-yellow: #FFCC00;    /* Alerts non-critice */
+  
+  /* CTA Color - Orange pentru conversii (Apple recommended) */
+  --color-cta: #ea580c;
+  --color-cta-hover: #c2410c;
+  --color-cta-subtle: #fff7ed;
+  
+  /* Success/Validation */
+  --color-success: #059669;
+  --color-success-subtle: #d1fae5;
+  
+  /* Text Colors - Ierarhie clară */
+  --color-label: #1f2937;           /* Text principal */
+  --color-label-secondary: #4b5563; /* Text secundar */
+  --color-label-tertiary: #6b7280;  /* Placeholder, hints */
+  --color-label-quaternary: #9ca3af;/* Disabled, metadata */
+  
+  /* Backgrounds - Layering pentru Depth */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+  --color-bg-elevated: #ffffff;
+  
+  /* Borders & Separators */
+  --color-separator: #e5e7eb;
+  --color-separator-opaque: #d1d5db;
+  
+  /* Special - WhatsApp */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #20bd5a;
+  
+  /* -------------------------------------------------------------------------
+     SPACING SYSTEM - 8pt Grid (Apple HIG)
+     Prägnanz: Spațiu alb generos pentru respirație vizuală
+     ------------------------------------------------------------------------- */
+  
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4pt - Tight, între elemente foarte legate */
+  --space-2: 0.5rem;    /* 8pt - Base unit */
+  --space-3: 0.75rem;   /* 12pt */
+  --space-4: 1rem;      /* 16pt - Standard margin */
+  --space-5: 1.25rem;   /* 20pt */
+  --space-6: 1.5rem;    /* 24pt - Între secțiuni diferite */
+  --space-8: 2rem;      /* 32pt - Separare majoră */
+  --space-10: 2.5rem;   /* 40pt */
+  --space-12: 3rem;     /* 48pt */
+  --space-16: 4rem;     /* 64pt - Între secțiuni majore */
+  --space-20: 5rem;     /* 80pt - Section padding */
+  --space-24: 6rem;     /* 96pt */
+  
+  /* -------------------------------------------------------------------------
+     TOUCH TARGETS - Minimum 44x44pt (Apple HIG OBLIGATORIU)
+     Research Apple: <44pt = 25%+ missed taps
+     ------------------------------------------------------------------------- */
+  
+  --touch-target-min: 2.75rem;  /* 44pt - MINIMUM ABSOLUT */
+  --touch-target-comfortable: 3rem; /* 48pt - Comfortable */
+  --touch-target-large: 3.5rem; /* 56pt - Large buttons */
+  
+  /* -------------------------------------------------------------------------
+     BORDER RADIUS - Consistență formelor (Prägnanz)
+     Alegem dreptunghiuri rotunjite ca formă dominantă
+     ------------------------------------------------------------------------- */
+  
+  --radius-none: 0;
+  --radius-sm: 0.375rem;    /* 6pt - Subtle rounding */
+  --radius-md: 0.5rem;      /* 8pt - Default */
+  --radius-lg: 0.75rem;     /* 12pt - Cards, inputs */
+  --radius-xl: 1rem;        /* 16pt - Large cards */
+  --radius-2xl: 1.5rem;     /* 24pt - Modals, sheets */
+  --radius-full: 9999px;    /* Pills, avatars */
+  
+  /* -------------------------------------------------------------------------
+     SHADOWS - Depth & Layering (Apple HIG)
+     Liquid Glass: Subtile, naturale
+     ------------------------------------------------------------------------- */
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  
+  /* Liquid Glass Shadows - Mai soft, cu blur */
+  --shadow-glass: 0 8px 32px rgb(0 0 0 / 0.06);
+  --shadow-glass-hover: 0 12px 40px rgb(0 0 0 / 0.1);
+  
+  /* -------------------------------------------------------------------------
+     TRANSITIONS - Animații sub 0.3s (Apple HIG)
+     Purposeful: comunică, nu decorează
+     ------------------------------------------------------------------------- */
+  
+  --duration-instant: 0ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  
+  /* Easing - Spring-like pentru naturalețe */
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* -------------------------------------------------------------------------
+     Z-INDEX SCALE - Layering consistent
+     ------------------------------------------------------------------------- */
+  
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-popover: 500;
+  --z-tooltip: 600;
+  --z-toast: 700;
+  --z-max: 9999;
+  
+  /* -------------------------------------------------------------------------
+     LAYOUT - Container & Breakpoints
+     ------------------------------------------------------------------------- */
+  
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-max: 1280px;
+  
+  /* Readable Content Width - 35-50 caractere pe linie pentru mobile */
+  --content-width-narrow: 65ch;
+  --content-width-normal: 75ch;
+}
+
+/* =============================================================================
+   2. LIQUID GLASS EFFECTS (Apple 2025)
+   - Transparențe glass-like
+   - Blur effects pentru layering
+   - Depth prin overlapping și shadows subtile
+   ============================================================================= */
+
+/* Glass Material - Light Mode */
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Glass Material - Elevated */
+.glass-elevated {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-glass);
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-glass);
+  transition: box-shadow var(--duration-normal) var(--ease-default),
+              transform var(--duration-normal) var(--ease-default);
+}
+
+.glass-card:hover {
+  box-shadow: var(--shadow-glass-hover);
+  transform: translateY(-2px);
+}
+
+/* =============================================================================
+   3. BASE STYLES - Reset & Foundation
+   ============================================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* Prevent font-size adjustment on orientation change */
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* =============================================================================
+   4. TYPOGRAPHY - Apple Text Styles
+   Prägnanz: Ierarhie clară prin weight, size, color
+   ============================================================================= */
+
+/* Large Title - Titluri principale */
+.text-large-title {
+  font-size: var(--text-large-title);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-label);
+}
+
+/* Title 1 - Secțiuni importante */
+.text-title-1 {
+  font-size: var(--text-title-1);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-label);
+}
+
+/* Title 2 - Sub-secțiuni */
+.text-title-2 {
+  font-size: var(--text-title-2);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-label);
+}
+
+/* Title 3 - Grupări de conținut */
+.text-title-3 {
+  font-size: var(--text-title-3);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-label);
+}
+
+/* Headline - Titluri articole, cards */
+.text-headline {
+  font-size: var(--text-headline);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-label);
+}
+
+/* Body - Text principal */
+.text-body {
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label);
+}
+
+/* Callout - Info secundare importante */
+.text-callout {
+  font-size: var(--text-callout);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label);
+}
+
+/* Subhead - Sub-titluri, labels */
+.text-subhead {
+  font-size: var(--text-subhead);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label-secondary);
+}
+
+/* Footnote - Metadata, timestamps */
+.text-footnote {
+  font-size: var(--text-footnote);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label-tertiary);
+}
+
+/* Caption 1 */
+.text-caption-1 {
+  font-size: var(--text-caption-1);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label-tertiary);
+}
+
+/* Caption 2 - MINIMUM SIZE */
+.text-caption-2 {
+  font-size: var(--text-caption-2);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-label-quaternary);
+}
+
+/* Semantic Text Colors */
+.text-primary { color: var(--color-label); }
+.text-secondary { color: var(--color-label-secondary); }
+.text-tertiary { color: var(--color-label-tertiary); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-system-orange); }
+.text-error { color: var(--color-system-red); }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-label);
+}
+
+h1 {
+  font-size: clamp(var(--text-title-1), 5vw + 1rem, var(--text-large-title));
+  margin-bottom: var(--space-4);
+}
+
+h2 {
+  font-size: clamp(var(--text-title-2), 3vw + 0.5rem, var(--text-title-1));
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  font-size: var(--text-title-3);
+  margin-bottom: var(--space-2);
+}
+
+h4 {
+  font-size: var(--text-headline);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-2);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  max-width: var(--content-width-normal);
+}
+
+/* Links - System Blue pentru consistency */
+a {
+  color: var(--color-system-blue);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-default);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* =============================================================================
+   5. LAYOUT SYSTEM
+   Prägnanz: Grupare logică, spațiu alb generos
+   ============================================================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: var(--space-8);
+  }
+}
+
+/* Sections - Spațiu generos între ele */
+.section {
+  padding-block: var(--space-16);
+}
+
+.section--compact {
+  padding-block: var(--space-10);
+}
+
+.section--spacious {
+  padding-block: var(--space-20);
+}
+
+/* Background variations */
+.section--alt {
+  background-color: var(--color-bg-secondary);
+}
+
+.section--elevated {
+  background-color: var(--color-bg-elevated);
+}
+
+/* Grid System - Consistent spacing */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1023px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 639px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* Flex utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+/* =============================================================================
+   6. BUTTONS - Apple HIG Compliant
+   - Touch target minimum 44x44pt
+   - Ierarhie vizuală clară
+   - Feedback haptic visual
+   ============================================================================= */
+
+.btn {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  
+  /* Sizing - Minimum touch target */
+  min-height: var(--touch-target-min);
+  padding: var(--space-3) var(--space-6);
+  
+  /* Typography */
+  font-family: inherit;
+  font-size: var(--text-body);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  
+  /* Appearance */
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  
+  /* Transitions - Fast, purposeful */
+  transition: 
+    background-color var(--duration-fast) var(--ease-default),
+    transform var(--duration-fast) var(--ease-default),
+    box-shadow var(--duration-fast) var(--ease-default);
+}
+
+/* Primary Button - CTA Orange pentru conversii */
+.btn--primary {
+  color: #ffffff;
+  background-color: var(--color-cta);
+  box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.3);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-cta-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(234, 88, 12, 0.4);
+}
+
+.btn--primary:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px 0 rgba(234, 88, 12, 0.3);
+}
+
+/* Secondary Button */
+.btn--secondary {
+  color: var(--color-primary);
+  background-color: var(--color-primary-subtle);
+  border: 1.5px solid var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn--secondary:active {
+  transform: scale(0.98);
+}
+
+/* Ghost Button */
+.btn--ghost {
+  color: var(--color-label-secondary);
+  background-color: transparent;
+  border: 1.5px solid var(--color-separator-opaque);
+}
+
+.btn--ghost:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-label);
+  border-color: var(--color-separator-opaque);
+}
+
+/* WhatsApp Button */
+.btn--whatsapp {
+  color: #ffffff;
+  background-color: var(--color-whatsapp);
+}
+
+.btn--whatsapp:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-1px);
+}
+
+/* Destructive Button - System Red DOAR pentru delete */
+.btn--destructive {
+  color: #ffffff;
+  background-color: var(--color-system-red);
+}
+
+.btn--destructive:hover {
+  background-color: #e62e24;
+}
+
+/* Button Sizes */
+.btn--sm {
+  min-height: 2.25rem;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-subhead);
+}
+
+.btn--lg {
+  min-height: var(--touch-target-large);
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-callout);
+}
+
+/* Full width */
+.btn--full {
+  width: 100%;
+}
+
+/* Button with icon */
+.btn svg,
+.btn .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* =============================================================================
+   7. FORMS - Simplificat pentru conversii
+   Apple HIG: Input fields trebuie să aibă touch target minim
+   ============================================================================= */
+
+.form {
+  width: 100%;
+  max-width: 480px;
+}
+
+.form--centered {
+  margin-inline: auto;
+}
+
+.form__group {
+  margin-bottom: var(--space-4);
+}
+
+.form__label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: var(--text-subhead);
+  font-weight: var(--weight-medium);
+  color: var(--color-label);
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+  /* Layout */
+  width: 100%;
+  min-height: var(--touch-target-min);
+  padding: var(--space-3) var(--space-4);
+  
+  /* Typography */
+  font-family: inherit;
+  font-size: var(--text-body);
+  color: var(--color-label);
+  
+  /* Appearance */
+  background-color: var(--color-bg-primary);
+  border: 1.5px solid var(--color-separator-opaque);
+  border-radius: var(--radius-lg);
+  
+  /* Transitions */
+  transition: 
+    border-color var(--duration-fast) var(--ease-default),
+    box-shadow var(--duration-fast) var(--ease-default);
+}
+
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: var(--color-system-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+}
+
+.form__input::placeholder {
+  color: var(--color-label-tertiary);
+}
+
+.form__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%236b7280'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-3) center;
+  background-size: 1.25rem;
+  padding-right: var(--space-10);
+}
+
+.form__textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: var(--leading-normal);
+}
+
+/* Form helper text */
+.form__helper {
+  margin-top: var(--space-2);
+  font-size: var(--text-footnote);
+  color: var(--color-label-tertiary);
+}
+
+.form__helper--success {
+  color: var(--color-success);
+}
+
+.form__helper--error {
+  color: var(--color-system-red);
+}
+
+/* =============================================================================
+   8. CARDS - Prägnanz: Grupare logică, forme consistente
+   ============================================================================= */
+
+.card {
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-separator);
+  overflow: hidden;
+  transition: 
+    transform var(--duration-normal) var(--ease-default),
+    box-shadow var(--duration-normal) var(--ease-default),
+    border-color var(--duration-normal) var(--ease-default);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+}
+
+.card__body {
+  padding: var(--space-6);
+}
+
+.card__header {
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--color-separator);
+  background-color: var(--color-bg-secondary);
+}
+
+.card__footer {
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-separator);
+  background-color: var(--color-bg-secondary);
+}
+
+/* Service Card - Consistent form (dreptunghi rotunjit) */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-separator);
+  overflow: hidden;
+  transition: 
+    transform var(--duration-normal) var(--ease-default),
+    box-shadow var(--duration-normal) var(--ease-default),
+    border-color var(--duration-normal) var(--ease-default);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.service-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: var(--space-4);
+  background-color: var(--color-primary-subtle);
+  border-radius: var(--radius-lg);
+  color: var(--color-primary);
+  transition: 
+    background-color var(--duration-normal) var(--ease-default),
+    color var(--duration-normal) var(--ease-default),
+    transform var(--duration-normal) var(--ease-default);
+}
+
+.service-card:hover .service-card__icon {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.service-card__body {
+  flex: 1;
+  padding: var(--space-6);
+}
+
+.service-card__title {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-title-3);
+  font-weight: var(--weight-semibold);
+}
+
+.service-card__description {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-subhead);
+  color: var(--color-label-secondary);
+  line-height: var(--leading-normal);
+}
+
+.service-card__price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-success-subtle);
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-semibold);
+  color: var(--color-success);
+}
+
+.service-card__footer {
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-separator);
+  background-color: var(--color-bg-secondary);
+}
+
+/* =============================================================================
+   9. BADGES - Ierarhie vizuală pentru status și categorii
+   ============================================================================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-caption-1);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  border-radius: var(--radius-full);
+}
+
+.badge--primary {
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+}
+
+.badge--success {
+  background-color: var(--color-success-subtle);
+  color: var(--color-success);
+}
+
+.badge--warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge--popular {
+  background-color: var(--color-cta-subtle);
+  color: var(--color-cta);
+}
+
+/* =============================================================================
+   10. LISTS - Apple HIG: Consistent row design
+   ============================================================================= */
+
+.list {
+  list-style: none;
+  border-radius: var(--radius-xl);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-separator);
+  overflow: hidden;
+}
+
+.list__item {
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--color-separator);
+  transition: background-color var(--duration-fast) var(--ease-default);
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+.list__item:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.list__item--interactive {
+  cursor: pointer;
+}
+
+/* =============================================================================
+   11. NAVIGATION - Clear hierarchy, predictable patterns
+   ============================================================================= */
+
+/* Tab Bar equivalent - Bottom navigation */
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: var(--touch-target-large);
+  padding: var(--space-2);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-separator);
+}
+
+.tab-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  min-width: 64px;
+  color: var(--color-label-tertiary);
+  text-decoration: none;
+  font-size: var(--text-caption-2);
+  font-weight: var(--weight-medium);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+
+.tab-bar__item:hover,
+.tab-bar__item--active {
+  color: var(--color-system-blue);
+}
+
+.tab-bar__icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--touch-target-large);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-separator);
+}
+
+/* =============================================================================
+   12. TRUST BAR - Social Proof (Prägnanz: grouping)
+   ============================================================================= */
+
+.trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4) var(--space-8);
+  padding: var(--space-4) 0;
+  background-color: var(--color-bg-secondary);
+  border-block: 1px solid var(--color-separator);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-subhead);
+  color: var(--color-label-secondary);
+  white-space: nowrap;
+}
+
+.trust-item__icon {
+  color: var(--color-success);
+}
+
+.trust-item__stars {
+  color: var(--color-system-yellow);
+  letter-spacing: 1px;
+}
+
+/* =============================================================================
+   13. STATS - Visual hierarchy through size
+   ============================================================================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat {
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.stat__number {
+  font-size: var(--text-large-title);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: var(--space-1);
+}
+
+.stat__label {
+  font-size: var(--text-footnote);
+  font-weight: var(--weight-medium);
+  color: var(--color-label-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* =============================================================================
+   14. TESTIMONIALS - Social Proof Section
+   ============================================================================= */
+
+.testimonial {
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--color-separator);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.testimonial__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.testimonial__name {
+  font-weight: var(--weight-semibold);
+  color: var(--color-label);
+  margin-bottom: 2px;
+}
+
+.testimonial__location {
+  font-size: var(--text-footnote);
+  color: var(--color-label-tertiary);
+}
+
+.testimonial__rating {
+  display: flex;
+  gap: 2px;
+  margin-bottom: var(--space-3);
+  color: var(--color-system-yellow);
+}
+
+.testimonial__text {
+  font-size: var(--text-body);
+  color: var(--color-label-secondary);
+  font-style: italic;
+  line-height: var(--leading-relaxed);
+}
+
+/* =============================================================================
+   15. FLOATING ACTION BUTTONS - WhatsApp & Call
+   Touch target: 56px pentru ușurință
+   ============================================================================= */
+
+.fab {
+  position: fixed;
+  z-index: var(--z-sticky);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--touch-target-large);
+  min-height: var(--touch-target-large);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  transition: 
+    transform var(--duration-normal) var(--ease-default),
+    box-shadow var(--duration-normal) var(--ease-default);
+}
+
+.fab:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+.fab--whatsapp {
+  bottom: var(--space-6);
+  right: var(--space-6);
+  background-color: var(--color-whatsapp);
+  color: #ffffff;
+  padding: var(--space-4) var(--space-6);
+}
+
+.fab--call {
+  bottom: var(--space-6);
+  left: var(--space-6);
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .fab--call {
+    display: none;
+  }
+}
+
+/* =============================================================================
+   16. ACCESSIBILITY UTILITIES
+   ============================================================================= */
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus visible - Clear focus states */
+:focus-visible {
+  outline: 2px solid var(--color-system-blue);
+  outline-offset: 2px;
+}
+
+/* Focus within for containers */
+:focus-within {
+  outline: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  :root {
+    --color-separator: #000000;
+    --color-label-secondary: #1f2937;
+    --color-label-tertiary: #374151;
+  }
+  
+  .btn--secondary {
+    border-width: 2px;
+  }
+}
+
+/* =============================================================================
+   17. UTILITY CLASSES
+   ============================================================================= */
+
+/* Text alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Margin utilities */
+.m-0 { margin: 0; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+/* Width utilities */
+.w-full { width: 100%; }
+.max-w-sm { max-width: var(--container-sm); }
+.max-w-md { max-width: var(--container-md); }
+.max-w-lg { max-width: var(--container-lg); }
+
+/* Display utilities */
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline-flex { display: inline-flex; }
+
+@media (min-width: 640px) {
+  .sm\:block { display: block; }
+  .sm\:hidden { display: none; }
+  .sm\:flex { display: flex; }
+}
+
+@media (min-width: 768px) {
+  .md\:block { display: block; }
+  .md\:hidden { display: none; }
+  .md\:flex { display: flex; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block { display: block; }
+  .lg\:hidden { display: none; }
+  .lg\:flex { display: flex; }
+  .lg\:inline { display: inline; }
+}
+
+/* Icon sizes */
+.icon-sm { width: 1rem; height: 1rem; }
+.icon-md { width: 1.25rem; height: 1.25rem; }
+.icon-lg { width: 1.5rem; height: 1.5rem; }
+.icon-xl { width: 2rem; height: 2rem; }
+
+/* Icon utility classes for compatibility */
+.w-4 { width: 1rem; }
+.w-5 { width: 1.25rem; }
+.h-4 { height: 1rem; }
+.h-5 { height: 1.25rem; }
+.mr-1 { margin-right: var(--space-1); }
+.ml-1 { margin-left: var(--space-1); }

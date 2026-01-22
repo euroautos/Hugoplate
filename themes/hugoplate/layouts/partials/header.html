@@ -1,0 +1,323 @@
+{{/* Header optimizat conform analizei:
+    - Număr de telefon vizibil constant
+    - Navigație simplificată (max 6 itemi)
+    - Program de lucru afișat
+    - CTA evidențiat pentru ITP
+*/}}
+
+<header class="header">
+  {{/* Top Bar - Program și Contact rapid */}}
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-content">
+        <div class="header__top-left">
+          <span class="header__schedule">
+            {{ partial "icons/clock.html" (dict "class" "w-4 h-4 inline-block mr-1") }}
+            {{ .Site.Params.schedule.weekdays }} | {{ .Site.Params.schedule.saturday }}
+          </span>
+          {{ if .Site.Params.schedule.note }}
+          <span class="header__schedule-note">
+            — {{ .Site.Params.schedule.note }}
+          </span>
+          {{ end }}
+        </div>
+        <div class="header__top-right">
+          <a href="{{ .Site.Params.contact.google_maps }}" target="_blank" rel="noopener" class="header__top-link">
+            {{ partial "icons/map-pin.html" (dict "class" "w-4 h-4 inline-block mr-1") }}
+            {{ .Site.Params.contact.city }}
+          </a>
+          <span class="header__top-divider">|</span>
+          <span class="header__rar">
+            Stație ITP autorizată RAR {{ .Site.Params.stats.rar_code }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{/* Main Header */}}
+  <div class="header__main">
+    <div class="container">
+      <div class="header__content">
+        {{/* Logo */}}
+        <a href="{{ "/" | relURL }}" class="header__logo" aria-label="{{ .Site.Title }} - Pagina principală">
+          <img src="/images/logo.svg" alt="{{ .Site.Title }}" width="180" height="48">
+        </a>
+        
+        {{/* Desktop Navigation */}}
+        <nav class="header__nav" aria-label="Navigație principală">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <div class="header__nav-dropdown">
+              <button class="header__nav-link header__nav-link--dropdown" aria-expanded="false">
+                {{ .Name }}
+                {{ partial "icons/chevron-down.html" (dict "class" "w-4 h-4 ml-1") }}
+              </button>
+              <div class="header__dropdown-menu">
+                {{ range .Children }}
+                <a href="{{ .URL }}" class="header__dropdown-link">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+            {{ else }}
+            <a href="{{ .URL }}" 
+               class="header__nav-link{{ if .Params.highlight }} header__nav-link--highlight{{ end }}{{ if $.IsMenuCurrent "main" . }} header__nav-link--active{{ end }}">
+              {{ .Name }}
+            </a>
+            {{ end }}
+          {{ end }}
+        </nav>
+        
+        {{/* CTA Area */}}
+        <div class="header__cta">
+          {{/* Phone - Desktop */}}
+          <a href="tel:{{ .Site.Params.contact.phone }}" class="header__phone">
+            {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+            <span>{{ .Site.Params.contact.phone_display }}</span>
+          </a>
+          
+          {{/* WhatsApp Button - Desktop */}}
+          <a href="https://wa.me/{{ .Site.Params.contact.whatsapp }}?text={{ urlquery "Bună ziua! Aș dori să programez o vizită." }}" 
+             target="_blank"
+             rel="noopener"
+             class="btn btn--whatsapp btn--sm">
+            {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+            <span class="hidden lg:inline">WhatsApp</span>
+          </a>
+          
+          {{/* Mobile Menu Toggle */}}
+          <button class="header__menu-toggle" 
+                  data-menu-toggle 
+                  aria-label="Deschide meniul"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu">
+            {{ partial "icons/menu.html" (dict "class" "w-6 h-6") }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{/* Mobile Navigation */}}
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu__header">
+      <span class="mobile-menu__title">Meniu</span>
+      <button class="mobile-menu__close" data-menu-toggle aria-label="Închide meniul">
+        {{ partial "icons/x.html" (dict "class" "w-6 h-6") }}
+      </button>
+    </div>
+    
+    <nav class="mobile-menu__nav" aria-label="Navigație mobilă">
+      {{ range .Site.Menus.main }}
+        {{ if not .HasChildren }}
+        <a href="{{ .URL }}" class="mobile-menu__link{{ if .Params.highlight }} mobile-menu__link--highlight{{ end }}">
+          {{ .Name }}
+        </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+    
+    {{/* Quick Actions Mobile */}}
+    <div class="mobile-menu__actions">
+      <a href="tel:{{ $.Site.Params.contact.phone }}" class="btn btn--primary btn--lg w-full">
+        {{ partial "icons/phone.html" (dict "class" "w-5 h-5") }}
+        Sună Acum
+      </a>
+      <a href="https://wa.me/{{ $.Site.Params.contact.whatsapp }}" 
+         target="_blank"
+         rel="noopener"
+         class="btn btn--whatsapp btn--lg w-full">
+        {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+        Scrie pe WhatsApp
+      </a>
+    </div>
+    
+    {{/* Contact Info Mobile */}}
+    <div class="mobile-menu__info">
+      <p class="mobile-menu__schedule">
+        {{ partial "icons/clock.html" (dict "class" "w-4 h-4 inline") }}
+        {{ $.Site.Params.schedule.weekdays }}
+      </p>
+      <p class="mobile-menu__address">
+        {{ partial "icons/map-pin.html" (dict "class" "w-4 h-4 inline") }}
+        {{ $.Site.Params.contact.address }}
+      </p>
+    </div>
+  </div>
+</header>
+
+<style>
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-xl);
+  z-index: 1001;
+  transition: right var(--transition-slow);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu.is-open {
+  right: 0;
+}
+
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mobile-menu__title {
+  font-weight: 600;
+}
+
+.mobile-menu__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+}
+
+.mobile-menu__nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-md) 0;
+}
+
+.mobile-menu__link {
+  display: block;
+  padding: var(--space-md) var(--space-lg);
+  color: var(--color-text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mobile-menu__link:hover {
+  background: var(--color-bg-alt);
+}
+
+.mobile-menu__link--highlight {
+  color: var(--color-cta);
+}
+
+.mobile-menu__actions {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.mobile-menu__info {
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-alt);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.mobile-menu__info p {
+  margin-bottom: var(--space-xs);
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+}
+
+.menu-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.w-full { width: 100%; }
+
+@media (min-width: 1024px) {
+  .mobile-menu,
+  .menu-overlay {
+    display: none;
+  }
+}
+
+/* Dropdown for Desktop */
+.header__nav-dropdown {
+  position: relative;
+}
+
+.header__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-sm) 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-fast);
+}
+
+.header__nav-dropdown:hover .header__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header__dropdown-link {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.header__dropdown-link:hover {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+}
+
+/* Top Bar Styles */
+.header__top-content {
+  font-size: var(--font-size-sm);
+}
+
+.header__top-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header__top-link:hover {
+  color: #ffffff;
+}
+
+.header__top-divider {
+  margin: 0 var(--space-sm);
+  opacity: 0.5;
+}
+
+.header__rar {
+  opacity: 0.9;
+}
+
+.header__schedule-note {
+  color: var(--color-yellow);
+  font-weight: 500;
+}
+
+.hidden { display: none; }
+@media (min-width: 1024px) {
+  .lg\:inline { display: inline; }
+}
+</style>

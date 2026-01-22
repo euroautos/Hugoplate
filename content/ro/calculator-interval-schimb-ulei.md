@@ -6,9 +6,12 @@ image: "/images/2024/05/calculator-interval-schimb-ulei.jpg"
 categories: ["Calculatoare"]
 author: "Ioan"
 draft: false
+noindex: true
 ---
 <div class="entry-content single-content">
-	
+
+<meta name="robots" content="noindex, nofollow">
+
 <h1 class="wp-block-heading has-medium-font-size"><strong>Calculator de Schimb al Uleiului: Cum Funcționează</strong></h1>
 
 
@@ -261,9 +264,18 @@ draft: false
             </div>
         </div>
     </div>
-    
 
 
+<div style="margin-top: 30px; padding: 20px; background-color: #f0f9ff; border-left: 4px solid #3b82f6; border-radius: 4px;">
+    <h3 style="margin-top: 0; color: #1e40af;">Contactează-ne pentru programare</h3>
+    <p style="margin-bottom: 15px; color: #374151;">Echipa Euro Auto Service este pregătită să te ajute cu schimbul uleiului și revizia mașinii tale.</p>
+    <a href="tel:+40729440127" style="display: inline-block; padding: 12px 24px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
+      0729 440 127
+    </a>
+    <a href="/contact/" style="display: inline-block; margin-left: 15px; padding: 12px 24px; background-color: #10b981; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
+      Formular Contact
+    </a>
+</div>
 
 <p></p>
 <span class="kt-load-after-post"></span></div><!-- .entry-content -->

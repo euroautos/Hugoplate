@@ -1,0 +1,167 @@
+{{/* Testimonials Section - Social Proof conform analizei
+    - Testimoniale cu poze și nume
+    - Rating vizibil
+    - Link către Google Reviews
+*/}}
+
+{{ $testimonials := .Site.Data.testimonials.testimonials }}
+{{ $google := .Site.Data.testimonials.google_reviews }}
+{{ $limit := .limit | default 3 }}
+{{ $title := .title | default "Ce spun clienții noștri" }}
+
+<section class="section testimonials-section" id="testimoniale">
+  <div class="container">
+    {{/* Section Header */}}
+    <div class="section__header text-center">
+      <h2 class="section__title">{{ $title }}</h2>
+      
+      {{/* Google Rating Summary */}}
+      <div class="testimonials__rating">
+        <div class="testimonials__stars">
+          {{ range seq 5 }}
+          <svg class="w-6 h-6 text-yellow" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          {{ end }}
+        </div>
+        <p class="testimonials__rating-text">
+          <strong>{{ $google.rating }}/5</strong> din {{ $google.count }} recenzii pe Google
+        </p>
+        <a href="{{ $google.url }}" target="_blank" rel="noopener" class="testimonials__google-link">
+          Vezi toate recenziile →
+        </a>
+      </div>
+    </div>
+    
+    {{/* Testimonials Grid */}}
+    <div class="testimonials__grid">
+      {{ range first $limit $testimonials }}
+      <div class="testimonial" data-reveal>
+        <div class="testimonial__header">
+          {{ if .avatar }}
+          <img src="{{ .avatar }}" alt="{{ .name }}" class="testimonial__avatar" loading="lazy" width="56" height="56">
+          {{ else }}
+          <div class="testimonial__avatar testimonial__avatar--placeholder">
+            {{ substr .name 0 1 }}
+          </div>
+          {{ end }}
+          <div>
+            <div class="testimonial__name">{{ .name }}</div>
+            <div class="testimonial__location">{{ .location }}</div>
+          </div>
+        </div>
+        
+        <div class="testimonial__rating">
+          {{ range seq .rating }}
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          {{ end }}
+        </div>
+        
+        <blockquote class="testimonial__text">
+          "{{ .text }}"
+        </blockquote>
+        
+        <div class="testimonial__service">
+          <span class="badge badge--primary">{{ .service }}</span>
+          {{ if .verified }}
+          <span class="testimonial__verified">
+            {{ partial "icons/check-circle.html" (dict "class" "w-4 h-4 inline") }}
+            Verificat
+          </span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    
+    {{/* CTA */}}
+    <div class="testimonials__cta text-center">
+      <a href="{{ $google.url }}" target="_blank" rel="noopener" class="btn btn--secondary">
+        Citește toate recenziile pe Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.testimonials-section {
+  background: var(--color-bg-alt);
+}
+
+.section__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.section__title {
+  margin-bottom: var(--space-md);
+}
+
+.testimonials__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.testimonials__stars {
+  display: flex;
+  gap: 2px;
+}
+
+.testimonials__rating-text {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.testimonials__google-link {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.testimonials__grid {
+  display: grid;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial__avatar--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary-50);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+  border-radius: 50%;
+}
+
+.testimonial__verified {
+  font-size: var(--font-size-xs);
+  color: var(--color-success);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.testimonials__cta {
+  margin-top: var(--space-xl);
+}
+
+.text-yellow { color: var(--color-yellow); }
+</style>

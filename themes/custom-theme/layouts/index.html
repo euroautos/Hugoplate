@@ -1,0 +1,268 @@
+{{ define "title" }}{{ .Site.Title }} - Service Auto și ITP Constanța{{ end }}
+
+{{ define "body_class" }}page-home{{ end }}
+
+{{ define "main" }}
+
+{{/* Hero Section - Redesigned */}}
+{{ partial "sections/hero.html" (dict 
+  "Site" .Site 
+  "Page" .
+  "title" "ITP în 30 min sau Revizie de la <span class='hero__title-highlight'>199 RON</span>"
+  "subtitle" "Service auto profesionist în Constanța. Stație ITP autorizată RAR, fără programare. Peste 50.000 de ITP-uri efectuate din 2007."
+  "badge" "Stație ITP Autorizată RAR CT060"
+  "showStats" true
+  "showPrices" true
+) }}
+
+{{/* Trust Bar - Social Proof */}}
+{{ partial "sections/trust-bar.html" . }}
+
+{{/* Services Section */}}
+<section class="section" id="servicii">
+  <div class="container">
+    <div class="section__header text-center">
+      <h2>Serviciile noastre</h2>
+      <p class="text-muted">Tot ce ai nevoie pentru mașina ta, într-un singur loc</p>
+    </div>
+    
+    <div class="services-grid">
+      {{ partial "components/service-card.html" (dict 
+        "title" "ITP Auto"
+        "description" "Inspecție tehnică periodică pentru toate tipurile de autovehicule. Fără programare, rezultat în 30 minute."
+        "icon" "clipboard-check"
+        "price" 120
+        "url" "/servicii/itp/"
+        "badge" "Cel mai popular"
+      ) }}
+      
+      {{ partial "components/service-card.html" (dict 
+        "title" "Revizie Auto"
+        "description" "Revizie completă cu ulei și filtre de calitate. Păstrăm garanția producătorului."
+        "icon" "refresh"
+        "price" 199
+        "url" "/servicii/revizie-auto/"
+      ) }}
+      
+      {{ partial "components/service-card.html" (dict 
+        "title" "Reparații Auto"
+        "description" "Reparații mecanice, electrice și diagnoză computerizată pentru orice marcă."
+        "icon" "wrench"
+        "price" 0
+        "url" "/servicii/reparatii-auto/"
+        "badge" "Diagnostic gratuit"
+      ) }}
+      
+      {{ partial "components/service-card.html" (dict 
+        "title" "Montaj GPL"
+        "description" "Instalații GPL de ultimă generație. Economisești până la 50% la combustibil."
+        "icon" "fuel"
+        "price" 2500
+        "url" "/servicii/montaj-gpl/"
+        "badge" "Economie 50%"
+      ) }}
+      
+      {{ partial "components/service-card.html" (dict 
+        "title" "Diagnoză Auto"
+        "description" "Diagnoză computerizată completă cu echipamente profesionale de ultimă generație."
+        "icon" "cpu"
+        "price" 0
+        "url" "/servicii/diagnoza-auto/"
+      ) }}
+      
+      {{ partial "components/service-card.html" (dict 
+        "title" "Geometrie Roți"
+        "description" "Verificare și reglare geometrie 3D pentru siguranță și economie de anvelope."
+        "icon" "target"
+        "price" 80
+        "url" "/servicii/geometrie-roti/"
+      ) }}
+    </div>
+    
+    <div class="text-center mt-xl">
+      <a href="/servicii/" class="btn btn--secondary">
+        Vezi toate serviciile
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* Why Choose Us - Guarantees */}}
+<section class="section section--alt" id="de-ce-noi">
+  <div class="container">
+    <div class="section__header text-center">
+      <h2>De ce să ne alegi</h2>
+      <p class="text-muted">Garanții și beneficii pentru fiecare client</p>
+    </div>
+    
+    <div class="guarantees-grid">
+      {{ range .Site.Params.guarantees }}
+      <div class="guarantee-card" data-reveal>
+        <div class="guarantee-card__icon">
+          {{ partial (printf "icons/%s.html" .icon) (dict "class" "w-8 h-8") }}
+        </div>
+        <h3 class="guarantee-card__title">{{ .title }}</h3>
+        <p class="guarantee-card__description">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* Testimonials */}}
+{{ partial "sections/testimonials.html" (dict "Site" .Site "title" "Ce spun clienții noștri" "limit" 3) }}
+
+{{/* CTA Section with Form */}}
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-section">
+      <div class="cta-section__content">
+        <h2>Programează-te acum</h2>
+        <p class="text-muted mb-lg">
+          Completează formularul sau contactează-ne direct. 
+          Răspundem în maxim 15 minute în orele de program.
+        </p>
+        
+        <div class="cta-section__info">
+          <div class="cta-info-item">
+            {{ partial "icons/map-pin.html" (dict "class" "w-5 h-5 text-primary") }}
+            <span>{{ .Site.Params.contact.address }}, {{ .Site.Params.contact.city }}</span>
+          </div>
+          <div class="cta-info-item">
+            {{ partial "icons/clock.html" (dict "class" "w-5 h-5 text-primary") }}
+            <span>{{ .Site.Params.schedule.weekdays }}</span>
+          </div>
+          <div class="cta-info-item">
+            {{ partial "icons/phone.html" (dict "class" "w-5 h-5 text-primary") }}
+            <a href="tel:{{ .Site.Params.contact.phone }}">{{ .Site.Params.contact.phone_display }}</a>
+          </div>
+        </div>
+        
+        {{/* Map placeholder */}}
+        <div class="cta-section__map">
+          <a href="{{ .Site.Params.contact.google_maps }}" target="_blank" rel="noopener" class="btn btn--ghost">
+            {{ partial "icons/navigation.html" (dict "class" "w-5 h-5") }}
+            Deschide în Google Maps
+          </a>
+        </div>
+      </div>
+      
+      <div class="cta-section__form">
+        {{ partial "components/contact-form.html" (dict 
+          "Site" .Site 
+          "Page" .
+          "title" "Solicită programare"
+          "subtitle" "Completează și te sunăm noi"
+          "ctaText" "Trimite solicitarea"
+        ) }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<style>
+.services-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.guarantees-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .guarantees-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .guarantees-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.guarantee-card {
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.guarantee-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--color-primary-50);
+  border-radius: var(--radius-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.guarantee-card__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.guarantee-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.cta-section {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .cta-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cta-section__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.cta-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.cta-section__map {
+  padding: var(--space-lg);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.mt-xl { margin-top: var(--space-xl); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.text-primary { color: var(--color-primary); }
+</style>
+{{ end }}

@@ -2,16 +2,15 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "/"
 # Title of your website (required).
-title = "Hugoplate"
+title = "Euro Auto Service - Service Auto & ITP Constanța"
 # Your theme name
-theme = "hugoplate"
+theme = "custom-theme"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Europe/Bucharest"
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
 # disable language
-disableLanguages = ["en"]
-] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+disableLanguages = ["en"] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 # default language
 defaultContentLanguage = 'ro'
@@ -33,8 +32,8 @@ ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-go
 shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
 ########################## Permalinks ############################
-[permalinks.page]
-"pages" = "/:slugorcontentbasename/"
+[permalinks]
+"pages" = "/:slug/"
 
 
 ########################## Pagination ############################
@@ -117,6 +116,26 @@ mediaType = "application/json"
 baseName = "searchindex"
 isPlainText = true
 notAlternative = true
+
+
+############################# Params ##############################
+[params]
+keywords = ["Hugo", "Hugoplate", "Template", "Bootstrap", "Static Site Generator"]
+
+[[params.prices]]
+title = "ITP"
+price = "220 RON"
+description = "Stație ITP autorizată RAR"
+
+[[params.prices]]
+title = "Revizie Tehnică"
+price = "de la 199 RON"
+description = "Schimb ulei + filtre"
+
+[[params.prices]]
+title = "Instalare GPL"
+price = "de la 2500 RON"
+description = "Sistem complet Zavoli"
 
 
 ############################# Plugins ##############################

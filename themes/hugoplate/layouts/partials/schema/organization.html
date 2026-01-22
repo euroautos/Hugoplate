@@ -1,0 +1,95 @@
+{{/* Schema.org - LocalBusiness & AutoRepair pentru SEO local */}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoRepair", "LocalBusiness"],
+  "name": "{{ .Site.Params.name }}",
+  "description": "{{ .Site.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.contact.phone }}",
+  "email": "{{ .Site.Params.contact.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ .Site.Params.contact.address }}",
+    "addressLocality": "{{ .Site.Params.contact.city }}",
+    "addressRegion": "{{ .Site.Params.contact.county }}",
+    "postalCode": "{{ .Site.Params.contact.postal_code }}",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "44.1765",
+    "longitude": "28.6519"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ .Site.Params.stats.google_rating }}",
+    "reviewCount": "{{ .Site.Params.stats.google_reviews }}",
+    "bestRating": "5"
+  },
+  "foundingDate": "{{ .Site.Params.stats.years_since }}",
+  "areaServed": {
+    "@type": "City",
+    "name": "Constanța"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicii Auto",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ITP Auto",
+          "description": "Inspecție tehnică periodică pentru autovehicule"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Revizie Auto",
+          "description": "Revizie completă cu ulei și filtre"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reparații Auto",
+          "description": "Reparații mecanice și electrice"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Montaj GPL",
+          "description": "Instalații GPL pentru autoturisme"
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "{{ .Site.Params.social.facebook }}",
+    "{{ .Site.Params.social.instagram }}",
+    "{{ .Site.Params.social.google_business }}"
+  ]
+}
+</script>

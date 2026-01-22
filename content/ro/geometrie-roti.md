@@ -1,9 +1,11 @@
 ---
+noindex: true
 title: "Geometrie Roti - Euro Auto Service"
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/geometrie-roti"
 ---
+noindex: true
 
 Operatia de reglaj a directiei sau a geometriei rotilor consta in principiu in adjustarea unghiulor rotii astfel incat acestea sa fie perpendiculare pe drum si paralele intre ele. Scopul acestor adjustari este sa prelungeasca durata de utilizare a anvelopelor si sa stabilizeze autovehiculul in directia fix inainte atunci cand acesta ruleaza pe un drum drept.
 

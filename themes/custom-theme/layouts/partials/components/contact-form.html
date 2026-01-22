@@ -1,0 +1,192 @@
+{{/* Formular de Contact Simplificat
+    Conform analizei: doar 3 câmpuri (Nume, Telefon, Serviciu)
+    - CAPTCHA invizibil (reCAPTCHA v3)
+    - Mesaj de răspuns rapid sub formular
+*/}}
+
+{{ $title := .title | default "Programează-te acum" }}
+{{ $subtitle := .subtitle | default "Completează formularul și te contactăm în maxim 15 minute" }}
+{{ $formName := .formName | default "contact" }}
+{{ $showServices := .showServices | default true }}
+{{ $ctaText := .ctaText | default "Trimite solicitarea" }}
+
+<div class="contact-form-wrapper">
+  {{ if $title }}
+  <h3 class="contact-form__title">{{ $title }}</h3>
+  {{ end }}
+  
+  {{ if $subtitle }}
+  <p class="contact-form__subtitle">{{ $subtitle }}</p>
+  {{ end }}
+  
+  <form action="{{ $.Site.Params.form.action }}" 
+        method="POST" 
+        class="form contact-form"
+        data-ajax-form
+        data-form-name="{{ $formName }}">
+    
+    {{/* Nume */}}
+    <div class="form__group">
+      <label for="form-name" class="form__label">Numele dumneavoastră</label>
+      <input type="text" 
+             id="form-name" 
+             name="name" 
+             class="form__input" 
+             placeholder="ex: Ion Popescu"
+             required
+             autocomplete="name">
+    </div>
+    
+    {{/* Telefon */}}
+    <div class="form__group">
+      <label for="form-phone" class="form__label">Număr de telefon</label>
+      <input type="tel" 
+             id="form-phone" 
+             name="phone" 
+             class="form__input" 
+             placeholder="ex: 0741 123 456"
+             required
+             autocomplete="tel"
+             pattern="[0-9\s]{10,14}">
+    </div>
+    
+    {{/* Serviciu dorit */}}
+    {{ if $showServices }}
+    <div class="form__group">
+      <label for="form-service" class="form__label">Serviciul dorit</label>
+      <select id="form-service" name="service" class="form__select" required>
+        <option value="">Selectează serviciul</option>
+        <option value="itp">ITP Auto</option>
+        <option value="revizie">Revizie Auto</option>
+        <option value="reparatii">Reparații Auto</option>
+        <option value="gpl">Montaj GPL</option>
+        <option value="diagnoza">Diagnoză Auto</option>
+        <option value="geometrie">Geometrie Roți</option>
+        <option value="altele">Altele</option>
+      </select>
+    </div>
+    {{ end }}
+    
+    {{/* Hidden fields for tracking */}}
+    <input type="hidden" name="source" value="{{ $.Page.RelPermalink }}">
+    <input type="hidden" name="timestamp" value="">
+    
+    {{/* reCAPTCHA v3 (invisible) */}}
+    {{ with $.Site.Params.form.recaptcha_site_key }}
+    <input type="hidden" name="g-recaptcha-response" id="recaptcha-response">
+    {{ end }}
+    
+    {{/* Submit Button */}}
+    <div class="form__group">
+      <button type="submit" class="btn btn--primary btn--lg w-full">
+        {{ $ctaText }}
+      </button>
+    </div>
+    
+    {{/* Response time promise */}}
+    <p class="form__note form__note--success">
+      <svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>
+      Răspundem în maxim {{ $.Site.Params.form.response_time | default "15 minute" }} în orele de program
+    </p>
+  </form>
+  
+  {{/* Alternative contact methods */}}
+  <div class="contact-form__alt">
+    <p class="contact-form__alt-text">Sau contactați-ne direct:</p>
+    <div class="contact-form__alt-buttons">
+      <a href="tel:{{ $.Site.Params.contact.phone }}" class="btn btn--ghost btn--sm">
+        {{ partial "icons/phone.html" (dict "class" "w-4 h-4") }}
+        {{ $.Site.Params.contact.phone_display }}
+      </a>
+      <a href="https://wa.me/{{ $.Site.Params.contact.whatsapp }}" 
+         target="_blank" 
+         rel="noopener"
+         class="btn btn--whatsapp btn--sm">
+        {{ partial "icons/whatsapp.html" (dict "class" "w-4 h-4") }}
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+.contact-form-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-form__title {
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-form__subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-form__alt {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.contact-form__alt-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-form__alt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.form__message {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+.form__message--success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.form__message--error {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.inline { display: inline; }
+</style>
+
+{{/* reCAPTCHA v3 Script */}}
+{{ with $.Site.Params.form.recaptcha_site_key }}
+<script src="https://www.google.com/recaptcha/api.js?render={{ . }}"></script>
+<script>
+  grecaptcha.ready(function() {
+    document.querySelectorAll('form[data-ajax-form]').forEach(form => {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        grecaptcha.execute('{{ . }}', {action: 'submit'}).then(function(token) {
+          document.getElementById('recaptcha-response').value = token;
+          // Continue with form submission
+          form.submit();
+        });
+      });
+    });
+  });
+</script>
+{{ end }}

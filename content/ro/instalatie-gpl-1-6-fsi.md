@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Instalatii GPL pe Motoare cu Injectie Directa: Studiu de Caz Volkswagen Passat 1.6 FSI"
 description: "Instalatie GPL pe motor VW 1.6 FSI - studiu detaliat. Solutii tehnice, recomandari, service specializat."
 date: 2024-01-01T00:00:00Z
@@ -7,6 +8,7 @@ categories: ["Instalatii GPL"]
 author: "Ioan"
 draft: false
 ---
+noindex: true
 <div class="entry-content single-content">
 	
 <hr class="wp-block-separator has-alpha-channel-opacity">

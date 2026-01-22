@@ -1,0 +1,53 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Alexandru Popescu",
+      "location": "Constanța",
+      "service": "ITP",
+      "rating": 5,
+      "text": "Am ajuns fără programare și în 25 de minute aveam ITP-ul făcut. Foarte profesioniști, prețuri corecte. Recomand!",
+      "date": "2025-12-15",
+      "avatar": "/images/testimonials/avatar-1.jpg",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Maria Ionescu",
+      "location": "Constanța",
+      "service": "Reparații Auto",
+      "rating": 5,
+      "text": "Mi-au reparat cutia de viteze la un preț mult mai bun decât la reprezentanță. Garanție 6 luni pe manoperă, foarte corect!",
+      "date": "2025-11-28",
+      "avatar": "/images/testimonials/avatar-2.jpg",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Andrei Dumitrescu",
+      "location": "Năvodari",
+      "service": "Montaj GPL",
+      "rating": 5,
+      "text": "Am montat GPL acum 2 ani, economisesc ~800 lei pe lună. Echipa e foarte pricepută, toate verificările la timp.",
+      "date": "2025-10-10",
+      "avatar": "/images/testimonials/avatar-3.jpg",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "Elena Constantinescu",
+      "location": "Constanța",
+      "service": "Revizie Auto",
+      "rating": 4,
+      "text": "Revizie completă la preț bun. Mi-au explicat tot ce au făcut și ce trebuie urmărit. Mașina merge perfect acum.",
+      "date": "2025-09-22",
+      "avatar": "/images/testimonials/avatar-4.jpg",
+      "verified": true
+    }
+  ],
+  "google_reviews": {
+    "rating": 4.5,
+    "count": 241,
+    "url": "https://g.page/euroautoservice/review"
+  }
+}

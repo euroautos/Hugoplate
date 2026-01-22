@@ -1,0 +1,74 @@
+# =============================================================================
+# EUROAUTOSERVICE.RO - Hugo Configuration
+# Template optimizat pentru conversii - Ianuarie 2026
+# =============================================================================
+
+baseURL = "https://euroautoservice.ro/"
+languageCode = "ro-RO"
+defaultContentLanguage = "ro"
+title = "EuroAutoService - Service Auto și Stație ITP Constanța"
+theme = ""  # Nu folosim temă externă, totul e în layouts/
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = false  # Evităm emoji-uri excesive conform analizei
+
+# URL settings
+canonifyURLs = true
+relativeURLs = false
+
+[permalinks]
+  posts = "/blog/:slug/"
+  services = "/servicii/:slug/"
+  pages = "/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  service_type = "service_types"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+    [minify.tdewolff.css]
+      decimals = -1
+    [minify.tdewolff.js]
+      precision = 0
+
+[caches]
+  [caches.images]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"
+
+[imaging]
+  quality = 85
+  resampleFilter = "Lanczos"
+
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]

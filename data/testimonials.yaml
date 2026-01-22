@@ -1,0 +1,38 @@
+# Testimonials Data
+# Date pentru secțiunea de testimoniale
+
+google_reviews:
+  rating: 4.9
+  count: 150
+  url: "#"
+
+testimonials:
+  - name: "Ion Popescu"
+    avatar: ""
+    rating: 5
+    text: "Serviciu excelent, am făcut ITP în timp record și fără probleme. Recomand cu încredere!"
+    date: "Ianuarie 2026"
+
+  - name: "Maria Ionescu"
+    avatar: ""
+    rating: 5
+    text: "Mecanici foarte competenți. Au reparat problema la mașina mea rapid și la preț corect."
+    date: "Decembrie 2025"
+
+  - name: "Andrei Dumitrescu"
+    avatar: ""
+    rating: 5
+    text: "Instalație GPL făcută perfect. Economie mare la combustibil și funcționare fără probleme."
+    date: "Noiembrie 2025"
+
+  - name: "Elena Stoica"
+    avatar: ""
+    rating: 5
+    text: "Vopsitorie și polish auto de calitate superioară. Mașina arată ca nouă!"
+    date: "Octombrie 2025"
+
+  - name: "Robert Georgescu"
+    avatar: ""
+    rating: 4
+    text: "Schimbare ulei și filtre la preț bun. Personal amabil și profesional."
+    date: "Septembrie 2025"

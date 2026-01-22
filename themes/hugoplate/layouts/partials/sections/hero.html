@@ -1,0 +1,129 @@
+{{/* Hero Section - Redesign conform analizei
+    - Headline specific cu beneficii concrete
+    - Statistici vizibile
+    - CTA-uri clare și contrastante
+    - Trust signals integrate
+*/}}
+
+{{ $title := .title | default "Service Auto și ITP în Constanța" }}
+{{ $subtitle := .subtitle | default "ITP în 30 min, fără programare. Reparații auto la prețuri corecte." }}
+{{ $badge := .badge | default "Stație ITP autorizată RAR" }}
+{{ $showStats := .showStats | default true }}
+{{ $showPrices := .showPrices | default true }}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      {{/* Badge */}}
+      {{ if $badge }}
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        {{ $badge }}
+      </div>
+      {{ end }}
+      
+      {{/* Main Headline */}}
+      <h1 class="hero__title">
+        {{ $title | safeHTML }}
+      </h1>
+      
+      {{/* Subtitle */}}
+      <p class="hero__subtitle">
+        {{ $subtitle }}
+      </p>
+      
+      {{/* CTA Buttons */}}
+      <div class="hero__cta">
+        <a href="/contact/" class="btn btn--primary btn--lg">
+          {{ partial "icons/calendar.html" (dict "class" "w-5 h-5") }}
+          {{ $.Site.Params.cta.primary }}
+        </a>
+        <a href="/preturi/" class="btn btn--secondary btn--lg">
+          {{ $.Site.Params.cta.secondary }}
+        </a>
+      </div>
+      
+      {{/* Quick Prices - conform recomandării de prețuri vizibile */}}
+      {{ if $showPrices }}
+      <div class="hero__prices">
+        {{ range first 3 $.Site.Params.prices }}
+        <div class="hero__price-item">
+          <span class="hero__price-service">{{ .service }}</span>
+          <span class="hero__price-value">
+            {{ if eq .price_from 0 }}
+              <span class="hero__price-free">GRATUIT</span>
+            {{ else }}
+              de la <strong>{{ .price_from }} {{ .unit }}</strong>
+            {{ end }}
+          </span>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      {{/* Statistics */}}
+      {{ if $showStats }}
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number">{{ $.Site.Params.stats.years_experience }}+</span>
+          <span class="hero__stat-label">Ani experiență</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">{{ $.Site.Params.stats.total_itps }}</span>
+          <span class="hero__stat-label">ITP-uri efectuate</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">{{ $.Site.Params.stats.google_rating }}★</span>
+          <span class="hero__stat-label">Rating Google</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">{{ $.Site.Params.stats.rar_code }}</span>
+          <span class="hero__stat-label">Cod RAR</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  
+  {{/* Decorative Background */}}
+  <div class="hero__decoration" aria-hidden="true"></div>
+</section>
+
+<style>
+.hero__prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.hero__price-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero__price-service {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.hero__price-value {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.hero__price-value strong {
+  color: var(--color-success);
+  font-size: var(--font-size-lg);
+}
+
+.hero__price-free {
+  color: var(--color-success);
+  font-weight: 700;
+}
+</style>
