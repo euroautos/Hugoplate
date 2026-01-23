@@ -1,19 +1,13 @@
 {
-  "media": {
-    "root": "static/images",
-    "public": "static"
-  },
-  "content": {
-    "root": "content/ro"
-  },
-  "code": {
-    "root": "layouts"
-  },
-  "themeConfig": [
+  "media": "static/images",
+  "content": "content/ro",
+  "code": "layouts",
+  "arrangement": [],
+  "public": "static",
+  "configs": [
     "config/_default",
     "hugo.toml",
     "data"
   ],
-  "arrangement": [],
-  "showCommitModal": true
+  "custom-commit": true
 }
