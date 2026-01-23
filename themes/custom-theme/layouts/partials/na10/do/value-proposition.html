@@ -1,0 +1,22 @@
+<div class="value-proposition">
+  {{ if .Params.na10.value_props }}
+    <ul class="value-props-list">
+      {{ range .Params.na10.value_props }}
+        <li class="value-prop-item">
+          <span class="prop-icon">{{ .icon | default "✓" }}</span>
+          <span class="prop-text">{{ .text }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <div class="default-props">
+      <h3>De ce să alegi Euro Auto Service?</h3>
+      <ul>
+        <li>✓ Experiență de peste 15 ani în service auto</li>
+        <li>✓ Echipamente de diagnoză profesionale</li>
+        <li>✓ Personal certificat și autorizat RAR</li>
+        <li>✓ Garanție pentru toate lucrările efectuate</li>
+      </ul>
+    </div>
+  {{ end }}
+</div>

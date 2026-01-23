@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Senzori GPL - Lambda și Temperatură
-description: Ghid tehnic despre senzorii GPL: sonda lambda, senzorul de temperatură, emulatorul lambda, adaptări OBD și proceduri de diagnosticare.
+  intent: educational
+  traffic: organic
+title: "Senzori GPL - Lambda și Temperatură"
+description: "Ghid tehnic despre senzorii GPL: sonda lambda, senzorul de temperatură, emulatorul lambda, adaptări OBD și proceduri de diagnosticare."
 tags:
   - GPL
   - senzori GPL

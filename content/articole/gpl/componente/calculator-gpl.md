@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Calculator GPL - Unitatea de Control ECU
-description: Ghid tehnic complet despre ECU GPL: funcționare, parametri, adaptrare OBD, autocalibrare și proceduri de programare pentru sistemele GPL moderne.
+  intent: educational
+  traffic: organic
+title: "Calculator GPL - Unitatea de Control ECU"
+description: "Ghid tehnic complet despre ECU GPL: funcționare, parametri, adaptrare OBD, autocalibrare și proceduri de programare pentru sistemele GPL moderne."
 tags:
   - GPL
   - ECU GPL

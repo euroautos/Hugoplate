@@ -1,0 +1,20 @@
+<div class="related-content-sidebar">
+  <h3>Continuă să înveți</h3>
+
+  <div class="related-articles">
+    {{ range first 3 (where .Site.RegularPages "Type" "know") }}
+      {{ if ne .Title $.Title }}
+        <article class="related-article">
+          <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+          <p class="excerpt">{{ .Params.description | truncate 100 }}</p>
+        </article>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="cta-sidebar-card">
+    <h4>Ai întrebări?</h4>
+    <p>Contactează echipa noastră de experți pentru răspunsuri personalizate.</p>
+    <a href="/contact/" class="btn btn-secondary btn-sm">Contactează-ne</a>
+  </div>
+</div>

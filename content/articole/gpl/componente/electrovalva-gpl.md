@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Electrovalvă GPL - Principii de Funcționare
-description: Ghid tehnic despre electrovalvele GPL: tipuri, principii de funcționare, diagnoză, testare și proceduri de înlocuire pentru sistemel de securitate GPL.
+  intent: educational
+  traffic: organic
+title: "Electrovalvă GPL - Principii de Funcționare"
+description: "Ghid tehnic despre electrovalvele GPL: tipuri, principii de funcționare, diagnoză, testare și proceduri de înlocuire pentru sistemel de securitate GPL."
 tags:
   - GPL
   - electrovalvă GPL

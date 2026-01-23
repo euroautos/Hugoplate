@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Furtun GPL - Instalație de Alimentare
-description: Ghid tehnic despre furtunele GPL: tipuri, dimensiuni, presiuni, verificare periodică, inspecție vizuală și proceduri de înlocuire.
+  intent: educational
+  traffic: organic
+title: "Furtun GPL - Instalație de Alimentare"
+description: "Ghid tehnic despre furtunele GPL: tipuri, dimensiuni, presiuni, verificare periodică, inspecție vizuală și proceduri de înlocuire."
 tags:
   - GPL
   - furtun GPL

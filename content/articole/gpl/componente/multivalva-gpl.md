@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Multivalvă GPL - Siguranță și Funcții
-description: Ghid tehnic despre multivalva GPL: componente, funcții de siguranță, supape, electrovalvă, indicator nivel și proceduri de diagnosticare.
+  intent: educational
+  traffic: organic
+title: "Multivalvă GPL - Siguranță și Funcții"
+description: "Ghid tehnic despre multivalva GPL: componente, funcții de siguranță, supape, electrovalvă, indicator nivel și proceduri de diagnosticare."
 tags:
   - GPL
   - multivalvă GPL

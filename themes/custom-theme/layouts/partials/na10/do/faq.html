@@ -1,0 +1,31 @@
+<div class="faq-section">
+  {{ if .Params.na10.faq }}
+    <h3>Întrebări Frecvente</h3>
+    <div class="faq-list">
+      {{ range .Params.na10.faq }}
+        <details class="faq-item">
+          <summary>{{ .question }}</summary>
+          <div class="answer">
+            <p>{{ .answer }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="default-faq">
+      <h3>Întrebări Frecvente</h3>
+      <details>
+        <summary>Cât durează serviciul?</summary>
+        <p>Durata variază în funcție de serviciu și complexitate. Contactează-ne pentru detalii specifice.</p>
+      </details>
+      <details>
+        <summary>Oferiți garanție?</summary>
+        <p>Da, toate lucrările beneficiază de garanție conform standardelor RAR și ale producătorului.</p>
+      </details>
+      <details>
+        <summary>Acceptați programări online?</summary>
+        <p>Da, poți programa online prin formularul nostru sau telefonic la numărul afișat.</p>
+      </details>
+    </div>
+  {{ end }}
+</div>

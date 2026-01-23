@@ -1,0 +1,15 @@
+<div class="technical-specs">
+  <h3>Specificații Tehnice</h3>
+  {{ if .Params.na10.specs }}
+    <div class="specs-grid">
+      {{ range .Params.na10.specs }}
+        <div class="spec-item">
+          <span class="spec-label">{{ .label }}</span>
+          <span class="spec-value">{{ .value }}</span>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="specs-placeholder">Specificații tehnice detaliate disponibile în articol.</p>
+  {{ end }}
+</div>

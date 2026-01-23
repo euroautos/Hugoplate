@@ -3,12 +3,12 @@ title: Lichide Auto - Ghid Complet și Schimb
 description: Lichide auto - ulei motor, antigel, lichid frână, lichid servodirecție, lichid parbriz. Schimb complet la prețuri fixe.
 layout: do
 type: do
-na10: true
-na10.stage: "DO"
-na10.traffic: "organic"
-na10.market_sophistication: "3"
-na10.awareness: "product_aware"
-na10.ladder: "value_ladder"
+na10:
+  stage: "DO"
+  traffic: "organic"
+  market_sophistication: "3"
+  awareness: "product_aware"
+  ladder: "value_ladder"
 slug: lichide-auto-ghid-complet
 ---
 

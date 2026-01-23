@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Injectoare GPL - Funcționare și Diagnoză
-description: Ghid complet despre injectoare GPL: principii de funcționare, parametri tehnici, coduri de eroare și proceduri de diagnoză pentru sistemele injecție seacă.
+  intent: educational
+  traffic: organic
+title: "Injectoare GPL - Funcționare și Diagnoză"
+description: "Ghid complet despre injectoare GPL: principii de funcționare, parametri tehnici, coduri de eroare și proceduri de diagnoză pentru sistemele injecție seacă."
 tags:
   - GPL
   - injecție GPL
@@ -12,6 +14,7 @@ tags:
   - injectoare
   - Landi Renzo
 keywords: injectoare GPL, diagnoză GPL, depanare injectoare, Landi Renzo injectoare, injecție seacă GPL
+
 weight: 1
 ---
 

@@ -3,12 +3,12 @@ title: Cum Prelungești Viața Motorului - Ghid Complet
 description: Ghid complet pentru prelungirea duratei de viață a motorului. Revizii regulate, schimb ulei, diagnostice. Prețuri și programare.
 layout: do
 type: do
-na10: true
-na10.stage: "DO"
-na10.traffic: "organic"
-na10.market_sophistication: "3"
-na10.awareness: "product_aware"
-na10.ladder: "value_ladder"
+na10:
+  stage: "DO"
+  traffic: "organic"
+  market_sophistication: "3"
+  awareness: "product_aware"
+  ladder: "value_ladder"
 slug: prelungire-viata-motorului
 ---
 

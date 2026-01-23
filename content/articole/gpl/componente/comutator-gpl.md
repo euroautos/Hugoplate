@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Comutator GPL - Selector Carburant
-description: Ghid tehnic despre comutatorul GPL: funcțiuni, tipuri (digital/analog), conectare ECU, diagnoză, proceduri de programare și coduri de eroare.
+  intent: educational
+  traffic: organic
+title: "Comutator GPL - Selector Carburant"
+description: "Ghid tehnic despre comutatorul GPL: funcțiuni, tipuri (digital/analog), conectare ECU, diagnoză, proceduri de programare și coduri de eroare."
 tags:
   - GPL
   - comutator GPL

@@ -1,0 +1,28 @@
+<div class="process-steps">
+  {{ if .Params.na10.process_steps }}
+    <h3>Cum funcționează?</h3>
+    <div class="steps-list">
+      {{ range $index, $step := .Params.na10.process_steps }}
+        <div class="process-step">
+          <div class="step-number">{{ add $index 1 }}</div>
+          <div class="step-content">
+            <h4>{{ $step.title }}</h4>
+            <p>{{ $step.description }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="default-process">
+      <h3>Procesul nostru simplu</h3>
+      <ol>
+        <li><strong>1. Contact</strong> - Ne suni sau completezi formularul</li>
+        <li><strong>2. Diagnostic</strong> - Evaluăm situația mașinii tale</li>
+        <li><strong>3. Ofertă</strong> - Primești preț transparent și detaliat</li>
+        <li><strong>4. Programare</strong> - Stabiliți data și ora</li>
+        <li><strong>5. Execuție</strong> - Realizăm lucrările conform acordului</li>
+        <li><strong>6. Garanție</strong> - Primești garanție pentru lucrare</li>
+      </ol>
+    </div>
+  {{ end }}
+</div>

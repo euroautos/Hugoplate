@@ -1,0 +1,15 @@
+<div class="next-article-nav">
+  {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="nav-prev">
+      <span class="nav-label">← Anterior</span>
+      <span class="nav-title">{{ .Title }}</span>
+    </a>
+  {{ end }}
+
+  {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="nav-next">
+      <span class="nav-label">Următor →</span>
+      <span class="nav-title">{{ .Title }}</span>
+    </a>
+  {{ end }}
+</div>

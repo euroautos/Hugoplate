@@ -1,0 +1,18 @@
+<div class="troubleshooting-section">
+  <h3>Probleme Frecvente și Soluții</h3>
+  {{ if .Params.na10.troubleshooting }}
+    <div class="troubleshooting-list">
+      {{ range .Params.na10.troubleshooting }}
+        <details class="troubleshooting-item">
+          <summary>{{ .problem }}</summary>
+          <div class="solution">
+            <p><strong>Cauză:</strong> {{ .cause }}</p>
+            <p><strong>Soluție:</strong> {{ .solution }}</p>
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="troubleshooting-placeholder">Informații de diagnosticare și depanare incluse în ghid.</p>
+  {{ end }}
+</div>

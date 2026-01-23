@@ -1,0 +1,25 @@
+<div class="pricing-section">
+  {{ if .Params.na10.pricing }}
+    <h3>Prețuri și Pachete</h3>
+    <div class="pricing-grid">
+      {{ range .Params.na10.pricing }}
+        <div class="price-card {{ if .featured }}featured{{ end }}">
+          <div class="price-header">
+            <h4>{{ .name }}</h4>
+            <div class="price">{{ .price }}</div>
+          </div>
+          <ul class="price-features">
+            {{ range .features }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          <a href="/contact/" class="btn btn-primary">Alege Pachetul</a>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="pricing-placeholder">
+      <p>Pentru prețuri actualizate și pachete personalizate, <a href="/contact/">contactează-ne</a>.</p>
+    </div>
+  {{ end }}
+</div>

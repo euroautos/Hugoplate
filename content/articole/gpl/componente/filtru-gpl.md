@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Filtru GPL - Vaporizator și Curățare
-description: Ghid tehnic despre filtrul GPL: vaporizator, reducer, filtre, proceduri de curățare, mentenanță periodică și diagnoză problemelor de filtrare.
+  intent: educational
+  traffic: organic
+title: "Filtru GPL - Vaporizator și Curățare"
+description: "Ghid tehnic despre filtrul GPL: vaporizator, reducer, filtre, proceduri de curățare, mentenanță periodică și diagnoză problemelor de filtrare."
 tags:
   - GPL
   - filtru GPL

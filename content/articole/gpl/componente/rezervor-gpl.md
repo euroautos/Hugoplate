@@ -3,8 +3,10 @@ layout: know
 type: know
 na10:
   stage: KNOW
-title: Rezervor GPL - Tipuri și Caracteristici
-description: Ghid tehnic despre rezervoarele GPL: tipuri toroidale, cilindrice, sub șasiu, standarde R67, dimensiuni, capacități și proceduri de instalare.
+  intent: educational
+  traffic: organic
+title: "Rezervor GPL - Tipuri și Caracteristici"
+description: "Ghid tehnic despre rezervoarele GPL: tipuri toroidale, cilindrice, sub șasiu, standarde R67, dimensiuni, capacități și proceduri de instalare."
 tags:
   - GPL
   - rezervor GPL
