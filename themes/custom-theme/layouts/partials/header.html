@@ -1,12 +1,6 @@
-{{/* Header optimizat conform analizei:
-    - Număr de telefon vizibil constant
-    - Navigație simplificată (max 6 itemi)
-    - Program de lucru afișat
-    - CTA evidențiat pentru ITP
-*/}}
-
+{{/* Header optimized pentru navigație în maxim 3 clickuri */}}
 <header class="header">
-  {{/* Top Bar - Program și Contact rapid */}}
+  {{/* Top Bar - Contact rapid */}}
   <div class="header__top">
     <div class="container">
       <div class="header__top-content">
@@ -35,7 +29,7 @@
     </div>
   </div>
   
-  {{/* Main Header */}}
+  {{/* Main Header - Navigație principală */}}
   <div class="header__main">
     <div class="container">
       <div class="header__content">
@@ -44,31 +38,60 @@
           <img src="/images/logo.png" alt="{{ .Site.Title }}" width="180" height="48" class="header__logo-img">
         </a>
         
-        {{/* Desktop Navigation */}}
+        {{/* Desktop Navigation - Maxim 3 clickuri */}}
         <nav class="header__nav" aria-label="Navigație principală">
-          {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-            <div class="header__nav-dropdown">
-              <button class="header__nav-link header__nav-link--dropdown" aria-expanded="false">
-                {{ .Name }}
-                {{ partial "icons/chevron-down.html" (dict "class" "w-4 h-4 ml-1") }}
-              </button>
-              <div class="header__dropdown-menu">
-                {{ range .Children }}
-                <a href="{{ .URL }}" class="header__dropdown-link">{{ .Name }}</a>
-                {{ end }}
-              </div>
+          {{/* Home */}}
+          <a href="/" class="header__nav-link{{ if $.IsHome }} header__nav-link--active{{ end }}">Home</a>
+          
+          {{/* ITP - Serviciu principal */}}
+          <div class="header__nav-dropdown">
+            <a href="/itp/" class="header__nav-link">ITP</a>
+            <div class="header__dropdown-menu">
+              <a href="/itp/" class="header__dropdown-link">Ce este ITP</a>
+              <a href="/itp/programare/" class="header__dropdown-link">Programare Online</a>
+              <a href="/itp/verificare/" class="header__dropdown-link">Ce Verificăm</a>
+              <a href="/itp/preturi/" class="header__dropdown-link">Tarife</a>
+              <a href="/itp/intrebari/" class="header__dropdown-link">Întrebări Frecvente</a>
             </div>
-            {{ else }}
-            <a href="{{ .URL }}" 
-               class="header__nav-link{{ if .Params.highlight }} header__nav-link--highlight{{ end }}{{ if $.IsMenuCurrent "main" . }} header__nav-link--active{{ end }}">
-              {{ .Name }}
-            </a>
-            {{ end }}
-          {{ end }}
+          </div>
+          
+          {{/* GPL - Serviciu principal */}}
+          <div class="header__nav-dropdown">
+            <a href="/gpl/" class="header__nav-link">Instalații GPL</a>
+            <div class="header__dropdown-menu">
+              <a href="/gpl/branduri/landi-renzo/" class="header__dropdown-link">Landi Renzo</a>
+              <a href="/gpl/branduri/zavoli/" class="header__dropdown-link">Zavoli</a>
+              <a href="/gpl/intretinere/" class="header__dropdown-link">Întreținere GPL</a>
+              <a href="/gpl/preturi/" class="header__dropdown-link">Costuri</a>
+            </div>
+          </div>
+          
+          {{/* Mecanică Auto */}}
+          <div class="header__nav-dropdown">
+            <a href="/mecanica-auto/" class="header__nav-link">Mecanică</a>
+            <div class="header__dropdown-menu">
+              <a href="/mecanica-auto/revizie/" class="header__dropdown-link">Revizie Tehnică</a>
+              <a href="/mecanica-auto/frane/" class="header__dropdown-link">Sistem Frânare</a>
+              <a href="/mecanica-auto/ambreiaj/" class="header__dropdown-link">Ambreiaj</a>
+              <a href="/mecanica-auto/distributie/" class="header__dropdown-link">Distribuție</a>
+            </div>
+          </div>
+          
+          {{/* Diagnoză Auto */}}
+          <div class="header__nav-dropdown">
+            <a href="/diagnoza-auto/" class="header__nav-link">Diagnoză</a>
+            <div class="header__dropdown-menu">
+              <a href="/diagnoza-auto/engine-light/" class="header__dropdown-link">Check Engine</a>
+              <a href="/diagnoza-auto/senzori/" class="header__dropdown-link">Senzori Auto</a>
+              <a href="/diagnoza-auto/testare/" class="header__dropdown-link">Testare Componente</a>
+            </div>
+          </div>
+          
+          {{/* Vopsitorie */}}
+          <a href="/vopsitorie-auto/" class="header__nav-link">Vopsitorie</a>
         </nav>
         
-        {{/* CTA Area */}}
+        {{/* CTA Area - Contact rapid */}}
         <div class="header__cta">
           {{/* Phone - Desktop */}}
           <a href="tel:{{ .Site.Params.contact.phone }}" class="header__phone">
@@ -108,13 +131,12 @@
     </div>
     
     <nav class="mobile-menu__nav" aria-label="Navigație mobilă">
-      {{ range .Site.Menus.main }}
-        {{ if not .HasChildren }}
-        <a href="{{ .URL }}" class="mobile-menu__link{{ if .Params.highlight }} mobile-menu__link--highlight{{ end }}">
-          {{ .Name }}
-        </a>
-        {{ end }}
-      {{ end }}
+      <a href="/" class="mobile-menu__link{{ if $.IsHome }} mobile-menu__link--active{{ end }}">Home</a>
+      <a href="/itp/" class="mobile-menu__link">ITP & Verificări</a>
+      <a href="/gpl/" class="mobile-menu__link">Instalații GPL</a>
+      <a href="/mecanica-auto/" class="mobile-menu__link">Mecanică Auto</a>
+      <a href="/diagnoza-auto/" class="mobile-menu__link">Diagnoză</a>
+      <a href="/vopsitorie-auto/" class="mobile-menu__link">Vopsitorie</a>
     </nav>
     
     {{/* Quick Actions Mobile */}}
@@ -147,6 +169,8 @@
 </header>
 
 <style>
+/* Header Styles - Optimizate pentru navigație în 3 clickuri */
+
 /* ========== Logo Styles ========== */
 .header__logo-img {
   width: 180px;
@@ -575,11 +599,29 @@
   position: relative;
 }
 
+.header__nav-link {
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.header__nav-link:hover {
+  color: var(--color-primary);
+}
+
+.header__nav-link--active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .header__dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
+  min-width: 220px;
   background: var(--color-bg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
@@ -588,6 +630,7 @@
   visibility: hidden;
   transform: translateY(10px);
   transition: all var(--transition-fast);
+  z-index: 1001;
 }
 
 .header__nav-dropdown:hover .header__dropdown-menu,
@@ -599,22 +642,24 @@
 
 .header__dropdown-link {
   display: block;
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-lg);
   color: var(--color-text);
   font-size: var(--font-size-sm);
   text-decoration: none;
   transition: all 0.2s ease;
+  position: relative;
 }
 
 .header__dropdown-link:hover,
 .header__dropdown-link:focus {
   background: var(--color-bg-alt);
   color: var(--color-primary);
+  padding-left: calc(var(--space-lg) + 2px);
 }
 
 .header__dropdown-link:focus {
   outline: none;
-  padding-left: calc(var(--space-md) + 2px);
+  border-left: 3px solid var(--color-primary);
 }
 
 /* ========== Utility Classes ========== */
@@ -626,7 +671,6 @@
 }
 
 /* ========== Enhanced Accessibility ========== */
-/* Skip link for keyboard users */
 [role="navigation"] a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--color-primary);
@@ -636,14 +680,52 @@ button:focus-visible {
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .header__logo-img,
-  .header__logo-img *,
-  .header__menu-toggle,
-  .mobile-menu,
   .header__dropdown-menu,
-  .header__top-link,
-  .mobile-menu__link,
-  .header__phone {
+  .mobile-menu,
+  .header__menu-toggle {
     transition: none;
   }
 }
+
+/* Mobile improvements */
+@media (max-width: 1023px) {
+  .header__cta .btn--whatsapp {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__phone span {
+    font-size: var(--font-size-xs);
+  }
+}
 </style>
+
+<script>
+// Mobile menu toggle
+(function() {
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const menuOverlay = document.createElement('div');
+  menuOverlay.className = 'menu-overlay';
+  document.body.appendChild(menuOverlay);
+  
+  function toggleMenu() {
+    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isOpen);
+    mobileMenu.classList.toggle('is-open', !isOpen);
+    menuOverlay.classList.toggle('is-visible', !isOpen);
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  }
+  
+  menuToggle.addEventListener('click', toggleMenu);
+  menuOverlay.addEventListener('click', toggleMenu);
+  
+  // Close on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+      toggleMenu();
+    }
+  });
+})();
+</script>

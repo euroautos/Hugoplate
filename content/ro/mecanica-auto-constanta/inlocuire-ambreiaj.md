@@ -1,8 +1,18 @@
 ---
 title: "Inlocuire Ambreiaj Constanta | Semne de uzura si sfaturi de intretinere - Euro Auto Service"
+description: "Ghid complet despre ambreiaj: cum funcționează, semne de uzură, întreținere, costuri și când e necesară înlocuirea."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto-constanta/inlocuire-ambreiaj"
+categories: ["Mecanica Auto"]
+tags: ["ambreiaj", "inlocuire ambreiaj", "semne uzura ambreiaj", "cutie viteze", "transmisie"]
+author: "Ioan"
+na10_stage: "KNOW"
+na10_awareness: "problem-aware"
+keywords: ["semne uzura ambreiaj", "cati km schimb ambreiaj", "inlocuire ambreiaj cost", "ambreiaj patina", "schimbare ambreiaj"]
+meta_title: "Înlocuire Ambreiaj Constanța | Semne de Uzură și Ghid Complet | Euro Auto Service"
+meta_description: "Află cum recunoști semnele de uzură ale ambreiajului, când trebuie schimbat, câți km rezistă și cât costă înlocuirea. Service auto autorizat în Constanța."
+image: "/images/2024/02/Mod-Functionare-Ambreiaj-1024x576.png"
 ---
 
 ## **1. Ce este ambreiajul?**

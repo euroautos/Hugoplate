@@ -1,12 +1,18 @@
 ---
-noindex: true
-title: "Tinichigerie Auto in Constanta"
+layout: "single"
+type: "post"
+na10:
+  stage: "DO"
+  intent: "conversion"
+  traffic: "mixed"
+title: "Tinichigerie Auto Constanta | Servicii Profesionale"
+description: "Servicii tinichigerie auto profesionale in Constanta: indreptat tabla, vopsitorie, tobe esapament, parbrize. Contacteaza-ne pentru programare!"
 url: "/tinichigerie-auto-in-constanta/"
-type: "services"
 categories:
   - Caroserie
+author: "Ioan"
+draft: false
 ---
-noindex: true
 # Tinichigerie Auto in Constanta
 
 Efectuam lucrari de tinichigerie auto profesionale si tot ce tine de structura metalica si nemetalica a autoturismului tau, precum si servicii de vopsitorie auto.
@@ -37,5 +43,3 @@ Va putem oferi urmatoarele tipuri de servicii:
 
 [0729440127](tel:+40729440127)[Solicita o programare](/contact)
 ![tinichigerie auto constanta](https://images.unsplash.com/photo-1512080482556-ea648017576c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8)
-
-.entry-content

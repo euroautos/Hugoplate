@@ -4,6 +4,20 @@ meta_title: "Termeni si Conditii Euro Auto Service"
 description: "Termeni si conditii de utilizare a serviciilor Euro Auto Service Constanta."
 layout: "page"
 draft: false
+
+# NA10 Framework Metadata
+na10:
+  stage: "trust"
+  awareness_level: "legal_validation"
+  primary_goal: "terms_agreement"
+  user_intent: "information"
+  keywords: ["termeni si conditii", "legal", "reguli utilizare", "contract", "politica"]
+  conversion_elements: []
+  trust_signals: ["clear_terms", "legal_compliance", "transparent_policies"]
+seo:
+  canonical: "/termeni-si-conditii/"
+  robots: "index, follow"
+  og_type: "article"
 ---
 
 <div class="entry-content single-content">

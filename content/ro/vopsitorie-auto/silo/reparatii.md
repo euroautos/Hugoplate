@@ -1,7 +1,13 @@
 ---
-title: "Reparații Caroserie - Zgârieturi și Lovituri"
-url: "/vopsitorie-auto/reparatii/"
+layout: "services"
 type: "services"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Ghid Reparații Caroserie - Tipuri Zgârieturi și Soluții"
+description: "Testul unghiei: cum identifici tipul zgârieturii. Polish, retușare sau vopsitorie completă? Ghid complet reparații caroserie."
+url: "/vopsitorie-auto/reparatii/"
 categories:
   - Caroserie
 ---
@@ -152,7 +158,7 @@ Dacă nu poți determina tipul zgârieturii din descrierile de mai sus, hai să 
 
 Trimite poze pe WhatsApp sau vino la service:
 
-Ce afla:ți
+Ce aflați:
 - Exact ce ai (tip daună, gravitate)
 - Ce opțiuni există (de la cea mai economică)
 - Cost estimat pentru fiecare opțiune
@@ -166,7 +172,7 @@ Fără obligații. Nu te presăm să repari. Poți lua 5 oferte și compara.
 
 | Cum | De ce |
 |-----|------|
-| Repară zgârieturile imediat | Rugină crește rapid |
+| Repără zgârieturile imediat | Rugină crește rapid |
 | Spală în sezon rece (sare) | Sarea corodează vopseaua |
 | Ceară protectoare anual | Strat suplimentar de protecție |
 | Parcare în zona umbrită | Soare degradează vopseaua |
@@ -185,19 +191,3 @@ Investiție mică (ceară anuală 200-400 lei) vs reparație mare (vopsitorie 80
 | Garanție 2 ani | Vopsitorie și tinichigerie |
 | Mașină la schimb | Disponibilă la cerere |
 | Opțiuni multiple | De la polish la vopsitorie completă |
-
----
-
-## Contact
-
-Trimite poză pe WhatsApp pentru evaluare rapidă.
-
-**Telefon:** +40 729 440 127
-
-**WhatsApp:** +40 729 440 127
-
-**Adresă:** Str. Mangaliei 28, Constanța
-
-**Program:** Luni - Vineri 08:00 - 18:00
-
-Trimite 2-3 poze clare din unghiuri diferite și îți răspundem în maximum 2 ore cu evaluarea exactă.

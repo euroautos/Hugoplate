@@ -1,8 +1,14 @@
 ---
-title: Sam Wilson
+title: "Sam Wilson - Specialist Auto"
 email: samwilson@email.com
 image: "/images/avatar.png"
-description: this is meta description
+layout: "author"
+type: "author"
+description: "Sam Wilson - tehnician auto certificat cu expertiză în diagnosticare electronică și reparații complexe. Soluții rapide și fiabile."
+na10:
+  stage: "TRUST"
+  intent: "brand"
+  traffic: "organic"
 social:
   - name: github
     icon: fa-brands fa-github

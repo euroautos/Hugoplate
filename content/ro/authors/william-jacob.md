@@ -1,8 +1,14 @@
 ---
-title: William Jacob
+title: "William Jacob - Expert Service Auto"
 email: williamjacob@email.com
 image: "/images/avatar.png"
-description: this is meta description
+layout: "author"
+type: "author"
+description: "William Jacob - mecanic profesionist cu experiență în mentenanță preventivă și reparații complete. Servicii de calitate pentru orice tip de vehicul."
+na10:
+  stage: "TRUST"
+  intent: "brand"
+  traffic: "organic"
 social:
   - name: github
     icon: fa-brands fa-github

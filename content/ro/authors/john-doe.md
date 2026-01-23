@@ -1,8 +1,14 @@
 ---
-title: John Doe
+title: "John Doe - Expert Auto"
 email: johndoe@email.com
 image: "/images/avatar.png"
-description: this is meta description
+layout: "author"
+type: "author"
+description: "John Doe - specialist auto cu experiență vastă în reparații și mentenanță vehicule. Expertiză în diagnosticare și soluții tehnice avansate."
+na10:
+  stage: "TRUST"
+  intent: "brand"
+  traffic: "organic"
 social:
   - name: github
     icon: fa-brands fa-github

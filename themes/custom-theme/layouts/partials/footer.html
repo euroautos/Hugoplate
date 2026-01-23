@@ -1,208 +1,180 @@
-{{/* Footer - Optimizat pentru conversii și SEO local */}}
-
+{{/* Footer optimizat pentru navigare și SEO */}}
 <footer class="footer">
   <div class="container">
-    <div class="footer__grid">
-      {{/* Brand Column */}}
-      <div class="footer__brand">
-        <img src="/images/logo-white.png" alt="{{ .Site.Title }}" class="footer__logo" width="180" height="40">
-        <p class="footer__description">
-          Service auto profesionist și stație ITP autorizată RAR în {{ .Site.Params.contact.city }}. 
-          Peste {{ .Site.Params.stats.years_experience }} ani de experiență, {{ .Site.Params.stats.total_itps }} ITP-uri efectuate.
-        </p>
-        
-        {{/* Google Rating Badge */}}
-        <div class="footer__rating">
-          <div class="footer__rating-stars">
-            {{ range seq 5 }}
-            {{ partial "icons/star.html" (dict "class" "w-4 h-4 text-yellow") }}
-            {{ end }}
-          </div>
-          <span class="footer__rating-text">
-            {{ .Site.Params.stats.google_rating }}/5 din {{ .Site.Params.stats.google_reviews }} recenzii Google
-          </span>
-        </div>
-      </div>
+    <div class="footer__content">
       
-      {{/* Services Column */}}
-      <div class="footer__column">
-        <h3 class="footer__heading">Servicii</h3>
+      {{/* Secțiunea 1: Serviciile principale */}}
+      <div class="footer__section">
+        <h4 class="footer__title">Serviciile Noastre</h4>
         <ul class="footer__links">
-          {{ range .Site.Menus.footer_services }}
-          <li>
-            <a href="{{ .URL }}" class="footer__link">{{ .Name }}</a>
-          </li>
-          {{ end }}
+          <li><a href="/itp/" class="footer__link">ITP Rapin Constanța</a></li>
+          <li><a href="/gpl/" class="footer__link">Instalații GPL</a></li>
+          <li><a href="/mecanica-auto/" class="footer__link">Mecanică Auto</a></li>
+          <li><a href="/diagnoza-auto/" class="footer__link">Diagnoză Computerizată</a></li>
+          <li><a href="/vopsitorie-auto/" class="footer__link">Vopsitorie & Estetică</a></li>
         </ul>
       </div>
       
-      {{/* Info Column */}}
-      <div class="footer__column">
-        <h3 class="footer__heading">Informații</h3>
+      {{/* Secțiunea 2: Despre noi */}}
+      <div class="footer__section">
+        <h4 class="footer__title">Despre Noi</h4>
         <ul class="footer__links">
-          {{ range .Site.Menus.footer_info }}
-          <li>
-            <a href="{{ .URL }}" class="footer__link">{{ .Name }}</a>
-          </li>
-          {{ end }}
+          <li><a href="/about/" class="footer__link">17 Ani de Experiență</a></li>
+          <li><a href="/certificari/" class="footer__link">Certificări RAR</a></li>
+          <li><a href="/testimoniale/" class="footer__link">Recenzii Clienți</a></li>
+          <li><a href="/echipa/" class="footer__link">Echipa Noastră</a></li>
         </ul>
       </div>
       
-      {{/* Contact Column */}}
-      <div class="footer__column">
-        <h3 class="footer__heading">Contact</h3>
-        
-        <div class="footer__contact">
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon">
-              {{ partial "icons/phone.html" (dict "class" "w-4 h-4") }}
-            </span>
-            <div>
-              <a href="tel:{{ .Site.Params.contact.phone }}" class="footer__link footer__link--phone">
-                {{ .Site.Params.contact.phone_display }}
-              </a>
-              {{ if .Site.Params.contact.phone_secondary }}
-              <br>
-              <a href="tel:{{ .Site.Params.contact.phone_secondary }}" class="footer__link">
-                {{ .Site.Params.contact.phone_secondary | replaceRE "^\\+40" "0" }}
-              </a>
-              {{ end }}
-            </div>
-          </div>
-          
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon">
-              {{ partial "icons/mail.html" (dict "class" "w-4 h-4") }}
-            </span>
-            <a href="mailto:{{ .Site.Params.contact.email }}" class="footer__link">
-              {{ .Site.Params.contact.email }}
-            </a>
-          </div>
-          
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon">
-              {{ partial "icons/map-pin.html" (dict "class" "w-4 h-4") }}
-            </span>
-            <div>
-              {{ .Site.Params.contact.address }}<br>
-              {{ .Site.Params.contact.city }}, {{ .Site.Params.contact.postal_code }}
-            </div>
-          </div>
-          
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon">
-              {{ partial "icons/clock.html" (dict "class" "w-4 h-4") }}
-            </span>
-            <div>
-              {{ .Site.Params.schedule.weekdays }}<br>
-              {{ .Site.Params.schedule.saturday }}
-            </div>
-          </div>
-        </div>
-        
-        {{/* Quick Actions */}}
-        <div class="footer__actions">
-          <a href="https://wa.me/{{ .Site.Params.contact.whatsapp }}" 
-             target="_blank" 
-             rel="noopener"
-             class="btn btn--whatsapp btn--sm w-full">
-            {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
-            WhatsApp
-          </a>
-          <a href="{{ .Site.Params.contact.waze }}" 
-             target="_blank" 
-             rel="noopener"
-             class="btn btn--ghost btn--sm w-full">
-            {{ partial "icons/navigation.html" (dict "class" "w-5 h-5") }}
-            Navighează
-          </a>
-        </div>
+      {{/* Secțiunea 3: Informații utile */}}
+      <div class="footer__section">
+        <h4 class="footer__title">Informații Utile</h4>
+        <ul class="footer__links">
+          <li><span class="footer__text">{{ .Site.Params.schedule.weekdays }}</span></li>
+          <li><span class="footer__text">{{ .Site.Params.schedule.saturday }}</span></li>
+          <li><a href="{{ .Site.Params.contact.google_maps }}" class="footer__link">{{ .Site.Params.contact.address }}</a></li>
+          <li><a href="tel:{{ .Site.Params.contact.phone }}" class="footer__link">{{ .Site.Params.contact.phone_display }}</a></li>
+        </ul>
+      </div>
+      
+      {{/* Secțiunea 4: Legal și contact */}}
+      <div class="footer__section">
+        <h4 class="footer__title">Legal & Contact</h4>
+        <ul class="footer__links">
+          <li><a href="/politica-de-confidentialitate/" class="footer__link">Politica de Confidențialitate</a></li>
+          <li><a href="/termeni-si-conditii/" class="footer__link">Termeni și Condiții</a></li>
+          <li><a href="/politica-cookie/" class="footer__link">Politica Cookie</a></li>
+          <li><a href="/contact/" class="footer__link footer__link--highlight">Contact & Programare</a></li>
+        </ul>
       </div>
     </div>
     
-    {{/* Bottom Bar */}}
+    {{/* Bottom bar */}}
     <div class="footer__bottom">
-      <div class="footer__copyright">
-        © {{ now.Year }} {{ .Site.Params.footer.copyright }}. Toate drepturile rezervate.
+      <div class="footer__bottom-content">
+        <div class="footer__copyright">
+          <p>&copy; 2024 Euro Auto Service. Toate drepturile rezervate.</p>
+          <p>Stație ITP autorizată RAR {{ .Site.Params.stats.rar_code }}</p>
+        </div>
+        
+        <div class="footer__social">
+          <a href="{{ .Site.Params.contact.whatsapp }}" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+            {{ partial "icons/whatsapp.html" (dict "class" "w-5 h-5") }}
+          </a>
+          <a href="{{ .Site.Params.contact.google_maps }}" target="_blank" rel="noopener" class="footer__social-link" aria-label="Locație">
+            {{ partial "icons/map-pin.html" (dict "class" "w-5 h-5") }}
+          </a>
+        </div>
       </div>
-      
-      <div class="footer__legal">
-        {{ range .Site.Menus.footer_legal }}
-        <a href="{{ .URL }}" class="footer__legal-link">{{ .Name }}</a>
-        {{ end }}
-      </div>
-      
-      {{ if .Site.Params.footer.show_social }}
-      <div class="footer__social">
-        {{ with .Site.Params.social.facebook }}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
-          {{ partial "icons/facebook.html" (dict "class" "w-5 h-5") }}
-        </a>
-        {{ end }}
-        {{ with .Site.Params.social.instagram }}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
-          {{ partial "icons/instagram.html" (dict "class" "w-5 h-5") }}
-        </a>
-        {{ end }}
-        {{ with .Site.Params.social.google_business }}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="footer__social-link" aria-label="Google Business">
-          {{ partial "icons/google.html" (dict "class" "w-5 h-5") }}
-        </a>
-        {{ end }}
-      </div>
-      {{ end }}
     </div>
   </div>
 </footer>
 
 <style>
-.footer__rating {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+/* Footer Styles - Optimizate pentru SEO și navigare */
+
+.footer {
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, #f8fafc 100%);
+  color: var(--color-text);
+  padding: var(--space-xl) 0 var(--space-md);
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.footer__section {
+  padding: 0 var(--space-xs);
+}
+
+.footer__title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links li {
+  margin-bottom: var(--space-xs);
+}
+
+.footer__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--color-primary);
+}
+
+.footer__link:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.footer__link--highlight {
+  color: var(--color-cta);
+  font-weight: 500;
+}
+
+.footer__text {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+/* Bottom bar */
+.footer__bottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
   margin-top: var(--space-md);
 }
 
-.footer__rating-stars {
+.footer__bottom-content {
   display: flex;
-  gap: 2px;
-}
-
-.footer__rating-text {
-  font-size: var(--font-size-sm);
-}
-
-.footer__link--phone {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer__actions {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-top: var(--space-lg);
-}
-
-.footer__legal {
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
-.footer__legal-link {
-  color: var(--color-text-light);
+@media (max-width: 767px) {
+  .footer__bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer__copyright {
   font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
 }
 
-.footer__legal-link:hover {
-  color: #ffffff;
+.footer__copyright p {
+  margin: 0;
+  line-height: 1.5;
 }
 
 .footer__social {
   display: flex;
   gap: var(--space-sm);
+  align-items: center;
 }
 
 .footer__social-link {
@@ -211,16 +183,66 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius);
-  color: var(--color-text-light);
-  transition: all var(--transition-fast);
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  transition: all 0.2s ease;
 }
 
 .footer__social-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
 }
 
-.text-yellow { color: var(--color-yellow); }
+/* Responsive improvements */
+@media (max-width: 1023px) {
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+  
+  .footer__section {
+    margin-bottom: var(--space-md);
+  }
+  
+  .footer__title {
+    margin-bottom: var(--space-xs);
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-lg);
+  }
+  
+  .footer__section {
+    margin-bottom: 0;
+  }
+  
+  .footer__links li {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .footer__social {
+    justify-content: center;
+    margin-top: var(--space-sm);
+  }
+}
+
+/* Print styles */
+@media print {
+  .footer {
+    display: none;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .footer__social-link {
+    transition: none;
+  }
+}
 </style>

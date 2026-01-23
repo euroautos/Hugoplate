@@ -1,5 +1,4 @@
 ---
-<meta http-equiv="refresh" content="0;url=/">
 redirect: "/"
 title: "Va Multumim"
 meta_title: "Va multumim - Euro Auto Service"
@@ -8,34 +7,3 @@ layout: "page"
 draft: false
 ---
 <meta http-equiv="refresh" content="0;url=/">
-
-<div class="entry-content single-content">
-
-<p class="has-text-align-center"></p>
-
-<section>
-	<div class="container-fluid px-4 py-5 my-5 text-center">
-		<div class="lc-block d-block mx-auto mb-4">
-			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 496 512" width="5em" height="5em" fill="currentColor">
-				<path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
-			</svg>
-		</div>
-		<div class="lc-block">
-			<div editable="rich">
-
-				<h2 class="display-5 fw-bold">Va multumim.</h2>
-
-			</div>
-		</div>
-		<div class="lc-block col-lg-6 mx-auto mb-4">
-			<div editable="rich">
-
-				<p class="lead">Echipa noastra deja lucreaza la solicitarea dvs.</p>
-
-			</div>
-		</div>
-
-	</div>
-</section>
-
-</div>

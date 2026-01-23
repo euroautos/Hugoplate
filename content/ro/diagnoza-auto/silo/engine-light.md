@@ -1,9 +1,14 @@
 ---
+layout: "know"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
 title: "Check Engine Aprins - Ce Înseamnă și Ce să Faci"
+description: "Check Engine aprins? Ghid complet: cauze comune, coduri OBD, cum procedezi, când e urgent. Nu înseamnă neapărat ceva grav."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/diagnoza-auto/silo/engine-light/"
-description: "Check Engine aprins? Descoperă ce înseamnă, cauzele comune și ce să faci. Nu înseamnă neapărat ceva grav. Diagnostic profesionist la Euro Auto Service Constanța."
 ---
 
 # Check Engine Aprins - Ce Înseamnă și Ce să Faci
@@ -44,7 +49,7 @@ Vehiculele europene folosesc de obicei un martor galben cu simbolul motorului. U
 
 ## Top 10 cauze comune pentru Check Engine
 
-### 1. Bușon rezervor slab sau necurătățat
+### 1. Bușon rezervor slab sau necurățățat
 
 Frecvenţă: ~30% dintre toate cazurile
 
@@ -194,18 +199,7 @@ Testerul profesional:
 4. Inspectare mecanică vizuală
 5. Interpretare integrată și raport clar
 
-Diagnostic complet la Euro Auto Service Constanța:
-- Durată: 30-60 minute
-- Cost: 100 RON + TVA
-- Include raport scris cu explicații și estimare reparații
-
-### Programare diagnostic
-
-**Euro Auto Service Constanța**
-- Telefon: 0729 440 127
-- Adresă: Str. Dumitru (Tache) Brumărescu nr. 1, Constanța
-- Program: Luni - Vineri, 08:00 - 18:00
-- Email: [email protected]
+Diagnosticul complet durează: 30-60 minute
 
 ### Poți conduce cu Check Engine aprins?
 

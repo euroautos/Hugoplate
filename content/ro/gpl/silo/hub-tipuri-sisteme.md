@@ -1,6 +1,11 @@
 ---
-title: "Sisteme GPL: Comparație Completă și Cum Să Alegi Cel Potrivit"
-description: "Descopera sistemele GPL Landi Renzo, Zavoli, BRC, Tomasetto. Comparație tehnica, caracteristici, compatibilitati."
+layout: "know"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Sisteme GPL: Comparație Completă și Cum Să Alegi"
+description: "Ghid complet sisteme GPL: comparație Landi Renzo, Zavoli, BRC, Tomasetto. Caracteristici, compatibilități, când alegi care."
 date: 2026-01-21T00:00:00Z
 image: "/images/2024/05/sisteme-gpl-comparatie.jpg"
 categories: ["GPL", "Componente GPL", "Branduri GPL"]
@@ -12,7 +17,7 @@ draft: false
 
 Dacă citești acest articol, probabil ai trecut de întrebarea "merită GPL?" și acum te lupti cu întrebarea pe care o primesc cel mai des în service: "care sistem să aleg?"
 
-Nu există un răspuns universal. Așa cum mașinile sunt diferite, și sistemele GPL sunt diferite. Să vedem ce există pe piață, ce fac fiecare și când e cazul să alegi care.
+Nu există un răspuns universal. Așa cum mașinile sunt diferite, și sistemele GPL sunt diferite. Să vedem ce există pe piață, ce face fiecare și când e cazul să alegi care.
 
 ## Principalele branduri de GPL pe piața românească
 
@@ -22,7 +27,7 @@ Nu există un răspuns universal. Așa cum mașinile sunt diferite, și sistemel
 
 **Landi Renzo** este poate cel mai cunoscut brand în Europa. Seria Omegas este standardul pentru injecția secvențială. Omegas Direct este varianta mai nouă, cu injecție directă în colector (mai puține piese între vaporizator și motor).
 
-**BRC** are sisteme precum Sequent24 (pentru motore de până la 4 cilindri) și Sequent54 (pentru 5-8 cilindri). Sunt sisteme robuste, folosite în multe aplicații OEM.
+**BRC** are sisteme precum Sequent24 (pentru motoare de până la 4 cilindri) și Sequent54 (pentru 5-8 cilindri). Sunt sisteme robuste, folosite în multe aplicații OEM.
 
 **Tomasetto** este un brand italian cu istorie în domeniul GPL. Vaporizatorul Nordic este încă folosit de multe service-uri pentru fiabilitate.
 
@@ -211,7 +216,7 @@ Iată un ghid simplu pentru alegere:
 
 Înainte de a instala GPL pe mașina ta, consideră:
 
-1. **Rulaj**: Faci mai mult de 1.000 km/lunar? Dacă nu, investiția se recuperează în 4-5 ani.
+1. **Rulaj**: Faci mai mult de 1.000 km/lună? Dacă nu, investiția se recuperează în 4-5 ani.
 
 2. **Acces GPL**: Ai stații GPL aproape de locațiile tale frecvente? În Constanța, sunt suficiente opțiuni.
 
@@ -220,17 +225,6 @@ Iată un ghid simplu pentru alegere:
 4. **Utilizare**: Mașina e pentru curse sau pentru uz cotidian? Pentru curse, GPL nu este recomandat.
 
 5. **Garanția mașinii**: Instalarea GPL poate anula garanția producătorului pentru anumite componente (verifică contractul de garanție).
-
-## Euro Auto Service: Ce sisteme montăm
-
-În service-ul nostru din Constanta, suntem autorizați Landi Renzo și Zavoli. Acest lucru înseamnă că:
-
-- Montăm sisteme originale, nu copii
-- Garanția este valabilă la producător
-- Avem acces la suport tehnic și piese genuine
-- Omologarea este acceptată de RAR fără probleme
-
-Suntem capabili să reparăm și sisteme de la alți producători. Am lucrat cu STAG, PRINS, LOVATO, LPGTECH, MILANO, FRATELLI, AG CENTRUM, AUTRONIC, OMVL, ROMANO, CANGAS, BRC, biGAS, Tartarini, Stefanelli. Dacă ai o problemă cu o instalatie GPL constanta, indiferent de brand, vin la noi.
 
 ---
 

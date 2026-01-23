@@ -1,0 +1,20 @@
+<div class="knowledge-badges">
+  <div class="badge educational">
+    <span class="badge-icon">🎓</span>
+    <span class="badge-text">Ghid Tehnic</span>
+  </div>
+
+  {{ if .Params.na10.verified }}
+  <div class="badge verified">
+    <span class="badge-icon">✅</span>
+    <span class="badge-text">Verificat Tehnic</span>
+  </div>
+  {{ end }}
+
+  {{ if .Params.na10.updated }}
+  <div class="badge updated">
+    <span class="badge-icon">🔄</span>
+    <span class="badge-text">Actualizat {{ .Lastmod.Format "2006" }}</span>
+  </div>
+  {{ end }}
+</div>

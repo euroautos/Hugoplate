@@ -1,11 +1,17 @@
 ---
 title: "Emisii Poluante la ITP - Euro Auto Service"
-description: "Acest articol îți oferă informații clare despre limitele de emisii poluante la ITP, cauzele comune ale respingerii și procedura de verificare."
+description: "Ghid complet despre limitele de emisii poluante la ITP, cauzele comune ale respingerii, procedura de verificare și cum să eviți problemele de poluare."
 date: 2024-05-27T13:39:07+02:00
 image: "/images/2024/05/verificare-emisii-poluante-5233283-1024x678.jpg"
 categories: ["ITP"]
+tags: ["emisii poluante", "ITP", "poluare auto", "verificare ITP", "ECOBD"]
 author: "Ioan"
 draft: false
+na10_stage: "KNOW"
+na10_awareness: "problem-aware"
+keywords: ["emisii poluante ITP", "limite emisii CO", "test emisii motoare diesel", "verificare OBD ITP", "respingere ITP poluare"]
+meta_title: "Emisii Poluante la ITP: Limite, Cauze și Soluții | Euro Auto Service"
+meta_description: "Află totul despre emisii poluante la ITP. Limite admise, cauze ale respingerii, procedura de verificare pentru motoare benzină și diesel, și cum să remediezi problemele."
 ---
 
 

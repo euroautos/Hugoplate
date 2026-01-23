@@ -1,7 +1,13 @@
 ---
-title: "Prețuri Vopsitorie Auto Constanța - Deviz Transparent"
-url: "/vopsitorie-auto/preturi/"
+layout: "do++"
 type: "services"
+na10:
+  stage: "DO++"
+  intent: "conversion"
+  traffic: "organic"
+title: "Prețuri Vopsitorie Auto Constanța - Deviz Transparent"
+description: "Prețuri vopsitorie auto transparente la Euro Auto Service Constanța. Deviz pe loc, fără surprize."
+url: "/vopsitorie-auto/preturi/"
 categories:
   - Caroserie
 ---

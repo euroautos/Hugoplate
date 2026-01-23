@@ -1,7 +1,12 @@
 ---
-title: "Vopsitorie Auto Constanța - Servicii Complete"
-url: "/vopsitorie-auto/"
+layout: "services"
 type: "services"
+na10:
+  stage: "DO"
+  intent: "conversion"
+  traffic: "organic"
+title: "Vopsitorie Auto Constanța - Servicii Complete, Preț Transparent"
+description: "Vopsitorie și tinichigerie cu spectrofotometru, garanție 2 ani. Evaluare gratuită și prețuri transparente la Euro Auto Service Constanța."
 categories:
   - Caroserie
 ---
@@ -27,7 +32,7 @@ Alege scenariul care se potrivește cel mai bine pentru a afla soluțiile dispon
 
 ---
 
-## Evaluare gratuită - fără obligații
+## Evaluare gratuită
 
 Nu știi exact ce ai sau ți-e teamă de un deviz scump? Hai să vedem realitatea.
 
@@ -161,7 +166,7 @@ Fisuri peste 15 cm, în câmpul vizual sau multiple impacturi = înlocuire neces
 
 > Cât timp stau fără mașină?
 
-Vopsitoria parțială: 2-3 zile. Vopsitorie completă: 7-10 zile. PDR: gata în aceeași zi sau a doua zi. Reparație parbriz: 30-45 minute. Îți oferim mașină la schimb sau poți aștepta în spațiul client.
+Vopsitoria parțială: 2-3 zile. Vopsitoria completă: 7-10 zile. PDR: gata în aceeași zi sau a doua zi. Reparație parbriz: 30-45 minute. Îți oferim mașină la schimb sau poți aștepta în spațiul client.
 
 > Se vede diferența la vopsitoria parțială?
 

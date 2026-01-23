@@ -1,7 +1,13 @@
 ---
-title: "Polish Auto și Protecție Ceramică - Strălucire Constanța"
-url: "/vopsitorie-auto/polish/"
+layout: "services"
 type: "services"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Polish Auto și Protecție Ceramică - Guide Complet Constanța"
+description: "Polish vs Protecție Ceramică: când merită investiția, tipuri de polishing, durată efect și costuri reale. Ghid fără marketing."
+url: "/vopsitorie-auto/polish/"
 categories:
   - Caroserie
 ---
@@ -193,19 +199,3 @@ Evaluarea e gratuită, fără obligații. Poți afla că nu îți merită și e 
 | Protecție ceramică certificată | Produse premium, garanție |
 | Garanție lucrări | 2 ani vopsitorie, ceramică per produs |
 | Spațiu client | Așteaptă în confort |
-
----
-
-## Contact
-
-Trimite poză sau vino pentru evaluare gratuită.
-
-**Telefon:** +40 729 440 127
-
-**WhatsApp:** +40 729 440 127
-
-**Adresă:** Str. Mangaliei 28, Constanța
-
-**Program:** Luni - Vineri 08:00 - 18:00
-
-Trimite poză a zonei de interes și îți răspundem în maximum 2 ore cu recomandarea exactă.

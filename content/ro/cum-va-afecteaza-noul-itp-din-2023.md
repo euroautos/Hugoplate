@@ -1,11 +1,29 @@
 ---
 title: "Cum vă afectează noul ITP din 2023 - Euro Auto Service"
-description: "Datele privind consumul de energie si emisiile de CO2 vor fi raportate la nivel european"
+description: "Datele privind consumul de energie si emisiile de CO2 vor fi raportate la nivel european aflati totul despre noile reglementari."
 date: 2023-06-04T21:23:01+02:00
 image: "/images/2023/06/itp-obfcm.webp"
 categories: ["ITP"]
 author: "Ioan"
 draft: false
+
+# NA10 Framework Metadata
+na10:
+  stage: "know"
+  awareness_level: "educational"
+  primary_goal: "inform_user"
+  user_intent: "learn"
+  keywords: ["itp 2023", "obfcm", "emisii co2", "regulament ue", "consum energie"]
+  conversion_elements: []
+  trust_signals: ["verified_information", "legal_accuracy", "expert_knowledge"]
+seo:
+  canonical: "/cum-va-afecteaza-noul-itp-din-2023/"
+  robots: "index, follow"
+  og_type: "article"
+  article_published_time: "2023-06-04T21:23:01+02:00"
+  article_modified_time: "2024-03-22T00:00:00+02:00"
+  article_section: "ITP"
+  article_tag: ["ITP", "OBFCM", "Regulament UE"]
 ---
 
 
@@ -20,143 +38,75 @@ By04/06/202322/03/2024Timp de citire:5minuteTimp de citire:5minuteTimp de citire
 
 ![Photo by Mark Chan](https://images.unsplash.com/photo-1549095244-09a0a8749b98?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wzNzg0fDB8MXxzZWFyY2h8NXx8b2RvbWV0ZXJ8ZW58MHwwfHx8MTY4NTkwNzc1NHww&ixlib=rb-4.0.3&q=80&w=1080&h=768)
 
-Cum se schimba ITP-ul din 2023Cum se schimba ITP-ul din 2023
-
-# Cum se schimba ITP-ul din 2023
-
-
-
-Datele privind consumul de energie si emisiile de CO2 vor fi raportate la nivel europeanDatele privind consumul de energie si emisiile de CO2 vor fi raportate la nivel european
-
-Datele privind consumul de energie si emisiile de CO2 vor fi raportate la nivel european
-
-[Solicita ITP](/statie-itp-constanta/)
-Cum vă afectează noul ITP din 2023Cum vă afectează noul ITP din 2023
-
 ## Cum vă afectează noul ITP din 2023
 
+Dacă dețineți sau utilizați un autoturism sau o vehiculă utilitară ușoară înmatriculată pentru prima dată începând din anul 2021, trebuie să știți că, din 20 mai 2023, la fiecare inspecție tehnică periodică (ITP) efectuată pentru vehiculul dumneavoastră, vor fi colectate și transmise către autoritățile europene datele privind consumul real de energie și emisiile de CO2 ale acestuia.
 
+Aceasta este o nouă obligație impusă de Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021, care are ca scop monitorizarea și raportarea performanței mediului a acestor categorii de vehicule, în conformitate cu Regulamentul (UE) 2019/631 al Parlamentului European și al Consiliului.
 
+### Ce vehicule sunt vizate?
 
-Daca detineti sau utilizati un autoturism sau o vehicula utilitara usoara inmatriculata pentru prima data incepand din anul 2021, trebuie sa stiti ca, din 20 mai 2023, la fiecareinspectie tehnica periodica(ITP) efectuata pentru vehiculul dumneavoastra, vor fi colectate si transmise catre autoritatile europene datele privind consumul real de energie si emisiile de CO2 ale acestuia.
+Regulamentul se aplică autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune în afară de locul conducătorului auto) și N1 (vehicule destinate transportului de marfuri, cu masa maximă autorizată care nu depășește 3,5 tone), care au fost prevăzute din fabricație cu dispozitive de înregistrare a datelor privind consumul real de energie și emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).
 
-[inspectie tehnica periodica](/statie-itp-constanta/)
-Aceasta este o noua obligatie impusa de Regulamentul de punere in aplicare (UE) 2021/392 al Comisiei din 4 martie 2021, care are ca scop monitorizarea si raportarea performantei mediului a acestor categorii de vehicule, in conformitate cu Regulamentul (UE) 2019/631 al Parlamentului European si al Consiliului.Aceasta este o noua obligatie impusa de Regulamentul de punere in aplicare (UE) 2021/392 al Comisiei din 4 martie 2021, care are ca scop monitorizarea si raportarea performantei mediului a acestor categorii de vehicule, in conformitate cu Regulamentul (UE) 2019/631 al Parlamentului European si al Consiliului.Aceasta este o noua obligatie impusa de Regulamentul de punere in aplicare (UE) 2021/392 al Comisiei din 4 martie 2021, care are ca scop monitorizarea si raportarea performantei mediului a acestor categorii de vehicule, in conformitate cu Regulamentul (UE) 2019/631 al Parlamentului European si al Consiliului.
+Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate începând cu 1 ianuarie 2020 și pentru toate autovehiculele noi înmatriculate începând cu 1 ianuarie 2021.
 
-Aceasta este o noua obligatie impusa de Regulamentul de punere in aplicare (UE) 2021/392 al Comisiei din 4 martie 2021, care are ca scop monitorizarea si raportarea performantei mediului a acestor categorii de vehicule, in conformitate cu Regulamentul (UE) 2019/631 al Parlamentului European si al Consiliului.
+### Ce date vor fi colectate și transmise?
 
-Ce vehicule sunt vizate?Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.Ce vehicule sunt vizate?Ce vehicule sunt vizate?Ce vehicule sunt vizate?
+Datele OBFCM care vor fi colectate și transmise sunt următoarele:
 
-## Ce vehicule sunt vizate?
-
-
-
-Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).
-
-Regulamentul se aplica autovehiculelor din categoriile M1 (vehicule destinate transportului de persoane, cu cel mult opt locuri pe scaune in afara locului conducatorului auto) si N1 (vehicule destinate transportului de marfuri, cu masa maxima autorizata care nu depaseste 3,5 tone), care au fost prevazute din fabricatie cu dispozitive de inregistrare a datelor privind consumul real de energie si emisiile de CO2 – datele OBFCM (On-Board Fuel and/or Energy Consumption Monitoring).
-
-Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.
-
-Aceste dispozitive sunt obligatorii pentru autovehiculele noi omologate incepand cu 1 ianuarie 2020 si pentru toate autovehiculele noi inmatriculate incepand cu 1 ianuarie 2021.
-
-Ce date vor fi colectate si transmise?Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:numarul de identificare al vehiculului (VIN);tipul vehicului;tipul motorizarii;tipul caroseriei;masa vehiculului in stare goala;consumul mediu anual de combustibil sau energie;distanta parcursa anual;emisiile medii anuale de CO2.Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.Ce date vor fi colectate si transmise?Ce date vor fi colectate si transmise?Ce date vor fi colectate si transmise?
-
-## Ce date vor fi colectate si transmise?
-
-Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:numarul de identificare al vehiculului (VIN);tipul vehicului;tipul motorizarii;tipul caroseriei;masa vehiculului in stare goala;consumul mediu anual de combustibil sau energie;distanta parcursa anual;emisiile medii anuale de CO2.Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:numarul de identificare al vehiculului (VIN);tipul vehicului;tipul motorizarii;tipul caroseriei;masa vehiculului in stare goala;consumul mediu anual de combustibil sau energie;distanta parcursa anual;emisiile medii anuale de CO2.Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:numarul de identificare al vehiculului (VIN);tipul vehicului;tipul motorizarii;tipul caroseriei;masa vehiculului in stare goala;consumul mediu anual de combustibil sau energie;distanta parcursa anual;emisiile medii anuale de CO2.Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:numarul de identificare al vehiculului (VIN);tipul vehicului;tipul motorizarii;tipul caroseriei;masa vehiculului in stare goala;consumul mediu anual de combustibil sau energie;distanta parcursa anual;emisiile medii anuale de CO2.Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.
-
-Datele OBFCM care vor fi colectate si transmise sunt urmatoarele:
-
-- numarul de identificare al vehiculului (VIN);
-- tipul vehicului;
-- tipul motorizarii;
+- numărul de identificare al vehiculului (VIN);
+- tipul vehiculului;
+- tipul motorizării;
 - tipul caroseriei;
-- masa vehiculului in stare goala;
+- masa vehiculului în stare goală;
 - consumul mediu anual de combustibil sau energie;
-- distanta parcursa anual;
+- distanța parcursă anual;
 - emisiile medii anuale de CO2.
 
+Datele vor fi colectate la fiecare inspecție tehnică periodica (ITP) efectuată pentru vehiculele vizate, prin conectarea la interfața standardizată de diagnoză a bord (OBD). Datele vor fi transmise către Registrul Auto Roman (RAR) prin intermediul unei aplicații web dezvoltate de instituția respectivă, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar și pentru a micșora posibilitatea de introducere a unor date eronate.
 
-Datele vor fi colectate la fiecare inspectie tehnica periodica (ITP) efectuata pentru vehiculele vizate, prin conectarea la interfata standardizata de diagnoza a bord (OBD). Datele vor fi transmise catre Registrul Auto Roman (RAR) prin intermediul unei aplicatii web dezvoltate de institutia respectiva, care va semnala toate autovehiculele de la care trebuie prelevate date OBFCM, dar si pentru a micsora posibilitatea de introducere a unor date eronate.
+### Ce scop are acest regulament?
 
-Ce scop are acest regulament?Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.Ce scop are acest regulament?Ce scop are acest regulament?Ce scop are acest regulament?
+Scopul acestui regulament este de a asigura o monitorizare și o raportare transparentă, exactă și comparabilă a datelor privind consumul real de energie și emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare, în vederea evaluării respectării obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanța mediului a vehiculelor pe care le achiziționează sau le utilizează.
 
-## Ce scop are acest regulament?
-
-
-
-Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.
-
-Scopul acestui regulament este de a asigura o monitorizare si o raportare transparenta, exacta si comparabila a datelor privind consumul real de energie si emisiile de CO2 ale autoturismelor si ale vehiculelor utilitare usoare, in vederea evaluarii respectarii obiectivelor de reducere a emisiilor stabilite prin Regulamentul (UE) 2019/631. Acest regulament contribuie, de asemenea, la informarea consumatorilor despre performanta mediului a vehiculelor pe care le achizitioneaza sau le utilizeaza.
-
-Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?
-
-## Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?
-
-Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.
+### Cum se monitorizează și se raportează emisiile de CO2 ale vehiculelor în UE?
 
 Emisiile de dioxid de carbon (CO2) ale autoturismelor și ale vehiculelor utilitare ușoare sunt principala sursă de emisii de gaze cu efect de seră din sectorul transporturilor rutiere din Uniunea Europeană (UE). Pentru a reduce impactul acestora asupra mediului și a sănătății umane, UE a stabilit obiective specifice de emisii de CO2 pentru fiecare producător de vehicule, care trebuie respectate până în 2025 și 2030.
 
-
 Pentru a verifica dacă producătorii își îndeplinesc obiectivele și pentru a informa publicul despre performanța consumului de carburant și a emisiilor de CO2 ale vehiculelor noi, UE a adoptat un nou regulament care stabilește normele privind monitorizarea și raportarea datelor referitoare la aceste aspecte.
-
 
 Regulamentul de punere în aplicare (UE) 2021/392 al Comisiei din 4 martie 2021 privind monitorizarea și raportarea datelor referitoare la emisiile de CO2 ale autoturismelor și ale vehiculelor utilitare ușoare în temeiul Regulamentului (UE) 2019/631 al Parlamentului European și al Consiliului și de abrogare a Regulamentelor de punere în aplicare (UE) nr. 1014/2010, (UE) nr. 293/2012, (UE) 2017/1152 și (UE) 2017/1153 ale Comisiei este actul juridic care reglementează acest domeniu.
 
-
 Acest regulament abrogă patru reglementări anterioare de punere în aplicare ale Comisiei care conțineau norme similare, dar mai puțin armonizate și mai puțin transparente. Astfel, se simplifică cadrul legislativ și se asigură o mai bună coerență și eficiență.
-
 
 Regulamentul prevede obligații pentru statele membre, producătorii de vehicule, furnizorii de date și Comisie în ceea ce privește colectarea, validarea, transmiterea și publicarea datelor referitoare la emisiile de CO2 și performanța consumului de carburant ale vehiculelor noi înmatriculate în Uniune.
 
-
 Regulamentul introduce un sistem electronic comun de raportare (SER) care va facilita schimbul de date între părțile implicate și va asigura o mai bună calitate și fiabilitate a datelor. Acest sistem va permite, de asemenea, accesul public la datele agregate la nivel național și al UE.
-
 
 Regulamentul stabilește, de asemenea, modalitățile de calcul și verificare a obiectivelor specifice de emisii de CO2 pentru fiecare producător de vehicule, precum și sancțiunile aplicabile în cazul nerespectării acestora. Aceste sancțiuni constau în plăți către bugetul UE proporționale cu depășirea obiectivelor.
 
-
 Regulamentul contribuie la implementarea Pactului verde european, care vizează transformarea UE într-o societate neutră din punct de vedere climatic până în 2050. De asemenea, regulamentul sprijină tranziția către o mobilitate curată și durabilă, prin stimularea inovării și competitivității industriei auto europene.
 
-Ce trebuie sa faceti ca proprietar sau utilizator al unui vehicul vizat?Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.Ce trebuie sa faceti ca proprietar sau utilizator al unui vehicul vizat?Ce trebuie sa faceti ca proprietar sau utilizator al unui vehicul vizat?Ce trebuie sa faceti ca proprietar sau utilizator al unui vehicul vizat?
+### Ce trebuie să faceți ca proprietar sau utilizator al unui vehicul vizat?
 
-## Ce trebuie sa faceti ca proprietar sau utilizator al unui vehicul vizat?
+Ca proprietar sau utilizator al unui vehicul vizat, trebuie să vă prezentați la o stație autorizată de ITP pentru a efectua inspecția tehnică periodică a vehiculului dumneavoastră, în conformitate cu legislația națională. La stația de ITP, personalul va conecta vehiculul dumneavoastră la interfața OBD și va colecta datele OBFCM, pe care le va transmite către RAR. Trebuie să știți că datele OBFCM sunt prelucrate în scopul monitorizării și raportării performanței mediului a vehiculelor și că sunt respectate regulile privind protecția datelor cu caracter personal.
 
-Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.
-
-Ca proprietar sau utilizator al unui vehicul vizat, trebuie sa va prezentati la o statie autorizata de ITP pentru a efectua inspectia tehnica periodica a vehiculului dumneavoastra, in conformitate cu legislatia nationala. La statia de ITP, personalul va conecta vehiculul dumneavoastra la interfata OBD si va colecta datele OBFCM, pe care le va transmite catre RAR. Trebuie sa stiti ca datele OBFCM sunt prelucrate in scopul monitorizarii si raportarii performantei mediului a vehiculelor si ca sunt respectate regulile privind protectia datelor cu caracter personal.
-
-Pot refuza colectarea datelor OBFCM ale vehiculului meu la ITP?Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.Pot refuza colectarea datelor OBFCM ale vehiculului meu la ITP?Pot refuza colectarea datelor OBFCM ale vehiculului meu la ITP?Pot refuza colectarea datelor OBFCM ale vehiculului meu la ITP?
-
-## Pot refuza colectarea datelor OBFCM ale vehiculului meu la ITP?
-
-
-
-Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.
+### Puteți refuza colectarea datelor OBFCM ale vehiculului meu la ITP?
 
 Aveți dreptul de a decide dacă doriți sau nu să împărtășiți datele OBFCM ale vehiculului dumneavoastră cu Comisia Europeană atunci când faceți ITP. Dacă nu sunteți de acord cu colectarea și raportarea acestor date, puteți să vă exprimați opoziția în fața entității care efectuează ITP și să cereți ca datele OBFCM să rămână confidențiale.
 
-
 Noi respectăm alegerea dumneavoastră și nu vom citi sau transmite datele OBFCM fără consimțământul dumneavoastră.
 
-De ce sa alegeti statia noastra de ITP?Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!De ce sa alegeti statia noastra de ITP?De ce sa alegeti statia noastra de ITP?De ce sa alegeti statia noastra de ITP?
+### De ce să alegeți stația noastră de ITP?
 
-## De ce sa alegeti statia noastra de ITP?
-
-
-
-Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!
-
-Statia noastra de ITP este autorizata de RAR si dispune de echipamentele si de personalul necesare pentru a efectua inspectia tehnica periodica a vehiculelor vizate de Regulamentul de punere in aplicare (UE) 2021/392. Noi va oferim servicii de calitate, rapide si sigure, la preturi competitive. De asemenea, noi va informam despre noutatile legislative privind ITP-ul si va sfatuim despre cum sa intretineti vehiculul dumneavoastra pentru a reduce consumul de energie si emisiile de CO2. Va asteptam cu drag la statia noastra de ITP!
-
+Stația noastră de ITP este autorizată de RAR și dispune de echipamentele și de personalul necesare pentru a efectua inspecția tehnică periodica a vehiculelor vizate de Regulamentul de punere în aplicare (UE) 2021/392. Noi vă oferim servicii de calitate, rapide și sigure, la prețuri competitive. De asemenea, noi vă informăm despre noutățile legislative privind ITP-ul și vă sfătuim despre cum să întrețineți vehiculul dumneavoastră pentru a reduce consumul de energie și emisiile de CO2. Vă așteptăm cu drag la stația noastră de ITP!
 
 ## Navigare în articole
 
-[PreviousPreviousCat costa revizia GPL?](/cat-costa-revizia-gpl/)
-[NextContinueCum să reglezi direcția mașinii pentru o conducere optimă](/cum-sa-reglezi-directia-masinii-pentru-o-conducere-optima/)
-PreviousPreviousPreviousNextContinueContinue
+[Previous: Cat costa revizia GPL?](/cat-costa-revizia-gpl/)
+[Next: Cum să reglezi direcția mașinii pentru o conducere optimă](/cum-sa-reglezi-directia-masinii-pentru-o-conducere-optima/)
 
-## Similar Posts
+## Alte articole similare
 
 
 ![Diferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să Știi](/images/2023/12/diferente-revizie-verificare-768x439.webp)
@@ -166,32 +116,15 @@ PreviousPreviousPreviousNextContinueContinue
 
 ### Diferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să Știi
 
-[Diferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să Știi](/diferenta-intre-revizie-si-verificare/)
-[Ioan](/)
-By09/12/202327/05/2024Ți-ai imaginat vreodată că două proceduri aparent similare, precum revizia tehnică auto și verificarea tehnică (ITP), pot avea impacturi atât de diferite asupra siguranței și performanței mașinii tale? În lumea întreținerii auto, înțelegerea corectă a acestor termeni nu este doar o chestiune de vocabular, ci un aspect crucial pentru fiecare șofer responsabil. Acest articol îți…
+Ți-ai imaginat vreodată că două proceduri aparent similare, precum revizia tehnică auto și verificarea tehnică (ITP), pot avea impacturi atât de diferite asupra siguranței și performanței mașinii tale? În lumea întreținerii auto, înțelegerea corectă a acestor termeni nu este doar o chestiune de vocabular, ci un aspect crucial pentru fiecare șofer responsabil.
 
-Ți-ai imaginat vreodată că două proceduri aparent similare, precum revizia tehnică auto și verificarea tehnică (ITP), pot avea impacturi atât de diferite asupra siguranței și performanței mașinii tale? În lumea întreținerii auto, înțelegerea corectă a acestor termeni nu este doar o chestiune de vocabular, ci un aspect crucial pentru fiecare șofer responsabil. Acest articol îți…
+[Citește tot](/diferenta-intre-revizie-si-verificare/)
 
+### Top 10 Defecte întâlnite la ITP
 
-Read MoreDiferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să ȘtiiContinue
+TOP 10 DEFECTE - Inspecția Tehnică Periodică este un pas important în asigurarea siguranței pe drum a autovehiculului tău. De asemenea, te ajuta să eviți sancțiunile financiare și, în unele cazuri, interzicerea circulației. Din păcate, mulți proprietari de autovehicule nu sunt conștienți de problemele ce pot fi descoperite.
 
-[Read MoreDiferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să ȘtiiContinue](/diferenta-intre-revizie-si-verificare/)
-[ITP](/category/itp/)
-Diferența Esențială între Revizia Tehnică Auto și Verificarea Tehnică: Ce Trebuie să ȘtiiContinue
-
-### Top 10 Defecte intalnite la ITP
-
-[Top 10 Defecte intalnite la ITP](/top-10-defecte-majore-intalnite-la-itp/)
-[Ioan](/)
-By16/01/202327/05/2024Top 10 Defecte Majore intalnite la ITP   TOP 10 DEFECTE Inspecția Tehnica Periodica este un pas important în asigurarea siguranței pe drum a autovehiculului tău. De asemenea, te ajuta sa eviți sancțiunile financiare și, în unele cazuri, interzicerea circulației. Din păcate, multi proprietari de autovehicule nu sunt conștienți de problemele ce pot fi descoperite…
-
-Top 10 Defecte Majore intalnite la ITP   TOP 10 DEFECTE Inspecția Tehnica Periodica este un pas important în asigurarea siguranței pe drum a autovehiculului tău. De asemenea, te ajuta sa eviți sancțiunile financiare și, în unele cazuri, interzicerea circulației. Din păcate, multi proprietari de autovehicule nu sunt conștienți de problemele ce pot fi descoperite…
-
-
-Read MoreTop 10 Defecte intalnite la ITPContinue
-
-[Read MoreTop 10 Defecte intalnite la ITPContinue](/top-10-defecte-majore-intalnite-la-itp/)
-Top 10 Defecte intalnite la ITPContinue
+[Citește tot](/top-10-defecte-majore-intalnite-la-itp/)
 
 ![acte necesare ITP](/images/2023/03/acte-necesare-ITP-768x768.webp)
 
@@ -199,29 +132,12 @@ Top 10 Defecte intalnite la ITPContinue
 
 ### Toate actele necesare pentru ITP
 
-[Toate actele necesare pentru ITP](/toate-actele-necesare-pentru-itp/)
-[Ioan](/)
-By03/03/202307/04/2024Documente obligatorii Toate actele necesare ITP Ce acte sunt necesare la ITP La verificarea tehnica periodica (ITP) a unui autovehicul, exista mai multe acte care trebuie sa fie prezentate în momentul efectuării testelor. Printre acestea se număra: Acte de identitate ale celui ce prezintă autovehiculul Pentru a efectua un ITP, este necesar să prezentați acte…
+Documente obligatorii - Ce acte sunt necesare la ITP? La verificarea tehnică periodica (ITP) a unui autovehicul, exista mai multe acte care trebuie să fie prezentate în momentul efectuării testelor.
 
-Documente obligatorii Toate actele necesare ITP Ce acte sunt necesare la ITP La verificarea tehnica periodica (ITP) a unui autovehicul, exista mai multe acte care trebuie sa fie prezentate în momentul efectuării testelor. Printre acestea se număra: Acte de identitate ale celui ce prezintă autovehiculul Pentru a efectua un ITP, este necesar să prezentați acte…
+[Citește tot](/toate-actele-necesare-pentru-itp/)
 
+### Rezolvă grija ITP sâmbăta aceasta!
 
-Read MoreToate actele necesare pentru ITPContinue
+ITP SÂMBĂTA - Ai realizat brusc că inspecția tehnică periodică (ITP) a mașinii tale expiră curând și nu vrei să riști o amendă? Sau mai rău, să ți se rețină certificatul de înmatriculare de către Poliția Română.
 
-[Read MoreToate actele necesare pentru ITPContinue](/toate-actele-necesare-pentru-itp/)
-[ITP](/category/itp/)
-Toate actele necesare pentru ITPContinue
-
-### Rezolvă grija ITP sambata aceasta!
-
-[Rezolvă grija ITP sambata aceasta!](/rezolva-grija-itp-sambata-aceasta/)
-[Ioan](/)
-By24/04/202207/04/2024ITP SÂMBĂTA Rezolvă grija ITP Sâmbăta aceasta! Ai realizat brusc că inspecția tehnică periodică (ITP) a mașinii tale expiră curând și nu vrei să riști o amendă? Sau mai rău, să ți se rețină certificatul de înmatriculare de către Poliția Română, fiind nevoit ulterior să faci ITP-ul la unitățile Registrului Auto Român, fiind pasibil de o amendă de până…
-
-ITP SÂMBĂTA Rezolvă grija ITP Sâmbăta aceasta! Ai realizat brusc că inspecția tehnică periodică (ITP) a mașinii tale expiră curând și nu vrei să riști o amendă? Sau mai rău, să ți se rețină certificatul de înmatriculare de către Poliția Română, fiind nevoit ulterior să faci ITP-ul la unitățile Registrului Auto Român, fiind pasibil de o amendă de până…
-
-
-Read MoreRezolvă grija ITP sambata aceasta!Continue
-
-[Read MoreRezolvă grija ITP sambata aceasta!Continue](/rezolva-grija-itp-sambata-aceasta/)
-Rezolvă grija ITP sambata aceasta!Continue
+[Citește tot](/rezolva-grija-itp-sambata-aceasta/)

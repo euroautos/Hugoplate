@@ -1,9 +1,15 @@
 ---
-title: "Distributie Auto - Curea, Lant, Pompa Apa si Inlocuire Kit"
+layout: "single"
+type: "post"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Distributie Auto - Curea, Lanț și Kit Distribuție"
+description: "Ghid complet distributie auto: curea, lanț, kit distribuție, când se schimbă, semne uzură. Riscuri și prevenirea distribuției rupte."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto/distributie"
-description: "Ghid complet distributie auto: curea, lanț, kit distribuție, când se schimbă, simptome uzură, preturi Constanta."
 ---
 
 # Distributie Auto - Ghid Complet de Inlocuire
@@ -266,7 +272,7 @@ Prețurile includ:
 - Se poate face într-o singură zi
 - Lasați auto-ul dimineața și ridică-l în aceași zi
 
-Înlocuirea distributiei nu se face "săptămâna viitoare" - cand depăști intervalul, riscul de distributie ruptă crește exponențial.
+Înlocuirea distributiei nu se face "săptămâna viitoare" - cand depăși intervalul, riscul de distributie ruptă crește exponențial.
 
 ---
 
@@ -276,7 +282,7 @@ Pompa de apă circula lichidul de răcire din motor în radiator și invers. E �
 
 **De ce se schimbă odată:**
 
-1. **Pentru accesibilitate** - pompa e in spatele lanțului; când lanțul e demontat, accesul e simplu
+1. **Pentru accesibilitate** - pompa e in spatele lanțului; cand lanțul e demontat, accesul e simplu
 2. **Pentru că pompa se poate strica la același interval** - uzura e similară
 3. **Pentru că pompa uzată poate "ataca" lanțul** - scăpările de lichid pot duce la coroziune în zona lanțului
 
@@ -326,7 +332,7 @@ Respectând aceste practici, riscul de distributie ruptă e minim. Distribuția 
 
 ---
 
-## Programare
+## Contact
 
 0729 440 127
 
@@ -339,5 +345,7 @@ Respectând aceste practici, riscul de distributie ruptă e minim. Distribuția 
 Înlocuirea distribuției necesită 3-5 ore de munca. Lăsați auto-ul dimineața și ridică-l în aceași zi.
 
 ---
+
+Information
 
 **Distribuția e sistemul sincronizat care ține motorul în funcționare. Cand funcționează corect, nu îl observi. Cand e uzată, avertizează (zgomot, turburări). Cand se rupe - motorul e blocat și reparația costă mii de lei. Schimbă la intervalul fix din carcasă tehnică - e mai ieftin acum decât să aștepți să se întâmple.**

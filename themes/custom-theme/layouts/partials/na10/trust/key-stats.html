@@ -1,0 +1,25 @@
+{{ if .Params.na10.statistics }}
+<div class="key-stats">
+  {{ range .Params.na10.statistics }}
+  <div class="stat-item">
+    <div class="stat-number">{{ .number }}</div>
+    <div class="stat-label">{{ .label }}</div>
+  </div>
+  {{ end }}
+</div>
+{{ else }}
+<div class="key-stats placeholders">
+  <div class="stat-item">
+    <div class="stat-number">1500+</div>
+    <div class="stat-label">Instalații GPL</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">15+</div>
+    <div class="stat-label">Ani Experiență</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">4.8/5</div>
+    <div class="stat-label">Rating Clienti</div>
+  </div>
+</div>
+{{ end }}

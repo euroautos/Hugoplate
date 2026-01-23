@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="trust-layout">
+  {{ partial "na10/schema.html" . }}
+
+  <!-- Social Proof Hero -->
+  <section class="trust-hero">
+    <div class="container">
+      <div class="trust-hero-content">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.description }}</p>
+
+        <!-- Key Statistics -->
+        {{ partial "na10/trust/key-stats.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Validation Content -->
+  <section class="trust-content">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="trust-testimonials">
+    <div class="container">
+      {{ partial "na10/trust/testimonials.html" . }}
+    </div>
+  </section>
+
+  <!-- Case Studies/Portfolio -->
+  {{ if .Params.na10.show_portfolio }}
+  <section class="trust-portfolio">
+    <div class="container">
+      {{ partial "na10/trust/portfolio.html" . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Certifications & Awards -->
+  <section class="trust-certifications">
+    <div class="container">
+      {{ partial "na10/trust/certifications.html" . }}
+    </div>
+  </section>
+
+  <!-- Soft CTA - Validation to Action -->
+  <section class="trust-cta">
+    <div class="container">
+      {{ partial "na10/trust/conversion-cta.html" . }}
+    </div>
+  </section>
+</article>
+{{ end }}

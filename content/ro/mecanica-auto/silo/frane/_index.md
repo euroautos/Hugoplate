@@ -1,9 +1,15 @@
 ---
-title: "Frane Auto - Placute, Discuri, Kituri Frana si Inlocuire"
+layout: "single"
+type: "post"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Frane Auto - Placute, Discuri, Lichid și Înlocuire"
+description: "Ghid complet frane auto: placute, discuri, lichid, etriere. Semne uzură, când se schimbă, prețuri în Constanța."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto/frane"
-description: "Ghid complet frane auto: placute, discuri, lichid, etriere. Semne uzura, cand se schimba, preturi Constanta. Test stand frana."
 ---
 
 # Frane Auto - Ghid Complet al Sistemului de Frânare
@@ -321,7 +327,7 @@ Respectând aceste practici, frânele pot dura peste 40.000 km - chiar și 60.00
 
 ---
 
-## Programare
+## Contact
 
 0729 440 127
 
@@ -334,5 +340,7 @@ Respectând aceste practici, frânele pot dura peste 40.000 km - chiar și 60.00
 Înlocuirea frânelor nu necesită mai mult de 2-3 ore. Lăsați auto-ul dimineața și ridică-l în aceași zi.
 
 ---
+
+Information
 
 **Frânele bune sunt invizibili - frânele bune sunt cele care nu observi. Când încep să observe (zgomot, vibrații, scăpare eficiență), e timpul să le verifici. Nu aștepta să devină ineficiente - frânele sunt critice pentru siguranța ta pe drum.**

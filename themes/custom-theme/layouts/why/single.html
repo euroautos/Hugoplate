@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="why-layout">
+  {{ partial "na10/schema.html" . }}
+
+  <!-- Hero Section - Brand Story -->
+  <section class="why-hero">
+    <div class="container">
+      <div class="why-hero-content">
+        {{ partial "na10/why/brand-story.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="why-mission">
+    <div class="container">
+      {{ partial "na10/why/mission-values.html" . }}
+    </div>
+  </section>
+
+  <!-- History Timeline -->
+  {{ if .Params.na10.show_timeline }}
+  <section class="why-timeline">
+    <div class="container">
+      {{ partial "na10/why/timeline.html" . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Team/Culture (optional) -->
+  {{ if .Params.na10.show_team }}
+  <section class="why-team">
+    <div class="container">
+      {{ partial "na10/why/team.html" . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Backstory - Why We Exist -->
+  <section class="why-backstory">
+    <div class="container">
+      <div class="content-wrapper">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft CTA to Trust/Know -->
+  <section class="why-transition">
+    <div class="container">
+      {{ partial "na10/why/transition-cta.html" . }}
+    </div>
+  </section>
+</article>
+{{ end }}

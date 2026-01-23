@@ -1,0 +1,22 @@
+{{ if .Params.na10.urgency }}
+<div class="urgency-banner">
+  {{ if .Params.na10.urgency.type }}
+    {{ if eq .Params.na10.urgency.type "limited-time" }}
+      <div class="urgency-item">
+        <span class="urgency-icon">⏰</span>
+        <span class="urgency-text">Ofertă limitată: {{ .Params.na10.urgency.duration | default "7 zile" }}</span>
+      </div>
+    {{ else if eq .Params.na10.urgency.type "limited-spots" }}
+      <div class="urgency-item">
+        <span class="urgency-icon">🔥</span>
+        <span class="urgency-text">Doar {{ .Params.na10.urgency.spots | default "5" }} locuri rămase</span>
+      </div>
+    {{ else if eq .Params.na10.urgency.type "seasonal" }}
+      <div class="urgency-item">
+        <span class="urgency-icon">🍂</span>
+        <span class="urgency-text">Pregătire sezonieră: {{ .Params.na10.urgency.season | default "Iarnă" }}</span>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

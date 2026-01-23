@@ -1,8 +1,12 @@
 ---
-title: "Recomandări - Euro Auto Service"
-description: "Recomandări și sfaturi utile pentru întreținerea și repararea autovehiculelor. Descoperă ghidurile complete, sfaturile practice și soluțiile oferite de experții Euro Auto Service din Constanța."
-layout: blog
-type: recomandari
+layout: "know"
+type: "recomandari"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Recomandări Autovehicule - Ghiduri și Sfaturi Euro Auto Service"
+description: "Descoperă ghiduri complete și sfaturi practice pentru întreținerea autovehiculelor. Calculatoare utile, proceduri tehnice și recomandări de la experții Euro Auto Service Constanța."
 ---
 
 # Recomandări

@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article class="value-ladder-layout">
+  {{ partial "na10/schema.html" . }}
+
+  <!-- High-Converting Hero -->
+  <section class="value-hero">
+    <div class="container">
+      <div class="value-hero-content">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.description }}</p>
+
+        <!-- Urgency/Scarcity -->
+        {{ partial "na10/value/urgency-banner.html" . }}
+
+        <!-- Main CTA -->
+        <div class="hero-cta">
+          {{ partial "na10/value/main-cta.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Calculation/ROI -->
+  <section class="value-calc">
+    <div class="container">
+      {{ partial "na10/value/roi-calculator.html" . }}
+    </div>
+  </section>
+
+  <!-- Offer Details -->
+  <section class="value-offer">
+    <div class="container">
+      <div class="offer-grid">
+        <div class="offer-content">
+          {{ .Content }}
+
+          <!-- What's Included -->
+          {{ partial "na10/value/included-features.html" . }}
+
+          <!-- Benefits/Outcomes -->
+          {{ partial "na10/value/benefits.html" . }}
+        </div>
+
+        <!-- Sticky CTA Sidebar -->
+        <aside class="sticky-cta">
+          {{ partial "na10/value/cta-sticky.html" . }}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objection Handling -->
+  <section class="value-objections">
+    <div class="container">
+      {{ partial "na10/value/objection-handling.html" . }}
+    </div>
+  </section>
+
+  <!-- Social Proof Urgency -->
+  <section class="value-proof">
+    <div class="container">
+      {{ partial "na10/value/social-proof-urgency.html" . }}
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="value-final-cta">
+    <div class="container">
+      {{ partial "na10/value/final-cta.html" . }}
+    </div>
+  </section>
+</article>
+{{ end }}

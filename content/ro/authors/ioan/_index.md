@@ -1,8 +1,14 @@
 ---
-title: "Ioan, Author at Euro Auto Service"
+title: "Ioan - Autor și Expert Auto la Euro Auto Service"
 url: "/author/ioan/"
 type: "authors"
+layout: "author"
 author: "ioan"
+description: "Ioan - autor specializat în sisteme GPL, reparații auto și service profesional. Articole despre economisire combustibil și mentenanță vehicule."
+na10:
+  stage: "TRUST"
+  intent: "brand"
+  traffic: "organic"
 ---
 [instalatii-gpl](/category/instalatii-gpl/).entry-taxonomies
 ## Calculator Amortizare Instalație GPL

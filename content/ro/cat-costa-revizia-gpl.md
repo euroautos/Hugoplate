@@ -7,6 +7,12 @@ categories: ["Instalatii GPL"]
 author: "Ioan"
 draft: false
 redirect: "/gpl/silo/intretinere/"
+layout: "single"
+type: "post"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  cta: false
 ---
 <meta http-equiv="refresh" content="0;url=/gpl/silo/intretinere/">
 <div class="entry-content single-content">

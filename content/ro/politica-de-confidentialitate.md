@@ -4,6 +4,20 @@ meta_title: "Politica de Confidentialitate - Euro Auto Service SRL"
 description: "Politica de confidentialitate Euro Auto Service SRL. Cum colectam, folosim si protejam datele dumneavoastra personale."
 layout: "page"
 draft: false
+
+# NA10 Framework Metadata
+na10:
+  stage: "trust"
+  awareness_level: "validation"
+  primary_goal: "legal_compliance"
+  user_intent: "information"
+  keywords: ["politica confidentialitate", "gdpr", "proiectie date", "legal", "regulament"]
+  conversion_elements: []
+  trust_signals: ["transparency", "legal_compliance", "gdpr_compliant", "user_rights"]
+seo:
+  canonical: "/politica-de-confidentialitate/"
+  robots: "index, follow"
+  og_type: "article"
 ---
 
 <div class="entry-content single-content">

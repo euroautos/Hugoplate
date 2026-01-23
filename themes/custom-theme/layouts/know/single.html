@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="know-layout">
+  {{ partial "na10/schema.html" . }}
+
+  <!-- Educational Hero - Zero Selling -->
+  <section class="know-hero">
+    <div class="container">
+      <div class="know-hero-content">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.description | default .Summary }}</p>
+        {{ partial "na10/know/hero-badges.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Educational Content -->
+  <section class="know-content">
+    <div class="container">
+      <div class="content-grid">
+        <!-- Main Content -->
+        <div class="content-main">
+          {{ partial "na10/k10/table-of-contents.html" . }}
+
+          <div class="content-body">
+            {{ .Content }}
+          </div>
+
+          <!-- Technical Specs (if applicable) -->
+          {{ if .Params.na10.technical_specs }}
+          <div class="technical-specs">
+            {{ partial "na10/know/technical-specs.html" . }}
+          </div>
+          {{ end }}
+
+          <!-- Troubleshooting Guide (if applicable) -->
+          {{ if .Params.na10.troubleshooting }}
+          <div class="troubleshooting-guide">
+            {{ partial "na10/know/troubleshooting.html" . }}
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Sidebar - Related Educational Content -->
+        <aside class="content-sidebar">
+          {{ partial "na10/know/related-content.html" . }}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author Expertise Box -->
+  <section class="know-author">
+    <div class="container">
+      {{ partial "na10/know/author-box.html" . }}
+    </div>
+  </section>
+
+  <!-- No CTA Section - Pure Education -->
+  <!-- Optional: Soft transition to next logical article -->
+  {{ if .Params.na10.next_article }}
+  <section class="know-next">
+    <div class="container">
+      {{ partial "na10/know/next-article.html" . }}
+    </div>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

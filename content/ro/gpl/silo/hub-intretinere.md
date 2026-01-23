@@ -1,6 +1,11 @@
 ---
-title: "Ghid Complet Revizie GPL: Ce Se Verifică, Intervale și Prețuri 2026"
-description: "Cat costa revizia GPL in 2026? Intervale recomandate, ce piese se inlocuiesc. Servicii complete Euro Auto Service Constanta."
+layout: "know"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Ghid Complet Revizie GPL: Intervale și Ce Se Verifică"
+description: "Ghid complet revizie GPL: ce se verifică, intervale recomandate, piese înlocuite, procedura completă întreținere."
 date: 2026-01-21T00:00:00Z
 image: "/images/2024/05/revizie-gpl-2026.jpg"
 categories: ["GPL", "Întreținere", "Revizie"]
@@ -8,17 +13,17 @@ author: "Euro Auto Service"
 draft: false
 ---
 
-# Ghid Complet Revizie GPL: Ce Se Verifică, Intervale și Prețuri 2026
+# Ghid Complet Revizie GPL: Ce Se Verifică, Intervale și Procedura
 
 Dacă ai o mașină cu GPL sau te gândești să instalezi unul, o întrebare pe care trebuie să o înțelegi de la început este: GPL-ul nu funcționează singur.
 
 Nu este ca benzină, pe care o bagi în rezervor și mergi. GPL-ul necesită întreținere periodică. Dacă faci revizia anuală, sistemul funcționează ani de zile fără probleme majore. Dacă neglijezi întreținerea, vei plăti mai târziu - și nu neapărat în bani, ci și în timp și stress.
 
-Hai să vedem ce presupune o revizie GPL completă, când să o faci și cât costă.
+Hai să vedem ce presupune o revizie GPL completă, când să o faci și cum decurge procedura.
 
 ## De ce revizia GPL este obligatorie
 
-GPL-ul nu este periculos dacă e întreținut corect. Devine problemă dacă negliji sistemul. Iată de ce:
+GPL-ul nu este periculos dacă e întreținut corect. Devine problemă dacă neglijezi sistemul. Iată de ce:
 
 1. **Filtrele se înfundă**: Sistemul GPL are două filtre - un filtru de lichid (între rezervor și vaporizator) și un filtru de gaz (după vaporizator, înainte de injectoare). În timp, acestea se înfundă și fluxul de GPL scade.
 
@@ -28,7 +33,7 @@ GPL-ul nu este periculos dacă e întreținut corect. Devine problemă dacă neg
 
 4. **Reglajul se dereglează**: După aproximativ 15.000 km, amestecul GPL-benzină poate să nu mai fie optimă. Consumul crește, performanța scade.
 
-5. **Etanșeitatea scade**: Furtunurile de cauciuc pot deveni poroase, conexiunile se pot slăbi. GPL poate scurge, ceea ce este periculos și neeficient.
+5. **Etanșeitatea scade**: Furtunurile de cauciuc pot deveni poroase, conexiunile se pot slăbi. GPL poate scăpa, ceea ce este periculos și neeficient.
 
 În concluzie: revizia GPL periodică nu este opțională. Este obligatorie pentru siguranță și eficiență.
 
@@ -36,21 +41,21 @@ GPL-ul nu este periculos dacă e întreținut corect. Devine problemă dacă neg
 
 Producătorii de sisteme GPL recomandă revizia periodică la:
 
-| Interval | Recomandare | Experiență Euro Auto Service |
+| Interval | Recomandare | Experiență practică |
 |----------|-------------|------------------------------|
 | Timp | Anual sau la 2 ani | Anual (12 luni) |
-| Kilometri | 10.000-15.000 km | 15.000 km (sezi întâmâna mai devreme) |
+| Kilometri | 10.000-15.000 km | 15.000 km (se întâmplă mai devreme) |
 
 **Ce înseamnă în practică:**
-- Circuli 1.000 km/lunar (12.000 km/an) → Revizie anuală
-- Circuli 2.000 km/lunar (24.000 km/an) → Revizie anuală (mai frecvent decât limitele de km)
-- Circuli 500 km/lunar (6.000 km/an) → Revizie anuală (chiar dacă nu ajungi la 15.000 km)
+- Circuli 1.000 km/lună (12.000 km/an) → Revizie anuală
+- Circuli 2.000 km/lună (24.000 km/an) → Revizie anuală (mai frecvent decât limitele de km)
+- Circuli 500 km/lună (6.000 km/an) → Revizie anuală (chiar dacă nu ajungi la 15.000 km)
 
 Anul este limita maximă, chiar dacă faci puțini kilometri. Componentele GPL au materiale care degradează în timp, nu doar la utilizare.
 
 ## Ce include o revizie GPL completă
 
-La Euro Auto Service Constanta, o revizie GPL completă presupune următoarele operațiuni:
+O revizie GPL completă presupune următoarele operațiuni:
 
 ### 1. Verificare preliminară (15-30 minute)
 
@@ -63,7 +68,7 @@ Ce se observă în această etapă:
 - Furtunuri poroase sau crăpate
 - Conexiuni slăbite
 - Scurgeri de GPL (se simte miros caracteristic)
-- erori la computer
+- Erori la computer
 - Probleme de funcționare (mers neregulat, consum mare)
 
 ### 2. Înlocuirea filtrelor (30-45 minute)
@@ -73,25 +78,25 @@ Aceasta este partea principală a reviziei GPL.
 **Filtru de lichid** (se înlocuiește la fiecare revizie):
 - Locație: între rezervor GPL și vaporizator
 - Funcție: retine impurități din GPL-ul lichid
-- De ce se înlocuiește: înfundă trecătoră
+- De ce se înlocuiește: înfundă treptat
 - Cost piesă: 30-80 lei (în funcție de sistem)
 
 **Filtru de gaz** (se înlocuiește la fiecare revizie):
 - Locație: după vaporizator, înainte de injectoare GPL
 - Funcție: retine impurități din GPL-ul gazos
-- De ce se înlocuiește: înfundă trecătoră, poate afecta injectoarele
+- De ce se înlocuiește: înfundă treptat, poate afecta injectoarele
 - Cost piesă: 40-100 lei (în funcție de sistem)
 
-Notă: În anumite sisteme (de exemplu Zavoli Allisei), filtrul de lichid este incorporat în electrovană sau vaporizator, pentru că nu poate fi înlocuit separat.
+Notă: În anumite sisteme (de exemplu Zavoli Allisei), filtrul de lichid este încorporat în electrovană sau vaporizator, pentru că nu poate fi înlocuit separat.
 
-### 3. Verificare și curățare linie alimentare (15-30分钟)
+### 3. Verificare și curățare linie alimentare (15-30 minute)
 
 Dacă filtrul de lichid este foarte înfundat, este posibil să fie necesară curățarea liniei de alimentare:
 - Verificare conducte GPL pentru blocaje
 - Curățare cu GPL sub presiune (dacă este cazul)
 - Verificare electrovane (dacă sunt instalate)
 
-### 4. Verificare vaporizator (10-20分钟)
+### 4. Verificare vaporizator (10-20 minute)
 
 Vaporizatorul este componenta critică a sistemului GPL. Se verifică:
 - Membrana (nu este crăpată)
@@ -103,7 +108,7 @@ Dacă vaporizatorul este uzat:
 - Poate fi recondiționat (schimbare membrană, curățare): 200-400 lei
 - Poate fi înlocuit cu unul nou: 400-800 lei
 
-### 5. Verificare injectoare GPL (15-30分钟)
+### 5. Verificare injectoare GPL (15-30 minute)
 
 Se verifică rampa de injectoare:
 - Funcționarea fiecărui injectoare (se testează computerul GPL)
@@ -114,7 +119,7 @@ Dacă un injectoare este defect sau înfundat:
 - Înlocuire injectoare: 50-150 lei per injectoare
 - Înlocuire rampă completă: 200-600 lei (4 injectoare)
 
-### 6. Reglaj și calibrare amestec (20-40分钟)
+### 6. Reglaj și calibrare amestec (20-40 minute)
 
 După înlocuirea filtrelor și verificarea componentelor, se face reglajul:
 - Se verifică raportul GPL-benzină (computerul GPL)
@@ -124,7 +129,7 @@ După înlocuirea filtrelor și verificarea componentelor, se face reglajul:
 
 Această etapă este esențială pentru consum minim și funcționare optimă.
 
-### 7. Verificare senzori (5-10分钟)
+### 7. Verificare senzori (5-10 minute)
 
 Se verifică:
 - Senzor de presiune GPL (nu este defect)
@@ -134,7 +139,7 @@ Se verifică:
 Dacă un senzor este defect:
 - Înlocuire senzor: 100-200 lei
 
-### 8. Verificare și calibrare senzor nivel rezervor (10-15分钟)
+### 8. Verificare și calibrare senzor nivel rezervor (10-15 minute)
 
 Se verifică senzorul de nivel de pe rezervorul GPL:
 - Afișează corect nivelul?
@@ -144,9 +149,9 @@ Dacă senzorul este defect sau dereglat:
 - Poate fi recalibrat (gratuit, în 90% din cazuri)
 - Poate fi înlocuit (50-150 lei)
 
-### 9. Verificare sistem de aprindere (5-15分钟)
+### 9. Verificare sistem de aprindere (5-15 minute)
 
-Aceasta este o etapă pe care mulți o ignoriă, dar este CRITICAL. GPL-ul nu funcționează corect dacă sistemul de aprindere al mașinii este slab.
+Aceasta este o etapă pe care mulți o ignoră, dar este CRITICĂ. GPL-ul nu funcționează corect dacă sistemul de aprindere al mașinii este slab.
 
 Se verifică:
 - Bujii (dacă sunt noi sau uzate)
@@ -161,7 +166,7 @@ Dacă bujiile sunt uzate sau bobinele sunt slabe:
 
 Aceasta nu este parte a reviziei GPL strict vorbind, dar este necesară pentru funcționare optimă.
 
-### 10. Testare funcționare (10-15分钟)
+### 10. Testare funcționare (10-15 minute)
 
 După toate operațiunile:
 - Se pornește motorul pe benzină
@@ -172,7 +177,7 @@ După toate operațiunile:
 - Se testează funcționarea la sarcină ridicată
 - Se verifică consumul estimat
 
-### 11. Verificare finală și completare certificat (5-10分针)
+### 11. Verificare finală și completare certificat (5-10 minute)
 
 - Verificare etanșeitate finală (se inspectează din nou instalația)
 - Verificare computer bord (nu mai există erori GPL)
@@ -185,19 +190,19 @@ Durata reviziei GPL variază în funcție de complexitate:
 | Sistem | Complexitate | Durată estimată |
 |--------|-------------|-----------------|
 | Sistem standard (Zavoli Bora, Landi Renzo Omegas) | Simplă | 45-60 minute |
-| Sistem complex (Omegas Direct, modele speciale) | Medie | 60-90分钟 |
-- Sistem cu probleme | Ridicată | 1.5-2.5 ore |
+| Sistem complex (Omegas Direct, modele speciale) | Medie | 60-90 minute |
+| Sistem cu probleme | Ridicată | 1.5-2.5 ore |
 
 Dacă sistemul este în stare bună, revizia durează aproximativ 1 oră. Dacă există probleme (vaporizator uzat, injectoare înfundate), durata se prelungește și pot apărea costuri suplimentare.
 
 ## Cât costă o revizie GPL
 
-La Euro Auto Service Constanta, costurile reviziei GPL sunt:
+Costurile reviziei GPL sunt orientative:
 
 | Revizie | Cost | Ce include |
 |---------|------|-----------|
 | Revizie standard (sistem bun) | 150-300 lei | Înlocuire filtre, verificare completă, reglaj |
-- Revizie complexa (sistem uzat) | 300-600 lei | Cele de mai sus + reparări suplimentare (vaporizator recondiționat, injectoare curățate) |
+| Revizie complexă (sistem uzat) | 300-600 lei | Cele de mai sus + reparări suplimentare (vaporizator recondiționat, injectoare curățate) |
 | Revizie majoră (sistem cu probleme) | 600-1200 lei | Cele de mai sus + piese înlocuite (vaporizator nou, injectoare noi) |
 
 *Note privind costurile:*
@@ -215,7 +220,7 @@ Neglijarea reviziei GPL poate duce la:
 
 3. **Eroare la computer**: GPL-ul nu funcționează corect, computerul afișează erori ("check engine").
 
-4. **Scăpieri GPL**: Furtunurile poroase sau conexiunile slăbite permit scurgeri de GPL (periculos).
+4. **Scăpări GPL**: Furtunurile poroase sau conexiunile slăbite permit scurgeri de GPL (periculos).
 
 5. **Avarie majoră**: Vaporizatorul sau injectoarele se defectează complet, cost de reparare majore: 400-1000 lei.
 
@@ -261,7 +266,7 @@ ITP-ul nu verifică în mod specific instalția GPL, dar:
 - Dacă rezervorul GPL are expirat (mai mult de 10 ani), ITP-ul poate fi respins
 - Dacă omologarea GPL nu este în carte, ITP-ul poate fi respins
 
-Verifică data expirarii rezervorului GPL (inscripționată pe rezervor) înainte de ITP. Dacă expiră, trebuie schimbat - obligatoriu.
+Verifică data expirării rezervorului GPL (inscripționată pe rezervor) înainte de ITP. Dacă expiră, trebuie schimbat - obligatoriu.
 
 Cost schimbare rezervor nou: 600-1200 lei (rezervor + montaj + omologare RAR).
 
@@ -280,33 +285,17 @@ Dacă cumpărați o mașină cu GPL:
 
 ## Întrebări frecvente despre revizia GPL
 
-**Pot fac revizia GPL singură?** Nu recomand this. Revizia GPL presupune lucrul cu gaz sub presiune, manopera pe componente sensibile și reglaje fine. Dacă ceva nu este montat corect, poate fi periculos.
+**Pot face revizia GPL singură?** Nu recomand acest lucru. Revizia GPL presupune lucrul cu gaz sub presiune, manoperă pe componente sensibile și reglaje fine. Dacă ceva nu este montat corect, poate fi periculos.
 
 **Revizia GPL poate fi făcută la 2 ani?** Nu, nu recomand. Producătorii recomandă anual. Chiar dacă faci puțini kilometri, materialele degradează în timp.
 
 **Revizia GPL la 10.000 km sau 15.000 km?** Producătorii recomandă 10.000 km, dar în practică, 15.000 km este suficient pentru sistemele moderne. Nu mai mult de 15.000 km și nu mai mult de 1 an.
 
-**Dacă GPL-ul funcționează bine, e necesară revizia?** Da. Filtrele sunt înfundate vizibil sau nu, sistemul de aprindere al mașinii se degradează, vaporizatorul se uzează. Mai bine prevenesti decât repari.
+**Dacă GPL-ul funcționează bine, e necesară revizia?** Da. Filtrele sunt înfundate vizibil sau nu, sistemul de aprindere al mașinii se degradează, vaporizatorul se uzează. Mai bine previi decât repari.
 
-**Pot face revizia GPL în alt service?** Da, dar alege un service cu experiență în GPL. Dacă service-ul nu a instalat GPL-ul, cere experiențele și certificate-ul de calificare.
+**Pot face revizia GPL în alt service?** Da, dar alege un service cu experiență în GPL. Dacă service-ul nu a instalat GPL-ul, cere experiențele și certificatul de calificare.
 
 **Dacă revizia GPL găsește probleme majore, pot refuza?** Poți refuza, dar nu recomand. Problemele se agravează în timp. Dacă vaporizatorul este uzat, se va strica complet. Dacă injectoarele sunt înfundate, se vor defecta.
-
-## Programare revizie GPL în Constanta
-
-Dacă vrei să programăm revizia GPL la mașina ta, ne poți contacta:
-
-- Telefon: 0729440127
-- Vizitează service-ul: [adresă completă]
-- Trimite e-mail: [email]
-
-Când ne contactezi, va fi util să știi:
-- Modelul și anul mașinii
-- Sistemul GPL instalat (dacă cunoști: Zavoli, Landi Renzo, BRC, etc.)
-- Kilometrii la ultima revizie GPL
-- Problema actuală (dacă există: mers neregulat,_consum mare, eroare computer)
-
-În 24 de ore, îți oferim o programare.
 
 ## Revizia GPL și garanția instalației
 
@@ -318,7 +307,7 @@ Dacă GPL-ul este mai vechi de 2 ani, nu mai ai garanția la instalare, dar revi
 
 1. **Revizia anuală sau la 15.000 km** - nu mai mult
 2. **Cost mediu: 150-250 lei** pentru sisteme în stare bună
-3. **Durată: 45-60 minutes** pentru sisteme standard
+3. **Durată: 45-60 minute** pentru sisteme standard
 4. **Include: înlocuire filtre, verificare completă, reglaj**
 5. **Previne: probleme majore, consum mare, erori computer**
 
@@ -329,5 +318,3 @@ Dacă faci revizia GPL anual, sistemul funcționează ani de zile fără problem
 Vrei să vezi prețurile pentru instalare GPL? Mergeți la [Preț Instalatie GPL Constanta 2026](/gpl/preturi/).
 
 Nu ești sigur de ce sistem GPL să alegi? Vezi [Comparație Sisteme GPL](/gpl/tipuri-sisteme/).
-
-Contactează-ne imediat pentru programare revizie GPL: **0729440127**

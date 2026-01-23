@@ -4,6 +4,20 @@ meta_title: "Contact - Euro Auto Service"
 description: "Contactati Euro Auto Service din Constanta pentru servicii auto profesionale. Programari, diagnoza, reparatii si multe altele."
 layout: "page"
 draft: false
+
+# NA10 Framework Metadata
+na10:
+  stage: "do"
+  awareness_level: "conversion"
+  primary_goal: "direct_contact"
+  user_intent: "action"
+  keywords: ["contact", "programare auto", "service constanta", "telefon", "email"]
+  conversion_elements: ["formular contact", "telefon", "email", "adresa"]
+  trust_signals: ["adresa fizica", "harta google maps", "date complete contact"]
+seo:
+  canonical: "/contact/"
+  robots: "index, follow"
+  og_type: "website"
 ---
 
 <div class="entry-content single-content">

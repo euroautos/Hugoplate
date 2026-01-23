@@ -1,8 +1,18 @@
 ---
 title: "Mecanica auto Constanta - Euro Auto Service"
+description: "Service auto complet în Constanța: reparații suspensie, transmisie, ambreiaj, frâne, motor, distribuție și revizii auto profesionale."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto-constanta"
+categories: ["Mecanica Auto"]
+tags: ["service auto", "mecanica auto Constanta", "reparatii auto", "revizie auto", "transmisie"]
+author: "Ioan"
+na10_stage: "KNOW"
+na10_awareness: "problem-aware"
+keywords: ["mecanica auto Constanta", "service auto autorizat", "reparatii frane", "inlocuire ambreiaj", "kit distributie", "revizie auto"]
+meta_title: "Mecanica Auto Constanța | Service Auto Complet | Euro Auto Service"
+meta_description: "Service auto complet în Constanța. Reparații suspensie, transmisie, ambreiaj, frâne, motor, kit distribuție și revizii auto. Telefon: 0729440127"
+image: "/images/2024/03/woman-in-green-jacket-holding-smartphone-4482013-768x1152.jpg"
 ---
 
 0729440127 

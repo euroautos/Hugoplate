@@ -1,0 +1,65 @@
+{{ define "main" }}
+<article class="do-layout">
+  {{ partial "na10/schema.html" . }}
+
+  <!-- Conversion Hero -->
+  <section class="do-hero">
+    <div class="container">
+      <div class="do-hero-content">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.description }}</p>
+
+        <!-- Value Proposition -->
+        {{ partial "na10/do/value-proposition.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Service/Product Details -->
+  <section class="do-details">
+    <div class="container">
+      <div class="details-grid">
+        <!-- Main Content -->
+        <div class="details-main">
+          {{ .Content }}
+
+          <!-- Process/How It Works -->
+          {{ if .Params.na10.process_steps }}
+          <div class="process-steps">
+            {{ partial "na10/do/process-steps.html" . }}
+          </div>
+          {{ end }}
+
+          <!-- Pricing/Packages -->
+          {{ if .Params.na10.pricing }}
+          <div class="pricing-section">
+            {{ partial "na10/do/pricing.html" . }}
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- CTA Sidebar -->
+        <aside class="cta-sidebar">
+          {{ partial "na10/do/cta-box.html" . }}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  {{ if .Params.na10.faq }}
+  <section class="do-faq">
+    <div class="container">
+      {{ partial "na10/do/faq.html" . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Trust Signals -->
+  <section class="do-trust">
+    <div class="container">
+      {{ partial "na10/do/trust-signals.html" . }}
+    </div>
+  </section>
+</article>
+{{ end }}

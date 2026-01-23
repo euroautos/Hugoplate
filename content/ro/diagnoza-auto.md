@@ -1,5 +1,12 @@
 ---
+layout: "do"
+type: "do"
+na10:
+  stage: "DO"
+  intent: "conversion"
+  traffic: "organic"
 title: "Diagnoza Auto Constanța – Servicii Profesionale - Euro Auto Service"
+description: "Diagnoza auto computerizată în Constanța. Scanare, diagnosticare și reparații pentru toate mărcile. Preț: 100 RON. Programează-te acum!"
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/diagnoza-auto"
@@ -7,7 +14,7 @@ url: "/diagnoza-auto"
 
 **Euro Auto Service** din Constanța este alegerea ideală pentru **diagnoza auto computerizată**, oferind servicii profesionale și soluții eficiente pentru toate mărcile de autovehicule. Cu o echipă de tehnicieni calificați și echipamente de ultimă generație, ne asigurăm că vehiculul tău primește îngrijirea corespunzătoare pentru a funcționa în condiții optime.
 
-**„Jumătate din reparația mașinii o reprezintă o diagnoză bună.”** – Acesta este principiul care ne ghidează la Euro Auto Service, deoarece o diagnoză corectă este esențială pentru identificarea și remedierea rapidă a problemelor vehiculului tău.
+**„Jumătate din reparația mașinii o reprezintă o diagnoză bună."** – Acesta este principiul care ne ghidează la Euro Auto Service, deoarece o diagnoză corectă este esențială pentru identificarea și remedierea rapidă a problemelor vehiculului tău.
 
 ## De Ce Este Importantă Diagnoza Auto Computerizată?
 
@@ -151,7 +158,7 @@ Pentru programări sau informații suplimentare, nu ezitați să ne contactați 
 
 ⭐⭐⭐⭐⭐
 
-*„Bună seara, sunt Adrian cu Loganul albastru. Mulțumesc din suflet Euro Auto Service, mulțumesc doamnei Aura și domnului Jan! Sunteți oameni extraordinari și adevărați profesioniști. Am avut ocazia și onoarea să ajung la dumneavoastră cu un Logan cu multiple probleme: garnitura de chiulasă arsă, chiulasă ovalizată, radiator înfundat și altele. Am ieșit cu mașina nou-nouță! Mulțumesc încă o dată echipei de mecanici super meseriași.”*
+*„Bună seara, sunt Adrian cu Loganul albastru. Mulțumesc din suflet Euro Auto Service, mulțumesc doamnei Aura și domnului Jan! Sunteți oameni extraordinari și adevărați profesioniști. Am avut ocazia și onoarea să ajung la dumneavoastră cu un Logan cu multiple probleme: garnitura de chiulasă arsă, chiulasă ovalizată, radiator înfundat și altele. Am ieșit cu mașina nou-nouță! Mulțumesc încă o dată echipei de mecanici super meseriași."*
 
 ### **Bogdan Corneliu**
 
@@ -163,7 +170,7 @@ Pentru programări sau informații suplimentare, nu ezitați să ne contactați 
 
 ⭐⭐⭐⭐⭐
 
-*„Mergeți cu încredere atât pentru ITP, cât și pentru service. Am avut o problemă cu mașina timp de 3 luni și m-am plimbat peste tot. Aici mi-au rezolvat în sfârșit problema. Personalul de nota 10!”*
+*„Mergeți cu încredere atât pentru ITP, cât și pentru service. Am avut o problemă cu mașina timp de 3 luni și m-am plimbat peste tot. Aici mi-au rezolvat în sfârșit problema. Personalul de nota 10!"*
 
 ## Întrebări Frecvente
 
@@ -185,6 +192,6 @@ La **[Euro Auto Service](/)**, punem accent pe calitate, profesionalism și sati
 
 Contactează-ne astăzi pentru a programa o diagnoză auto și pentru a te bucura de o mașină în perfectă stare de funcționare!
 
- Diagnoza Auto Computerizată – Soluția Pentru O Mașină Fără Probleme 
+ Diagnoza Auto Computerizată – Soluția Pentru O Mașină Fără Probleme
 
-**Euro Auto Service** este partenerul tău de încredere în **Constanța** pentru toate nevoile de diagnoză și reparații auto. Cu o abordare orientată spre client și tehnologii de ultimă genera
+**Euro Auto Service** este partenerul tău de încredere în **Constanța** pentru toate nevoile de diagnoză și reparații auto. Cu o abordare orientată spre client și tehnologii de ultimă generație.

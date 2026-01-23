@@ -1,8 +1,14 @@
 ---
-title: "Ioan, Author at Euro Auto Service - Pagina 2 din 5"
+title: "Ioan - Autor la Euro Auto Service - Pagina 2"
 url: "/author/ioan/page/2/"
 type: "authors"
+layout: "list"
 author: "ioan"
+description: "Mai multe articole de la Ioan - expert GPL și service auto. Continuă să descoperi ghiduri și sfaturi pentru mentenanță vehicule."
+na10:
+  stage: "WHY"
+  intent: "brand"
+  traffic: "organic"
 ---
 [Uncategorized](/category/uncategorized/).entry-taxonomies
 ## Verificarea Luminilor Mașinii înainte de ITP

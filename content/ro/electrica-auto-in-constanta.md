@@ -5,6 +5,10 @@ type: "services"
 categories:
   - Caroserie
 noindex: true
+layout: "do"
+na10.stage: "DO"
+na10.intent: "conversion"
+na10.traffic: "organic"
 ---
 
 <meta name="robots" content="noindex, nofollow">

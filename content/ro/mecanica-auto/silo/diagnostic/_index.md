@@ -1,16 +1,17 @@
 ---
-title: "Diagnostic Computer Auto - Scanare Coduri Eroare in Constanta"
+layout: "know"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Diagnostic Computer Auto - Scanare Coduri Eroare OBD-II"
+description: "Ghid complet diagnostic OBD-II: cum citesc codurile de eroare, ce semnifică, ce verifică. Înțelegerea sistemului de diagnosticare auto modern."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto/diagnostic"
-description: "Diagnostic computer auto gratuit Constanta - scanare coduri eroare, identificare probleme motor. Euro Auto Service 0729 440 127."
 ---
 
-# Diagnostic Computer Auto - Identificare Probleme GRATUITa
-
-0729 440 127
-
----
+# Diagnostic Computer Auto - Identificare Probleme
 
 Diagnosticul computerizat citește codurile de eroare stocate în unitatea de comandă a motorului (ECU). Fiecare cod corespunde unei probleme detectate de senzori auto. Codurile te ajută să identifici ce e stricat - înainte de a înlocui piese la întâmplare.
 
@@ -226,44 +227,6 @@ Diagnosticul te ajută să înțelegi ce e stricat și cât va costă reparația
 
 ---
 
-## Diagnosticare GRATUITa
-
-Vă oferim diagnosticare GRATUITă pentru identificarea problemelor.
-
-### Diagnosticul include:
-
-- Citirea codurilor de eroare de la ECU
-- Interpretarea codurilor și identificarea problemelor
-- Verificarea componentelor specifice
-- Estimarea costului de reparație
-- Recomandări clare de reparație
-
-### Cât durează diagnosticul:
-
-- 15-30 minute pentru citirea codurilor
-- 30-60 minute pentru verificarea fizică
-- Total: 45-90 minute
-
-Diagnosticul gratuit te ajută să înțelegi problema și să iei decizia de reparație - fără cost.
-
----
-
-## Programare
-
-0729 440 127
-
-**Program:**
-- Luni - Vineri: 09:00 - 18:00
-- Sâmbătă: 10:00 - 14:00
-
-**Adresa:** Euro Auto Service, [adresa]
-
-**Diagnosticul e gratuit nu ai nevoie de programare** - poți veni oricând în programul de lucru.
-
-Cu toate acestea, pentru probleme care necesită testări lungi (compresie, teste component complexe), e util să te pre-programezi: poți lăsa auto-ul dimineața și ridică-l în aceași zi.
-
----
-
 ## Prevenire - Diagnostic Preventiv
 
 Diagnosticul preventiv (la orice revizie auto) poate identifica problemele înainte de a deveni grave.
@@ -300,4 +263,4 @@ Diagnosticul computerizat e un instrument; verificarea umana e completări.
 
 ---
 
-**Diagnosticul computerizat identifică problemele înainte de a deveni grave. Codurile de eroare e sistemul senzori te avertizează cand ceva nu e corect. Nu ignora lumină "check engine" - e un avertisment și o oportunitate să rezolvi problema cu cost rațional. Diagnosticul e gratuit - poți veni oricând în programul de lucru.**
+**Diagnosticul computerizat identifică problemele înainte de a deveni grave. Codurile de eroare e sistemul senzori te avertizează cand ceva nu e corect. Nu ignora lumină "check engine" - e un avertisment și o oportunitate să rezolvi problema cu cost rațional.**

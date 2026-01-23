@@ -1,9 +1,15 @@
 ---
-title: "Ambreiaj Auto - Simptome, Semne Uzura Si Inlocuire"
+layout: "single"
+type: "post"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  traffic: "organic"
+title: "Ambreiaj Auto - Semne Uzură, Diagnostic și Înlocuire"
+description: "Ghid complet despre ambreiaj: semne de uzură, simptome, când se schimbă, prețuri în Constanța. Învață să recunoști patinarea."
 date: 2024-01-01T00:00:00Z
 draft: false
 url: "/mecanica-auto/ambreiaj"
-description: "Ghid complet despre ambreiaj: semne uzura, simptome, cand si cum se inlocuieste, preturi Constanta. Euro Auto Service."
 ---
 
 # Ambreiaj Auto - Ghid Complet de Inlocuire
@@ -48,7 +54,7 @@ Cand apesi acceleratia, tura motorului si volanta cadranului cresc dar viteza nu
 
 Asta e semnul final de uzură. Ambreiajul patinează constant și nu mai are suficientă frecare să transmită forța.
 
-### 3. Senzație de "Ardere” la Schimb (semn mediu)
+### 3. Senzație de "Ardere" la Schimb (semn mediu)
 
 Poți simți o ușoară senzație de căldură sau frictie cand schimbi vitezele. Discul de fricțiune se freacă prea mult de placa de presiune sau rulmențul e blocat.
 
@@ -245,20 +251,6 @@ Notează ce simți exact - ne ajută să identificăm problema mai rapid.
 
 ---
 
-## Programare
-
-0729 440 127
-
-**Program:**
-- Luni - Vineri: 09:00 - 18:00
-- Sambata: 10:00 - 14:00
-
-**Adresa:** Euro Auto Service, [adresa]
-
-Lăsați auto-ul dimineața și ridică-l în aceași zi. Înlocuirea ambreiajului nu necesită peste 4-6 ore de lucru.
-
----
-
 ## Prevenire - Cum Păstrezi Ambreiajul Mai Mult Timp
 
 Câteva practici pot prelungi durata de viață a ambreiajului:
@@ -273,4 +265,20 @@ Respectând aceste practici, ambreiajul poate dura peste 150.000 km - chiar și 
 
 ---
 
-**Ambreiaj uzat nu așteaptă.** Cand observi semne de patinare, verifică. Continuarea să conduzi cu ambreiaj uzat duce la situația critică - rămâi blocat și ai nevoie de remorcare la service.
+Information
+
+**Ambreiaj uzat nu așteaptă.** Cand observi semne de patinare, verifică. Continuarea să conduci cu ambreiaj uzat duce la situația critică - rămâi blocat și ai nevoie de remorcare la service.
+
+---
+
+## Contact
+
+0729 440 127
+
+**Program:**
+- Luni - Vineri: 09:00 - 18:00
+- Sambata: 10:00 - 14:00
+
+**Adresa:** Euro Auto Service, [adresa]
+
+Lăsați auto-ul dimineața și ridică-l în aceași zi. Înlocuirea ambreiajului nu necesită peste 4-6 ore de lucru.

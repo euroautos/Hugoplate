@@ -4,6 +4,11 @@ title: "Diagnosticarea și Înlocuirea Catalizatorului Defect: Soluții Eficient
 url: "/diagnosticarea-si-inlocuirea-catalizatorului-defect-solutii-eficiente/"
 type: "category"
 category: "Diagnoza Auto"
+layout: "single"
+na10:
+  stage: "KNOW"
+  intent: "educational"
+  cta: false
 ---
 noindex: true
 [diagnoza-auto](/category/diagnoza-auto/).entry-taxonomies

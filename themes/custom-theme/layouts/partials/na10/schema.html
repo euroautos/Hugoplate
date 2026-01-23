@@ -1,0 +1,95 @@
+{{/* Schema.org Structured Data based on NA10 stage */}}
+{{ if eq .Params.na10.stage "WHY" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Params.description | default .Site.Params.description }}",
+  "url": "{{ .Permalink }}",
+  "logo": "{{ .Site.Params.logo | absURL }}",
+  "sameAs": [
+    "{{ .Site.Params.social.facebook }}",
+    "{{ .Site.Params.social.instagram }}",
+    "{{ .Site.Params.social.youtube }}"
+  ]
+}
+</script>
+{{ else if eq .Params.na10.stage "KNOW" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.logo | absURL }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ else if eq .Params.na10.stage "TRUST" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.logo | absURL }}"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ .Params.na10.rating | default "4.8" }}",
+    "reviewCount": "{{ .Params.na10.review_count | default "150" }}"
+  }
+}
+</script>
+{{ else if or (eq .Params.na10.stage "DO") (eq .Params.na10.stage "DO++") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "București"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicii Auto GPL"
+  }
+}
+</script>
+{{ end }}
